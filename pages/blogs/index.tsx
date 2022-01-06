@@ -20,7 +20,7 @@ const Home: React.FC<Props> = ({ posts }) => {
 	return (
 		<div className='mt-5'>
 			{posts.map((post, index) => (
-				<Link href={'/blog/' + post.slug} passHref key={index}>
+				<Link href={'/blogs/' + post.slug} passHref key={index}>
 					<div className='border border-gray-100 p-4 rounded-lg mb-3 pointer max-w-xl bg-gray-50'>
 						<div className='row g-0'>
 							<div className='col-md-8'>
