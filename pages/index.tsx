@@ -8,50 +8,53 @@ import {
 	NicheSection,
 	UnitHeroSection,
 	SubscribeSection,
-} from '@components/home';
+} from '@components';
+import { LayoutBase } from '@components';
 
-type Props = {
-	posts: {
-		slug: string;
-		frontMatter: {
-			title: string;
-			description: string;
-			thumbnailUrl: string;
-			date: string;
-		};
-	}[];
-};
+// type Props = {
+// 	posts: {
+// 		slug: string;
+// 		frontMatter: {
+// 			title: string;
+// 			description: string;
+// 			thumbnailUrl: string;
+// 			date: string;
+// 		};
+// 	}[];
+// };
 
-const Home: React.FC<Props> = ({ posts }) => {
+const Home: React.FC = () => {
 	return (
-		<div className='h-full'>
+		<LayoutBase pageKey='' pageTitle=''>
+			<>
 			<UnitHeroSection />
 			<NicheSection />
 			<BringSection />
 			<LoveInSection />
 			<SubscribeSection />
-		</div>
+			</>
+		</LayoutBase>
 	);
 };
 
 export default Home;
 
-export const getStaticProps = async () => {
-	const files = fs.readdirSync(path.join('posts'));
-	const posts = files.map((filename) => {
-		const markdownWithMeta = fs.readFileSync(
-			path.join('posts', filename),
-			'utf-8'
-		);
-		const { data: frontMatter } = matter(markdownWithMeta);
-		return {
-			frontMatter,
-			slug: filename.split('.')[0],
-		};
-	});
-	return {
-		props: {
-			posts,
-		},
-	};
-};
+// export const getStaticProps = async () => {
+// 	const files = fs.readdirSync(path.join('posts'));
+// 	const posts = files.map((filename) => {
+// 		const markdownWithMeta = fs.readFileSync(
+// 			path.join('posts', filename),
+// 			'utf-8'
+// 		);
+// 		const { data: frontMatter } = matter(markdownWithMeta);
+// 		return {
+// 			frontMatter,
+// 			slug: filename.split('.')[0],
+// 		};
+// 	});
+// 	return {
+// 		props: {
+// 			posts,
+// 		},
+// 	};
+// };
