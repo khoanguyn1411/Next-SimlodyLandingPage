@@ -1,15 +1,19 @@
 import Head from 'next/head';
-import type { AppProps } from 'next/app';
+// import type { AppProps } from 'next/app';
+import { AppProps } from 'next/app';
 import NextNProgress from 'nextjs-progressbar';
 import '../styles/globals.css';
+import { Header } from '@components';
+import { Footer } from '@components/footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>Next and MDX Blog</title>
+				<title>TungTung</title>
 			</Head>
-			<div className='container mx-auto'>
+			<div>
+				<Header />
 				<main>
 					<NextNProgress
 						color='#3B82F6'
@@ -18,6 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					/>
 					<Component {...pageProps} />
 				</main>
+				<Footer />
 			</div>
 		</>
 	);
