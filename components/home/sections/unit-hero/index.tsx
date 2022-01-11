@@ -27,7 +27,7 @@ export const UnitHeroSection = memo(() => {
 						</div>
 						<div className='button flex flex-row space-x-10'>
 							<Button text='Get Started' />
-							<Button text='Explore more' />
+							<Button text='Explore more' icon={<i className='fa fa-chevron-right'/>}/>
 						</div>
 					</div>
 				</div>

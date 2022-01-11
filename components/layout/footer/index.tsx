@@ -9,7 +9,7 @@ import React, { memo } from 'react';
 
 export const Footer = memo(() => {
 	return (
-		<footer className='py-16 flex flex-1'>
+		<footer className='py-16 flex flex-1 shadow-inner'>
 			<div className='flex flex-col w-full md:w-2/5 mx-auto'>
 				<div className='flex flex-row justify-between pb-12'>
 					<Link href='/about'>

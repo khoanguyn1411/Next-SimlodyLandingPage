@@ -3,6 +3,7 @@ module.exports = {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
 		'./components/**/*.{js,ts,jsx,tsx}',
+		'./containers/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
 		fontFamily: {
@@ -40,6 +41,9 @@ module.exports = {
 				section: 'calc(100vh - 56px)',
 			},
 		},
+	},
+	variants: {
+		display: ['group-hover']
 	},
 	plugins: [],
 };
