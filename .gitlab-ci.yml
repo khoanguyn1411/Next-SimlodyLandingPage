@@ -11,4 +11,4 @@ deploy_staging:
   script:
     - ssh $SSH_SERVER "export PATH=/home/ubuntu/.nvm/versions/node/v14.17.3/bin:/usr/bin:/bin ; cd $PROJECT_DIR ; git pull origin $CI_COMMIT_REF_NAME ; sh build.sh"
   only:
-    - main
+    - develop
