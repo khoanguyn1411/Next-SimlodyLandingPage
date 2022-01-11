@@ -5,7 +5,9 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"pm2:start": "pm2 start ./ecosystem.config.js --env production ; pm2 status",
+		"pm2:reload": "pm2 reload ./ecosystem.config.js --env production ; pm2 status"
 	},
 	"dependencies": {
 		"@types/react-syntax-highlighter": "^13.5.2",
