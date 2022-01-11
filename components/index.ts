@@ -3,3 +3,4 @@ export * from "./layout/footer";
 export * from "./home";
 export * from "./layout";
 export * from "./sections";
+export * from "./media";
