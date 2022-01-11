@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Button } from '@components/elements';
 import Image from 'next/image';
 import { memo } from 'react';
