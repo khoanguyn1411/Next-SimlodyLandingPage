@@ -7,7 +7,7 @@ import background3 from "../images/background2.png";
 export const PartnerSection = () => {
   return (
     <section
-      className="flex items-center justify-center w-full mb-24"
+      className="flex items-center justify-center w-full"
       style={{
         background:
           "linear-gradient(96.03deg, #1096F0 1.05%, rgba(29, 65, 123, 0) 180.46%, #466986 180.46%)",
@@ -26,7 +26,7 @@ export const PartnerSection = () => {
               </span>
             </div>
             <div className="flex flex-row gap-4">
-              <Button text="Subscribe now" />
+              <Button text="Subscribe now"type="primary" />
             </div>
           </div>
 

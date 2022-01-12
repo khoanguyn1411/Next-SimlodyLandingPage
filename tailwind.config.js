@@ -9,6 +9,23 @@ module.exports = {
 		fontFamily: {
 			inter: ['Inter'],
 		},
+		container: {
+			// you can configure the container to be centered
+			center: true,
+
+			// or have default horizontal padding
+			padding: "2rem",
+
+			// default breakpoints but with 40px removed
+			screens: {
+				sm: "100%",
+				md: "100%",
+				lg: "1024px",
+				xl: "1280px",
+				xxl: "1536px"
+			},
+		},
+
 		extend: {
 			colors: {
 				primary: {
@@ -41,6 +58,7 @@ module.exports = {
 				section: 'calc(100vh - 56px)',
 			},
 		},
+
 	},
 	variants: {
 		display: ['group-hover']

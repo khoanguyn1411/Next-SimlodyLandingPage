@@ -77,7 +77,7 @@ export const TabsSection: React.FC<ITabsProps> = ({
   onChange,
 }) => {
   return (
-    <section className=" flex items-center justify-center mb-24">
+    <section className=" flex items-center justify-center">
       <div className="container ">
         <div
           className={classNames("flex items-center justify-center space-x-8 lg:space-x-24")}

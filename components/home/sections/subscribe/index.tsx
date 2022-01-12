@@ -40,7 +40,7 @@ export const SubscribeSection = memo(() => {
 									)}
 								/>
 							</div>
-							<Button text='Subscribe now' />
+							<Button text='Subscribe now' type='primary'/>
 						</div>
 					</div>
 					<div className='flex flex-col flex-1'>
