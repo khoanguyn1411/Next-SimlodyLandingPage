@@ -1,5 +1,5 @@
 module.exports = {
-	darkMode: false,
+	darkMode: 'media',
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
 		'./components/**/*.{js,ts,jsx,tsx}',
@@ -8,6 +8,15 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			inter: ['Inter'],
+		},
+		container: {
+			padding: {
+				DEFAULT: '1rem',
+				sm: '2rem',
+				lg: '4rem',
+				xl: '5rem',
+				'2xl': '6rem',
+			},
 		},
 		extend: {
 			colors: {
@@ -43,7 +52,7 @@ module.exports = {
 		},
 	},
 	variants: {
-		display: ['group-hover']
+		display: ['group-hover'],
 	},
 	plugins: [],
 };

@@ -8,6 +8,7 @@ import {
 	NicheSection,
 	UnitHeroSection,
 	SubscribeSection,
+	ProjectSection,
 } from '@components';
 import { LayoutBase } from '@components';
 
@@ -27,11 +28,12 @@ const Home: React.FC = () => {
 	return (
 		<LayoutBase pageKey='' pageTitle=''>
 			<>
-			<UnitHeroSection />
-			<NicheSection />
-			<BringSection />
-			<LoveInSection />
-			<SubscribeSection />
+				<UnitHeroSection />
+				<NicheSection />
+				<BringSection />
+				<LoveInSection />
+				<ProjectSection />
+				<SubscribeSection />
 			</>
 		</LayoutBase>
 	);

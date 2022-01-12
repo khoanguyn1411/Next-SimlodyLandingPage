@@ -42,7 +42,9 @@ export const Card: React.FC<Props> = React.memo(
 					)}
 				>
 					<div className='flex justify-center pb-6'>{icon}</div>
-					<h4 className='text-gray-800 text-center pb-4 text-2xl'>{title}</h4>
+					<h4 className='text-gray-800 text-center font-semibold pb-4 text-2xl'>
+						{title}
+					</h4>
 					<span className='text-gray-500 text-base text-center'>
 						{description}
 					</span>
