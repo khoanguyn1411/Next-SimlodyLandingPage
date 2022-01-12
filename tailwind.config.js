@@ -10,6 +10,7 @@ module.exports = {
 			inter: ['Inter'],
 		},
 		container: {
+			center: true,
 			padding: {
 				DEFAULT: '1rem',
 				sm: '2rem',

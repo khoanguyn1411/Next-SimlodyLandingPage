@@ -16,9 +16,9 @@ export const SubscribeSection = memo(() => {
 					'linear-gradient(96.03deg, #0B9BFB 1.05%, rgba(29, 65, 123, 0) 180.46%, #BDE1FF 180.46%)',
 			}}
 		>
-			<div className='container mx-auto flex flex-1 py-6'>
+			<div className='container mx-auto flex flex-1'>
 				<div className='flex flex-col md:flex-row flex-1 gap-10'>
-					<div className='flex flex-1 justify-center flex-col'>
+					<div className='flex flex-1 justify-center flex-col py-6'>
 						<div className='flex flex-col pb-8'>
 							<h4 className='text-3xl font-semibold text-gray-50 pb-4'>
 								We're got more coming...
@@ -38,28 +38,16 @@ export const SubscribeSection = memo(() => {
 									)}
 								/>
 							</div>
-							<Button text='Subscribe now' />
+							<Button text='Subscribe now' type='primary' />
 						</div>
 					</div>
 					<div className='flex flex-col flex-1'>
-						<div className='md:-mt-14 mb-4 shadow-lg'>
+						<div className='md:-mt-14 mb-4'>
 							<Image src={backgroundImage} alt='Background' />
 						</div>
-						<div
-							className='flex flex-row gap-4'
-							style={{
-								marginRight: `calc(-50vw + 100% + calc(2.5rem)/2)`,
-							}}
-						>
+						<div className='flex flex-row gap-4'>
 							<Image src={background2Image} alt='Background 2' />
 							<Image src={background3Image} alt='Background 3' />
-							{/* <style jsx>
-								{`
-									img {
-										@apply: shadow-2xl;
-									}
-								`}
-							</style> */}
 						</div>
 					</div>
 				</div>

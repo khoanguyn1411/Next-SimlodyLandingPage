@@ -51,15 +51,17 @@ export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
 	return (
 		<header className='bg-white h-14 shadow-md sticky top-0 z-50'>
 			<div className='container flex flex-row mx-auto items-center h-full justify-between'>
-				<div className='flex items-center gap-x-4'>
-					<button
-						className={classNames(
-							'flex w-8 h-8 white rounded-full xl:hidden outline-none focus:outline-none items-center justify-center'
-						)}
-						onClick={onOpen}
-					>
-						<i className='text-base text-gray-400 fas fa-bars line-height-normal'></i>
-					</button>
+				<div className='flex items-center'>
+					<Media lessThan='xl'>
+						<button
+							className={classNames(
+								'flex outline-none focus:outline-none mr-4 items-center justify-center'
+							)}
+							onClick={onOpen}
+						>
+							<i className='text-base text-gray-400 fas fa-bars line-height-normal'></i>
+						</button>
+					</Media>
 
 					{/* logo */}
 					<Link href='/'>
@@ -88,7 +90,7 @@ export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
 
 				{/* contact */}
 				<div>
-					<Button text='Contact Us' />
+					<Button text='Contact Us' type='primary' />
 				</div>
 			</div>
 		</header>

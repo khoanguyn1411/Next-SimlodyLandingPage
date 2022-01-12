@@ -74,7 +74,8 @@ export const LoveInSection = memo(() => {
 							'absolute top-0 right-0 left-0 bottom-0',
 							'rounded-xl',
 							'bg-purple-500',
-							'-rotate-3'
+							'-rotate-3',
+							'hidden md:block'
 						)}
 					/>
 					<div
@@ -91,7 +92,7 @@ export const LoveInSection = memo(() => {
 									className={classnames(
 										'p-4',
 										'flex flex-1',
-										'md:basis-1/2 lg:basis-1/4'
+										'basis-full md:basis-1/2 lg:basis-1/4'
 									)}
 								>
 									<div
