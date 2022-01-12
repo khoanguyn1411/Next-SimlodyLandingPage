@@ -49,7 +49,7 @@ type IProps = {
 };
 export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
 	return (
-		<header className='bg-white h-14 shadow-md sticky top-0 z-50'>
+		<header className='bg-white h-header shadow sticky top-0 z-50'>
 			<div className='container flex flex-row mx-auto items-center h-full justify-between'>
 				<div className='flex items-center'>
 					<Media lessThan='xl'>

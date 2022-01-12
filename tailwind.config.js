@@ -49,6 +49,7 @@ module.exports = {
 			height: {
 				main: 'calc(100vh - 56px)',
 				section: 'calc(100vh - 56px)',
+				header: '4.5rem',
 			},
 		},
 	},
