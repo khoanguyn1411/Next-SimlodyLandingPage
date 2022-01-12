@@ -1,8 +1,9 @@
-import classNames from "classnames";
-import Image, { ImageProps } from "next/image";
+import Image  from "next/image";
 import { LayoutItem } from "./layout-item";
+import { Element } from "react-scroll";
 
 type IProps = {
+  id?:string
   title: string;
   description: string;
   subDescription: string[];
@@ -11,6 +12,7 @@ type IProps = {
   isReverse?: boolean;
 };
 export const ContentItem: React.FC<IProps> = ({
+  id = "",
   title,
   description,
   subDescription = [],
@@ -90,10 +92,12 @@ export const ContentItem: React.FC<IProps> = ({
   };
 
   return (
-    <LayoutItem
+    <Element name={id} className="element">
+      <LayoutItem
       isReverse={isReverse}
       layoutFirst={renderLayoutFirst()}
       layoutSecond={renderLayoutSecond()}
     />
+    </Element>
   );
 };

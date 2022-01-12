@@ -9,6 +9,7 @@ export const ContentSection = () => {
         {CONTENTS.map((content, index) => (
           <ContentItem
             key={index}
+            id={content.key}
             title={content.title}
             description={content.description}
             subDescription={content.subDescription}

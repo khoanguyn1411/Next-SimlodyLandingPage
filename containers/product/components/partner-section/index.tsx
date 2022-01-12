@@ -15,7 +15,7 @@ export const PartnerSection = () => {
     >
       <div className="container">
         <div className=" flex flex-1 flex-col lg:flex-row gap-0 lg:gap-32">
-          <div className="flex flex-1 justify-center items-center flex-col">
+          <div className="flex flex-1 justify-center items-center flex-col py-16">
             <div className="flex flex-col items-center justify-center pb-8">
               <h4 className="text-3xl font-semibold text-gray-50 pb-4">
                 Become our partner!
@@ -26,12 +26,12 @@ export const PartnerSection = () => {
               </span>
             </div>
             <div className="flex flex-row gap-4">
-              <Button text="Subscribe now"type="primary" />
+              <Button text="Subscribe now" type="primary" />
             </div>
           </div>
 
           <div className="flex flex-col flex-1">
-            <div className="">
+            <div>
               <div className="flex flex-row gap-4 pb-4">
                 <Image src={background2} alt="Background 2" />
                 <Image src={background3} alt="Background 3" />
