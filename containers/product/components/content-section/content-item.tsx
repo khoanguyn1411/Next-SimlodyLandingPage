@@ -33,7 +33,7 @@ export const ContentItem: React.FC<IProps> = ({
       <div className="space-y-8 flex flex-col flex-1 justify-center h-full">
         <h2 className="text-3xl font-semibold">{title}</h2>
 
-        <span className="text-base">{description}</span>
+        {description && <span className="text-base">{description}</span>}
 
         <div className="space-y-4">
           {subDescription.map((des, index) => (
@@ -59,7 +59,7 @@ export const ContentItem: React.FC<IProps> = ({
         <div className="space-y-8 flex flex-col flex-1 justify-center h-full">
           <h2 className="text-3xl font-semibold">{title}</h2>
 
-          <span className="text-base">{description}</span>
+          {description && <span className="text-base">{description}</span>}
 
           <div className="space-y-4">
             {subDescription.map((des, index) => (
@@ -96,5 +96,4 @@ export const ContentItem: React.FC<IProps> = ({
       layoutSecond={renderLayoutSecond()}
     />
   );
-
 };

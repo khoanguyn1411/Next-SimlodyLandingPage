@@ -4,7 +4,7 @@ import { CONTENTS } from "./constant";
 
 export const ContentSection = () => {
   return (
-    <section className="flex items-center justify-center mt-24 mb-24 px-8 xl:px-0">
+    <section className="flex items-center justify-center px-8 xl:px-0">
       <div className="container space-y-24">
         {CONTENTS.map((content, index) => (
           <ContentItem

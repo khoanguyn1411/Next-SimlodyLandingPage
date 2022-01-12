@@ -25,6 +25,6 @@
 
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "containers/solution/constant.tss"],
 	"exclude": ["node_modules"]
 }

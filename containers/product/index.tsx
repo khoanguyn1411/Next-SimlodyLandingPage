@@ -41,17 +41,19 @@ export const ProductContainer = () => {
           titleBanner="All-in-one platform you need"
           description="Get ready to scale up your company !"
         />
-        <TabsSection
-          tabs={TABS}
-          activeKey={activeKey}
-          onChange={handleChangeTab}
-        />
+        <div className="space-y-24">
+          <TabsSection
+            tabs={TABS}
+            activeKey={activeKey}
+            onChange={handleChangeTab}
+          />
 
-        <ContentSection/>
+          <ContentSection />
 
-        <ActionableSection/>
+          <ActionableSection />
 
-        <PartnerSection/>
+          <PartnerSection />
+        </div>
       </div>
     </>
   );
