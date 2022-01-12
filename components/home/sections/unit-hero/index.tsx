@@ -1,8 +1,6 @@
 import { Button } from "@components/elements";
 import Image from "next/image";
 import React, { memo } from "react";
-import image1 from "public/home/image-1.jpeg";
-import image2 from "public/home/image-2.jpeg";
 import background from "./background.png";
 
 export const UnitHeroSection = memo(() => {
@@ -25,7 +23,7 @@ export const UnitHeroSection = memo(() => {
                 solution
               </span>
             </div>
-            <div className="button flex flex-row space-x-4">
+            <div className="button flex flex-row space-x-10">
               <div className="w-40">
                 <Button text="Get Started" type="primary" block />
               </div>
@@ -40,7 +38,7 @@ export const UnitHeroSection = memo(() => {
                       <i className="fa fa-chevron-right" />
                     </span>
                   }
-				  block
+                  block
                 />
               </div>
             </div>

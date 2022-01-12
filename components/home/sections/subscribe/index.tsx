@@ -17,8 +17,8 @@ export const SubscribeSection = memo(() => {
 			}}
 		>
 			<div className='container mx-auto flex flex-1'>
-				<div className='flex flex-row flex-1 gap-10'>
-					<div className='flex flex-1 justify-center flex-col'>
+				<div className='flex flex-col md:flex-row flex-1 gap-10'>
+					<div className='flex flex-1 justify-center flex-col py-6'>
 						<div className='flex flex-col pb-8'>
 							<h4 className='text-3xl font-semibold text-gray-50 pb-4'>
 								We're got more coming...
@@ -29,10 +29,8 @@ export const SubscribeSection = memo(() => {
 							</span>
 						</div>
 						<div className='flex flex-row gap-4'>
-							<div className='flex flex-1 rounded-xl bg-white overflow-hidden items-center px-6 py-4'>
-								<div className='pr-4'>
-									<EmailIcon />
-								</div>
+							<div className='flex flex-1 rounded-xl bg-white overflow-hidden items-center px-6 py-4 gap-x-2'>
+								<EmailIcon />
 								<input
 									placeholder='Enter your email'
 									className={classnames(
@@ -40,11 +38,11 @@ export const SubscribeSection = memo(() => {
 									)}
 								/>
 							</div>
-							<Button text='Subscribe now' type='primary'/>
+							<Button text='Subscribe now' type='primary' />
 						</div>
 					</div>
 					<div className='flex flex-col flex-1'>
-						<div className='-mt-14 pb-4'>
+						<div className='md:-mt-14 mb-4'>
 							<Image src={backgroundImage} alt='Background' />
 						</div>
 						<div className='flex flex-row gap-4'>

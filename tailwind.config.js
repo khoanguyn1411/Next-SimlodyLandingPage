@@ -1,5 +1,5 @@
 module.exports = {
-	darkMode: false,
+	darkMode: 'media',
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
 		'./components/**/*.{js,ts,jsx,tsx}',
@@ -10,22 +10,15 @@ module.exports = {
 			inter: ['Inter'],
 		},
 		container: {
-			// you can configure the container to be centered
 			center: true,
-
-			// or have default horizontal padding
-			padding: "2rem",
-
-			// default breakpoints but with 40px removed
-			screens: {
-				sm: "100%",
-				md: "100%",
-				lg: "1024px",
-				xl: "1280px",
-				xxl: "1536px"
+			padding: {
+				DEFAULT: '1rem',
+				sm: '2rem',
+				lg: '4rem',
+				xl: '5rem',
+				'2xl': '6rem',
 			},
 		},
-
 		extend: {
 			colors: {
 				primary: {
@@ -58,10 +51,9 @@ module.exports = {
 				section: 'calc(100vh - 56px)',
 			},
 		},
-
 	},
 	variants: {
-		display: ['group-hover']
+		display: ['group-hover'],
 	},
 	plugins: [],
 };
