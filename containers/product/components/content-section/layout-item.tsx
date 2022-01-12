@@ -6,7 +6,6 @@ type IProps={
     layoutSecond:JSX.Element
 }
 export const LayoutItem:React.FC<IProps>=({isReverse,layoutFirst,layoutSecond})=>{
-    console.log(isReverse)
     return(
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-24">
             <div className={classNames({
