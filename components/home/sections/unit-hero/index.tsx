@@ -33,7 +33,7 @@ export const UnitHeroSection = memo(() => {
                   icon={
                     <span
                       className="ml-2 w-4 h-4 rounded-full bg-primary-500 text-white flex items-center justify-center"
-                      style={{ fontSize: "10px" }}
+                      style={{ fontSize: "8px" }}
                     >
                       <i className="fa fa-chevron-right" />
                     </span>

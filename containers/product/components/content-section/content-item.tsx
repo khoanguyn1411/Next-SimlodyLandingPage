@@ -39,10 +39,10 @@ export const ContentItem: React.FC<IProps> = ({
 
         <div className="space-y-4">
           {subDescription.map((des, index) => (
-            <div key={index} className="space-x-2 flex">
+            <div key={index} className="space-x-4 flex items-center">
               <span
                 className="w-5 h-5 bg-primary-200 text-primary-400 rounded-full flex items-center justify-center "
-                style={{ fontSize: "10px" }}
+                style={{ fontSize: "8px" }}
               >
                 <i className="fa fa-check" />
               </span>
@@ -65,10 +65,10 @@ export const ContentItem: React.FC<IProps> = ({
 
           <div className="space-y-4">
             {subDescription.map((des, index) => (
-              <div key={index} className="space-x-2 flex">
+              <div key={index} className="space-x-4 items-center flex">
                 <span
                   className="w-5 h-5 bg-primary-200 text-primary-400 rounded-full flex items-center justify-center "
-                  style={{ fontSize: "10px" }}
+                  style={{ fontSize: "8px" }}
                 >
                   <i className="fa fa-check" />
                 </span>

@@ -1,6 +1,7 @@
 import { Collapse } from "@components/elements";
 import classNames from "classnames";
 import Link from "next/link";
+import { SubMenuProps } from "./menu-item";
 
 type IProps = {
   name: string;
@@ -9,7 +10,7 @@ type IProps = {
   icon?: JSX.Element;
   isActive?: boolean;
   hasSubMenu?: boolean;
-  subMenus?: string[];
+  subMenus?: SubMenuProps[];
   isOpened: boolean;
   onShowSubMenu: () => void;
 };

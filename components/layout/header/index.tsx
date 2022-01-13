@@ -17,19 +17,35 @@ export const MENUS = [
 		href: '/who-it-for',
 		icon: <i className='fa fa-chevron-down' />,
 		hasSubmenu: true,
-		submenus: [
-			'Small enterprises',
-			'Medium-sized enterprises',
-			'Large enterprises',
-		],
+		// submenus: [
+		// 	'Small enterprises',
+		// 	'Medium-sized enterprises',
+		// 	'Large enterprises',
+		// ],
 	},
 	{
 		key: 'Solution',
 		name: 'Solution',
-		href: '/solution',
+		href: '/solution/product',
 		icon: <i className='fa fa-chevron-down' />,
 		hasSubmenu: true,
-		submenus: ['Product concept', 'Saas', 'Odoo'],
+		submenus:[
+			{
+				key:"Product",
+				name:'Product concept',
+				href:'/solution/product'
+			},
+			{
+				key:"Saas",
+				name:'Saas',
+				href:'/solution/saas'
+			},
+			{
+				key:"Odoo",
+				name:'Odoo',
+				href:'/solution/odoo'
+			},
+		]
 	},
 	{
 		key: 'News',

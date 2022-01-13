@@ -25,7 +25,7 @@ export const CONTENTS = [
       "Weekly and Monthly data entry allows you to track each team’s Scorecard with ease.",
     subDescription: [
       "Findings about the users’ context, common scenarios, goals",
-      "various forms: clickable Invision prototype, low fidelity wireframe, storyboards, lightweight coded prototype",
+      "Various forms: clickable Invision prototype, low fidelity wireframe, storyboards, lightweight coded prototype",
       "Optimize Average and Totals Colums",
     ],
     isReverse: true,
