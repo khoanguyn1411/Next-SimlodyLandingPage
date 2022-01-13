@@ -1,6 +1,6 @@
+import { HeaderSection } from "@components";
 import { ITab, Tabs } from "@components/elements";
 import { ContentItem } from "@containers/product/components/content-section/content-item";
-import { HeaderSection } from "@containers/solution/components";
 import {
   CONTENTS_ADAPT,
   CONTENTS_CENTRALIZING,

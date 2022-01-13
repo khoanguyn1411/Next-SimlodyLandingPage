@@ -13,7 +13,12 @@ import {
   ClientSection,
   OurTechnology,
 } from "./sections";
-import { PROCESSES_PRODUCT, PROCESSES_SASS, TABS_ODOO, TABS_SASS } from "./constant";
+import {
+  PROCESSES_PRODUCT,
+  PROCESSES_SASS,
+  TABS_ODOO,
+  TABS_SASS,
+} from "./constant";
 import { TABS_PRODUCT } from "./constant";
 
 export const SolutionContainer = () => {
@@ -132,7 +137,11 @@ export const SolutionContainer = () => {
         </div>
 
         <div className="flex flex-col space-y-24">
-          <ProcessSection processes={process} />
+          <ProcessSection
+            title="Why we should choose this process"
+            description="Give our customers our best solutions to make company grown better"
+            processes={process}
+          />
 
           <WillDoSection
             title={willDos.title}

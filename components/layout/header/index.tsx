@@ -14,14 +14,26 @@ export const MENUS = [
 	{
 		key: 'WhoItFor',
 		name: "Who's It For",
-		href: '/who-is-it-for',
+		href: '/who-is-it-for/small',
 		icon: <i className='fa fa-chevron-down' />,
 		hasSubmenu: true,
-		// submenus: [
-		// 	'Small enterprises',
-		// 	'Medium-sized enterprises',
-		// 	'Large enterprises',
-		// ],
+		submenus:[
+			{
+				key:"Small",
+				name:'Small enterprises',
+				href:'/who-is-it-for/small'
+			},
+			{
+				key:"Medium",
+				name:'Medium-sized enterprises',
+				href:'/who-is-it-for/medium'
+			},
+			{
+				key:"Large",
+				name:'Large enterprises',
+				href:'/who-is-it-for/large'
+			},
+		]
 	},
 	{
 		key: 'Solution',

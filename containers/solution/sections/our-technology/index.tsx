@@ -1,8 +1,8 @@
-import { HeaderSection } from "@containers/solution/components";
 import { TechItem } from "./tech-item";
 import data from "../../images/big-data.png";
 import framework from "../../images/framework.png";
 import manageTools from "../../images/manage-tool.png";
+import { HeaderSection } from "@components";
 
 export const OurTechnology = () => {
   return (

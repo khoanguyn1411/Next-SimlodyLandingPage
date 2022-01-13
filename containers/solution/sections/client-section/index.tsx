@@ -1,4 +1,4 @@
-import { HeaderSection } from "@containers/solution/components";
+import { HeaderSection } from "@components";
 import Image from "next/image";
 import client from "../../images/client.png";
 export const ClientSection = () => {
@@ -27,7 +27,7 @@ export const ClientSection = () => {
 
             <div className="col-span-2">
               <div className="flex flex-col space-y-4">
-                <h2 className="font-medium text-3xl text-primary-800">
+                <h2 className="font-medium text-xl lg:text-3xl text-primary-800">
                   Tungtung has been so helpful to my clients running on EOS.
                   Excellent structure for bussines !
                 </h2>

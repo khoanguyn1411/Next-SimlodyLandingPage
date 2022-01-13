@@ -1,9 +1,5 @@
-import { HeaderSection } from "@containers/solution/components";
-import {
-  PlanningIcon,
-  CollaborationIcon,
-  VisualizationIcon,
-} from "@containers/solution/icon";
+import { HeaderSection } from "@components";
+
 import { CartItem } from "./card-item";
 
 export type ProcessProps={
@@ -13,9 +9,11 @@ export type ProcessProps={
 }
 
 type IProps={
+  title:string,
+  description:string,
   processes:ProcessProps[]
 }
-export const ProcessSection:React.FC<IProps> = ({processes}) => {
+export const ProcessSection:React.FC<IProps> = ({title,description, processes}) => {
 
   return (
     <section className="flex items-center justify-center">
@@ -29,7 +27,7 @@ export const ProcessSection:React.FC<IProps> = ({processes}) => {
         }}
       >
         <div className="flex flex-col items-center justify-center space-y-32">
-         <HeaderSection title="What we will do in this process" description="Give our customers our best solutions to make company grown better"/>
+         <HeaderSection title={title} description={description}/>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-16">
             {processes.map((process, index) => (

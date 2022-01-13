@@ -51,7 +51,7 @@ export const Button = forwardRef<HTMLButtonElement, IProps>(
 				type={htmlType}
 				onClick={onClick}
 				className={classnames(
-					'text-base rounded-md px-4 py-2 font-medium',
+					'text-sm lg:text-base rounded-md px-4 py-2 font-medium',
 					'transition-all duration-300 ease-in-out',
 					'flex items-center justify-center',
 					{ 'w-full': block },
