@@ -22,9 +22,9 @@
 			"@components/*": ["components/*"],
 			"@constants/*": ["constants/*"],
 			"@containers/*": ["containers/*"],
-
+			"@images/*": ["public/images/*"]
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "containers/solution/constant.tss"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["node_modules"]
 }
