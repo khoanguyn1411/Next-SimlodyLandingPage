@@ -14,7 +14,7 @@ export const MENUS = [
 	{
 		key: 'WhoItFor',
 		name: "Who's It For",
-		href: '/who-it-for',
+		href: '/who-is-it-for',
 		icon: <i className='fa fa-chevron-down' />,
 		hasSubmenu: true,
 		submenus: [
