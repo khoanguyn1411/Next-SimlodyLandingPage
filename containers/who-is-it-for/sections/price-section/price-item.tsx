@@ -18,7 +18,7 @@ export const PriceItem: React.FC<IProps> = ({
   return (
     <div
       className={classNames(
-        "relative border rounded-md flex flex-col justify-between items-center px-6 py-6",
+        "relative border rounded-xl flex flex-col justify-between items-center px-6 py-6",
         {
           "shadow-md": isPopular,
         }
@@ -30,7 +30,7 @@ export const PriceItem: React.FC<IProps> = ({
         </div>
       )}
       <div className="flex flex-col flex-1 space-y-4 mb-8">
-        <div className="flex flex-col flex-1 space-y-4">
+        <div className="flex flex-col space-y-4">
           <h2 className="text-base font-medium">{title}</h2>
 
           <span className="text-3xl font-semibold">{price}</span>

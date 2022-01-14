@@ -60,8 +60,9 @@ export const Tabs: React.FC<ITabsProps> = ({
   return (
     <div
       className={classNames(
-        "inline-flex items-center h-12 bg-gray-100 shadow-inner divide-x px-2 divide-gray-200 rounded-md"
+        "inline-flex items-center overflow-auto h-12 bg-gray-100 shadow-inner divide-x px-2 divide-gray-200 rounded-md"
       )}
+      style={{width:"768px"}}
     >
       {tabs.map((tab, index) => {
         return (

@@ -13,7 +13,7 @@ export const OurTechnology = () => {
           description="We build technology silution with the best user expierence, optimized operation for businesses, startups to devolop business model"
         />
 
-        <div className="grid grid-cols-3 gap-8 items-center justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-center justify-center">
           <TechItem
             srcImg={data}
             title="Big Data Stack"

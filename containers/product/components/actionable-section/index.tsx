@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { ColItem } from "./col-item";
 import { description, title } from "./constant";
+import Image from "next/image";
+import background from "../images/test.jpg";
 
 export const ActionableSection = () => {
   return (
@@ -42,15 +44,9 @@ export const ActionableSection = () => {
             </div>
           </div>
 
-          <div
-            className="flex flex-1"
-            style={{
-              backgroundImage: "url('/product/test.jpg')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "right",
-            }}
-          ></div>
+          <div className="flex flex-1">
+            <Image src={background} alt="" objectFit="cover" />
+          </div>
         </div>
       </div>
     </section>
