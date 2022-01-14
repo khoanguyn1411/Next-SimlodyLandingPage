@@ -9,11 +9,11 @@ export const ContentSection = () => {
         {CONTENTS.map((content, index) => (
           <ContentItem
             key={index}
-            id={content.key}
+            id={content.id}
             title={content.title}
             description={content.description}
             subDescription={content.subDescription}
-            isReverse={content.isReverse}
+            position={content.position}
             srcImg={content.srcImg}
           />
         ))}

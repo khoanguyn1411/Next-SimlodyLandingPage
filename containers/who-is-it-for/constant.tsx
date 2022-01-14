@@ -33,16 +33,21 @@ export const FEATURE_SMALL = [
     description:
       "We provide plans to tranfer your old company to become more dynamic and faster",
     srcImg: <SolutionIcon/>,
+    color:"green"
   },
   {
     title: "ERP Plan",
     description: "Sold your problems with KPI, OKRs, EOS",
     srcImg: <PlanIcon/>,
+    color:"purple"
+
   },
   {
     title: "SaaS Product",
     description: "New technology and platform to work more effeciently",
     srcImg: <ProductIcon/>,
+    color:"blue"
+
   },
 ];
 

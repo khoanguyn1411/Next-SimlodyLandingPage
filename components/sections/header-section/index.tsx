@@ -1,3 +1,5 @@
+import { Button } from "@components/elements";
+
 type IProps = {
     title: string;
     description: string;
@@ -8,6 +10,7 @@ type IProps = {
         <h2 className="text-3xl font-semibold text-center">{title}</h2>
   
         <span className="text-xl text-center text-gray-400">{description}</span>
+
       </div>
     );
   };

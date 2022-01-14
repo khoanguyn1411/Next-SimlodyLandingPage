@@ -30,7 +30,7 @@ export const PriceItem: React.FC<IProps> = ({
         </div>
       )}
       <div className="flex flex-col flex-1 space-y-4 mb-8">
-        <div className="flex flex-col flex-1 space-y-4">
+        <div className="flex flex-col space-y-4">
           <h2 className="text-base font-medium">{title}</h2>
 
           <span className="text-3xl font-semibold">{price}</span>

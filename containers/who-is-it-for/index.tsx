@@ -3,7 +3,7 @@ import { ClientSection, ProcessSection } from "@containers/solution/sections";
 import { useRouter } from "next/router";
 import { useMemo } from "react";
 import { PROCESSES_SMALL } from "./constant";
-import { FeatureSection, PriceSection } from "./sections";
+import { FeatureSection, PriceSection, SolutionSection } from "./sections";
 
 export const WhoIsItForContainer = () => {
   const router = useRouter();
@@ -61,6 +61,7 @@ export const WhoIsItForContainer = () => {
           nameBanner={contentBanner.nameBanner}
           titleBanner={contentBanner.titleBanner}
           description={contentBanner.description}
+          showBtnTrial
         />
 
         <div className="flex flex-col space-y-24">
@@ -70,13 +71,15 @@ export const WhoIsItForContainer = () => {
             processes={process}
           />
 
-          <FeatureSection />
+          <SolutionSection />
 
-          <PriceSection/>
+          <FeatureSection />
 
           <ClientSection />
 
-          <SubscribeSection/>
+          <PriceSection />
+
+          <SubscribeSection />
         </div>
       </div>
     </>

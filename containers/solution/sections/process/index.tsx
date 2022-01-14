@@ -29,7 +29,7 @@ export const ProcessSection:React.FC<IProps> = ({title,description, processes}) 
         <div className="flex flex-col items-center justify-center space-y-32">
          <HeaderSection title={title} description={description}/>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-8 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
             {processes.map((process, index) => (
               <CartItem
                 key={index}

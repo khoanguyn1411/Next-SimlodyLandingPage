@@ -4,10 +4,13 @@ import { ContentItem } from "@containers/product/components/content-section/cont
 import {
   CONTENTS_ADAPT,
   CONTENTS_CENTRALIZING,
+  CONTENTS_HUMAN,
   CONTENTS_INTEGRATING,
+  CONTENTS_MARKETING,
   CONTENTS_PROBLEMS,
   CONTENTS_PRODUCTS,
   CONTENTS_REVOLUTION,
+  CONTENTS_SALE,
   CONTENTS_STAFFING,
   CONTENTS_VALIDATE,
 } from "@containers/solution/constant";
@@ -25,7 +28,6 @@ export const WillDoSection: React.FC<IProps> = ({
   tabs,
   activeTab,
 }) => {
-  console.log(activeTab);
 
   const [activeKey, setActiveKey] = useState("");
 
@@ -59,6 +61,13 @@ export const WillDoSection: React.FC<IProps> = ({
         return CONTENTS_ADAPT;
       case "STAFFING":
         return CONTENTS_STAFFING;
+      //content page odoo
+      case "HUMAN":
+        return CONTENTS_HUMAN;
+      case "SALES":
+        return CONTENTS_SALE;
+      case "MARKETING":
+        return CONTENTS_MARKETING;
       default:
         return CONTENTS_PROBLEMS;
     }
@@ -75,7 +84,7 @@ export const WillDoSection: React.FC<IProps> = ({
             title={content.title}
             description={content.description}
             subDescription={content.subDescription}
-            isReverse={content.isReverse}
+            position={content.position}
             srcImg={content.srcImg}
           />
         ))}

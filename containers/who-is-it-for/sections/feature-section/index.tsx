@@ -19,6 +19,7 @@ export const FeatureSection = () => {
                 title={feature.title}
                 description={feature.description}
                 icon={feature.srcImg}
+                color={feature.color}
               />
             ))}
           </div>
