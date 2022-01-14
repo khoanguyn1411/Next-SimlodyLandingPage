@@ -41,7 +41,7 @@ export const SolutionContainer = () => {
         };
       case "odoo":
         return {
-          nameBanner: "Selling",
+          nameBanner: "Managing",
           titleBanner: "Odoo: business management software",
           description: "Based-on-one platform",
         };

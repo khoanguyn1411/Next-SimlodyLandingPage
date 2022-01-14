@@ -18,7 +18,7 @@ export const FeatureSection = () => {
                 key={index}
                 title={feature.title}
                 description={feature.description}
-                icon={feature.srcImg}
+                icon={feature.icon}
                 color={feature.color}
               />
             ))}

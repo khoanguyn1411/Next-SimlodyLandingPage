@@ -32,6 +32,26 @@ import adapt_2 from "./images/adapt_2.png"
 import staff_1 from "./images/staff_1.png"
 import staff_2 from "./images/staff_2.png"
 
+import human_1 from "./images/human_1.png"
+import human_2 from "./images/human_2.png"
+import human_3 from "./images/human_3.png"
+
+import sale_1 from "./images/sale_1.png"
+import sale_2 from "./images/sale_2.png"
+import sale_3 from "./images/sale_3.png"
+
+import marketing_1 from "./images/marketing_1.png"
+import marketing_2 from "./images/marketing_2.png"
+import marketing_3 from "./images/marketing_3.png"
+
+import service_1 from "./images/service_1.png"
+import service_2 from "./images/service_2.png"
+import service_3 from "./images/service_3.png"
+
+import productivity_1 from "./images/productivity_1.png"
+import productivity_2 from "./images/productivity_2.png"
+import productivity_3 from "./images/productivity_3.png"
+
 import { ProcessProps } from "./sections";
 
 export const PROCESSES_PRODUCT:ProcessProps[] = [
@@ -361,7 +381,7 @@ export const CONTENTS_HUMAN:ContentItemProps[] = [
       "Receive alerts for any new leave requests, allocation requests, applications, appraisals, and more"
     ],
     position:"left",
-    srcImg: validate_1,
+    srcImg: human_1,
   },
   {
     title: "Track Time & Attendance",
@@ -371,7 +391,7 @@ export const CONTENTS_HUMAN:ContentItemProps[] = [
       "Easily access statistics to record and analyze timesheets as well as check each employee's attendance",
     ],
     position:"right",
-    srcImg: validate_2,
+    srcImg: human_2,
   },
   {
     title: "Employee Evaluation Made Easy",
@@ -382,7 +402,7 @@ export const CONTENTS_HUMAN:ContentItemProps[] = [
       "Automate the entire process so that you can focus on people, not administration duties.",
     ],
     position:"left",
-    srcImg: validate_2,
+    srcImg: human_3,
   },
 ];
 
@@ -396,7 +416,7 @@ export const CONTENTS_SALE:ContentItemProps[] = [
       "Dig deeper with real-time reports and flow charts that anyone can create and share"
     ],
     position:"left",
-    srcImg: staff_1,
+    srcImg: sale_1,
   },
   {
     title: "More Done In Less Time",
@@ -406,7 +426,7 @@ export const CONTENTS_SALE:ContentItemProps[] = [
       "Get all the information you need, directly on the opportunity: website pages viewed, mail received, etc",
     ],
     position:"right",
-    srcImg: staff_2,
+    srcImg: sale_2,
   },
   {
     title: "Real-time Overview",
@@ -417,7 +437,7 @@ export const CONTENTS_SALE:ContentItemProps[] = [
       "Organize your work based on your scheduled next actions",
     ],
     position:"left",
-    srcImg: validate_2,
+    srcImg: sale_3,
   },
 ];
 
@@ -431,7 +451,7 @@ export const CONTENTS_MARKETING:ContentItemProps[] = [
       "Find new customers and keep users’ engaged"
     ],
     position:"left",
-    srcImg: validate_1,
+    srcImg: marketing_1,
   },
   {
     title: "Reach your audience anywhere",
@@ -441,7 +461,7 @@ export const CONTENTS_MARKETING:ContentItemProps[] = [
       "Get all the information you need, directly on the opportunity: website pages viewed, mail received, etc",
     ],
     position:"right",
-    srcImg: validate_2,
+    srcImg: marketing_2,
   },
   {
     title: "Start Conversations At Will",
@@ -452,7 +472,7 @@ export const CONTENTS_MARKETING:ContentItemProps[] = [
       "Proactively engage with visitors, which is a crucial part of a positive customer support experience",
     ],
     position:"left",
-    srcImg: validate_2,
+    srcImg: marketing_3,
   },
 ];
 
@@ -466,7 +486,7 @@ export const CONTENTS_SERVICES:ContentItemProps[] = [
       "Compare forecasts with real timesheets for increased profitability"
     ],
     position:"left",
-    srcImg: validate_1,
+    srcImg: service_1,
   },
   {
     title: "Any device & Anywhere",
@@ -476,7 +496,7 @@ export const CONTENTS_SERVICES:ContentItemProps[] = [
       "Log in and track your time through any device, anywhere",
     ],
     position:"right",
-    srcImg: validate_2,
+    srcImg: service_2,
   },
   {
     title: "Discuss Tasks Share Documents",
@@ -487,7 +507,7 @@ export const CONTENTS_SERVICES:ContentItemProps[] = [
       "Create graph views to analyze your data utilizing a powerful search tool, filter and grouping functions ",
     ],
     position:"left",
-    srcImg: validate_2,
+    srcImg: service_3,
   },
 ];
 
@@ -501,7 +521,7 @@ export const CONTENTS_PRODUCTIVITY:ContentItemProps[] = [
       "A powerful communication tool"
     ],
     position:"left",
-    srcImg: validate_1,
+    srcImg: productivity_1,
   },
   {
     title: "Save Time Managing Employee",
@@ -511,7 +531,7 @@ export const CONTENTS_PRODUCTIVITY:ContentItemProps[] = [
       "The management of your requests are made easy all request submissions can be created, validated, or declined in second",
     ],
     position:"right",
-    srcImg: validate_2,
+    srcImg: productivity_2,
   },
   {
     title: "Integrated With All Modules",
@@ -522,7 +542,7 @@ export const CONTENTS_PRODUCTIVITY:ContentItemProps[] = [
       "Choose how you want notifications to be handled, add followers to tasks, schedule activities",
     ],
     position:"left",
-    srcImg: validate_2,
+    srcImg: productivity_3,
   },
 ];
 

@@ -1,15 +1,16 @@
 import classnames from "classnames";
 import Image from "next/image";
-type IProps = {
+
+export type SolutionProps = {
   position: "left" | "right";
   title: string;
   description: string;
-  color: "orange" | "green";
+  color: "orange" | "green" | "purple" | "blue";
   label: string;
   icon: JSX.Element;
   srcImg: any;
 };
-export const SolutionItem: React.FC<IProps> = ({
+export const SolutionItem: React.FC<SolutionProps> = ({
   position,
   title,
   description,
@@ -27,6 +28,14 @@ export const SolutionItem: React.FC<IProps> = ({
       bg: "bg-green-400",
       text: "text-green-400",
     },
+    blue: {
+      bg: "bg-blue-400",
+      text: "text-blue-400",
+    },
+    purple: {
+      bg: "bg-purple-400",
+      text: "text-purple-400",
+    },
   };
   return (
     <div className="grid grid-cols-1 lg:grid-cols-5 gap-24">
@@ -36,7 +45,7 @@ export const SolutionItem: React.FC<IProps> = ({
         </div>
       ) : null}
 
-      <div className="col-span-2">
+      <div className="col-span-2 items-center justify-center flex">
         <div className="flex flex-1 flex-col py-4">
           <div className="flex flex-col pb-4">
             <div className="pb-4">

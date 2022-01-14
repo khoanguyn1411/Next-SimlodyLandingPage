@@ -18,7 +18,7 @@ export const PriceItem: React.FC<IProps> = ({
   return (
     <div
       className={classNames(
-        "relative border rounded-md flex flex-col justify-between items-center px-6 py-6",
+        "relative border rounded-xl flex flex-col justify-between items-center px-6 py-6",
         {
           "shadow-md": isPopular,
         }

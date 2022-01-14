@@ -8,9 +8,11 @@ import {
   CONTENTS_INTEGRATING,
   CONTENTS_MARKETING,
   CONTENTS_PROBLEMS,
+  CONTENTS_PRODUCTIVITY,
   CONTENTS_PRODUCTS,
   CONTENTS_REVOLUTION,
   CONTENTS_SALE,
+  CONTENTS_SERVICES,
   CONTENTS_STAFFING,
   CONTENTS_VALIDATE,
 } from "@containers/solution/constant";
@@ -28,7 +30,6 @@ export const WillDoSection: React.FC<IProps> = ({
   tabs,
   activeTab,
 }) => {
-
   const [activeKey, setActiveKey] = useState("");
 
   useEffect(() => {
@@ -68,6 +69,10 @@ export const WillDoSection: React.FC<IProps> = ({
         return CONTENTS_SALE;
       case "MARKETING":
         return CONTENTS_MARKETING;
+      case "SERVICE":
+        return CONTENTS_SERVICES;
+      case "PRODUCTIVITY":
+        return CONTENTS_PRODUCTIVITY;
       default:
         return CONTENTS_PROBLEMS;
     }
@@ -97,11 +102,13 @@ export const WillDoSection: React.FC<IProps> = ({
       <div className="container space-y-16">
         <HeaderSection title={title} description={description} />
 
-        <div className="flex items-center justify-center">
+        <div
+          className="flex items-center justify-center px-0 lg:px-16 overflow-auto"
+        >
           <Tabs tabs={tabs} activeKey={activeKey} onChange={handleChangeTab} />
         </div>
 
-        <div className="space-y-24">{renderContentSection}</div>
+        <div className="space-y-16">{renderContentSection}</div>
       </div>
     </section>
   );
