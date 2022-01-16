@@ -102,9 +102,7 @@ export const WillDoSection: React.FC<IProps> = ({
       <div className="container space-y-16">
         <HeaderSection title={title} description={description} />
 
-        <div
-          className="flex items-center justify-center px-0 lg:px-16 overflow-auto"
-        >
+        <div className="flex items-center justify-center px-0 lg:px-16 overflow-auto">
           <Tabs tabs={tabs} activeKey={activeKey} onChange={handleChangeTab} />
         </div>
 
