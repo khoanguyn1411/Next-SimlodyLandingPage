@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import classnames from 'classnames';
 import { ExcellentIcon, FocusIcon, PassionIcon, TogetherIcon } from './icons';
 import { FlexibilityIcon } from './icons/Flexibility';
+import { HeaderSection } from '@components';
 
 type CoreValueProps = {
 	icon: JSX.Element;
@@ -69,11 +70,12 @@ export const CoreValueSection = memo(() => {
 		<section className='bg-white'>
 			<div
 				className={classnames(
-					'container py-16',
+					'container py-16 space-y-16',
 					"bg-[url('/images/background-dot.svg')] bg-no-repeat md:bg-[right_12rem_top_4rem] bg-[right_2rem_top_4rem] bg-[length:250px_auto]"
 				)}
 			>
-				<div className='flex flex-col pb-14 md:max-w-3xl md:mx-auto'>
+				<HeaderSection title="Our core values" description="We build technology solution with the best user experience, optimized operation for businesses, startups to develop business model"/>
+				{/* <div className='flex flex-col pb-14 md:max-w-3xl md:mx-auto'>
 					<h4 className='text-gray-800 text-3xl font-semibold pb-6 text-center'>
 						Our core values
 					</h4>
@@ -82,7 +84,7 @@ export const CoreValueSection = memo(() => {
 						optimized operation for businesses, startups to develop business
 						model
 					</span>
-				</div>
+				</div> */}
 				<div className='flex flex-wrap -mx-4 md:-mx-10 -my-6'>
 					{coreValues.map((coreValue, idx) => {
 						return (

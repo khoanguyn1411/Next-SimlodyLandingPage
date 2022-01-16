@@ -3,7 +3,7 @@ import { Button } from '@components/elements';
 import Image from 'next/image';
 import { memo } from 'react';
 import classnames from 'classnames';
-import backgroundImage from './background.png';
+import backgroundImage from './background_3.png';
 import background2Image from './background2.png';
 import background3Image from './background3.png';
 import { EmailIcon } from '@components/home/icons';
@@ -28,7 +28,7 @@ export const SubscribeSection = memo(() => {
 								release a new batch of components.
 							</span>
 						</div>
-						<div className='flex flex-row gap-4'>
+						<div className='flex flex-col md:flex-row gap-4'>
 							<div className='flex flex-1 rounded-xl bg-white overflow-hidden items-center px-6 py-4 gap-x-2'>
 								<EmailIcon />
 								<input
@@ -43,7 +43,7 @@ export const SubscribeSection = memo(() => {
 					</div>
 					<div className='flex flex-col flex-1'>
 						<div className='md:-mt-14 mb-4'>
-							<Image src={backgroundImage} alt='Background' />
+							<Image className="shadow-md" src={backgroundImage} alt='Background' />
 						</div>
 						<div className='flex flex-row gap-4'>
 							<Image src={background2Image} alt='Background 2' />

@@ -4,8 +4,8 @@ import { PriceItem } from "./price-item";
 
 export const PriceSection = () => {
   return (
-    <section>
-      <div className="container">
+    <section className="flex items-center justify-center">
+      <div className="container pb-12">
         <div className="flex flex-col space-y-24">
           <HeaderSection
             title="Pricing plans"

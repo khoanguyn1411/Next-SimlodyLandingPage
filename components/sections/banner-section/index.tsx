@@ -1,5 +1,6 @@
 import { Button } from "@components/elements";
 import classNames from "classnames";
+import { memo } from "react";
 
 type IProps = {
   nameBanner: string;
@@ -7,15 +8,15 @@ type IProps = {
   description: string;
   showBtnTrial?: boolean;
 };
-export const BannerSection: React.FC<IProps> = ({
+const _BannerSection: React.FC<IProps> = ({
   nameBanner,
   titleBanner,
   description,
   showBtnTrial = false,
 }) => {
   return (
-    <section className="mt-24 mb-32 flex items-center justify-center">
-      <div className="container mx-auto my-auto">
+    <section className="flex items-center justify-center">
+      <div className="container mx-auto my-auto md:py-24 py-8">
         <div className=" flex flex-col md:flex-row justify-center">
           <div
             className="w-full xl:w-2/3"
@@ -56,3 +57,5 @@ export const BannerSection: React.FC<IProps> = ({
     </section>
   );
 };
+
+export const BannerSection=memo(_BannerSection)

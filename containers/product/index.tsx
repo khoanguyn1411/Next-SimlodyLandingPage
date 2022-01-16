@@ -35,13 +35,12 @@ export const ProductContainer = () => {
   };
   return (
     <>
-      <div style={{ minHeight: "calc(100vh - 56px - 312px)" }}>
         <BannerSection
           nameBanner="TungTung’s products"
           titleBanner="All-in-one platform you need"
           description="Get ready to scale up your company !"
         />
-        <div className="space-y-24">
+        <div className="flex flex-col gap-y-24 pb-24">
           <TabsSection
             tabs={TABS}
             activeKey={activeKey}
@@ -54,7 +53,6 @@ export const ProductContainer = () => {
 
           <PartnerSection />
         </div>
-      </div>
     </>
   );
 };

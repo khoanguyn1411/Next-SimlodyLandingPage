@@ -125,18 +125,17 @@ export const SolutionContainer = () => {
 
   return (
     <>
-      <div style={{ minHeight: "calc(100vh - 56px - 312px)" }}>
         <BannerSection
           nameBanner={contentBanner.nameBanner}
           titleBanner={contentBanner.titleBanner}
           description={contentBanner.description}
         />
 
-        <div className="-mt-24 mb-24">
+        <div className="-mt-16">
           <Image src={image} alt="" />
         </div>
 
-        <div className="flex flex-col space-y-24">
+        <div className="flex flex-col space-y-24 py-24">
           <ProcessSection
             title="Why we should choose this process"
             description="Give our customers our best solutions to make company grown better"
@@ -156,7 +155,6 @@ export const SolutionContainer = () => {
 
           <PartnerSection />
         </div>
-      </div>
     </>
   );
 };

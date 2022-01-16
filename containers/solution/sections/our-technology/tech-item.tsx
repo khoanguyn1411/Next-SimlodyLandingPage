@@ -17,7 +17,7 @@ export const TechItem: React.FC<IProps> = ({ title, description, srcImg }) => {
       <div className="flex flex-col space-y-4 ">
         <h2 className=" text-xl font-semibold">{title}</h2>
 
-        <span className="text-gray-400 flex-1">{description}</span>
+        <span className="text-gray-400 flex-1 text-base">{description}</span>
       </div>
     </div>
   );

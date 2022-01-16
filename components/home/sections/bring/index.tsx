@@ -8,6 +8,7 @@ import {
 	TechnologyIcon,
 } from '@components/home/icons';
 import background from './background.png';
+import { HeaderSection } from '@components';
 
 const list = [
 	{
@@ -33,16 +34,9 @@ const list = [
 export const BringSection = React.memo(() => {
 	return (
 		<section className='bg-white flex py-28'>
-			<div className='container mx-auto flex flex-1 flex-col'>
-				<div className='flex flex-col flex-1 pb-14'>
-					<h3 className='text-gray-800 font-semibold text-3xl pb-6 text-center'>
-						What we can bring?
-					</h3>
-					<h3 className='text-gray-500 font-normal text-xl text-center'>
-						By understanding our customers's paint, we would love to help you
-						sold the problems you are facing
-					</h3>
-				</div>
+			<div className='container mx-auto flex flex-1 flex-col space-y-16'>
+				<HeaderSection title='What we can bring?' description="By understanding our customers's paint, we would love to help yousold the problems you are facing"/>
+
 				<div className='flex flex-col md:flex-row gap-12 md:gap-72'>
 					<div className='flex flex-1'>
 						<Image src={background} alt='background' unoptimized />
