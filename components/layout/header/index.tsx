@@ -17,23 +17,23 @@ export const MENUS = [
 		href: '/who-is-it-for/small',
 		icon: <i className='fa fa-chevron-down' />,
 		hasSubmenu: true,
-		submenus:[
+		submenus: [
 			{
-				key:"Small",
-				name:'Small enterprises',
-				href:'/who-is-it-for/small'
+				key: 'Small',
+				name: 'Small enterprises',
+				href: '/who-is-it-for/small',
 			},
 			{
-				key:"Medium",
-				name:'Medium-sized enterprises',
-				href:'/who-is-it-for/medium'
+				key: 'Medium',
+				name: 'Medium-sized enterprises',
+				href: '/who-is-it-for/medium',
 			},
 			{
-				key:"Large",
-				name:'Large enterprises',
-				href:'/who-is-it-for/large'
+				key: 'Large',
+				name: 'Large enterprises',
+				href: '/who-is-it-for/large',
 			},
-		]
+		],
 	},
 	{
 		key: 'Solution',
@@ -41,23 +41,23 @@ export const MENUS = [
 		href: '/solution/product',
 		icon: <i className='fa fa-chevron-down' />,
 		hasSubmenu: true,
-		submenus:[
+		submenus: [
 			{
-				key:"Product",
-				name:'Product concept',
-				href:'/solution/product'
+				key: 'Product',
+				name: 'Product concept',
+				href: '/solution/product',
 			},
 			{
-				key:"Saas",
-				name:'Saas',
-				href:'/solution/saas'
+				key: 'Saas',
+				name: 'Saas',
+				href: '/solution/saas',
 			},
 			{
-				key:"Odoo",
-				name:'Odoo',
-				href:'/solution/odoo'
+				key: 'Odoo',
+				name: 'Odoo',
+				href: '/solution/odoo',
 			},
-		]
+		],
 	},
 	{
 		key: 'News',
@@ -67,7 +67,7 @@ export const MENUS = [
 	{
 		key: 'About',
 		name: 'About us',
-		href: '/about',
+		href: '/about-us',
 	},
 ];
 
