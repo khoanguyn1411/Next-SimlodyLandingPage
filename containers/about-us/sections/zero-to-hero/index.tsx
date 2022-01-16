@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import classnames from 'classnames';
 import { FiveYearIcon, TenYearIcon, ThreeYearIcon } from './icons';
+import { HeaderSection } from '@components';
 
 type Props = {
 	title: string;
@@ -117,8 +118,9 @@ const Item: React.FC<Props> = ({ title, color, content, icon }) => {
 export const ZeroToHeroSection = memo(() => {
 	return (
 		<section className='bg-white'>
-			<div className='container py-6'>
-				<div className='flex flex-col flex-1 pb-14'>
+			<div className='container space-y-16'>
+				<HeaderSection title="From zero to Hero" description="We aim to become a Tech Venture Builder company with a SaaS business model in: SaaS For Business, Education, Data Platform"/>
+				{/* <div className='flex flex-col flex-1 pb-14'>
 					<div className='flex flex-col md:max-w-3xl mx-auto'>
 						<h4 className='text-center pb-6 text-3xl font-semibold text-gray-800'>
 							From zero to Hero
@@ -128,7 +130,7 @@ export const ZeroToHeroSection = memo(() => {
 							business model in: SaaS For Business, Education, Data Platform
 						</span>
 					</div>
-				</div>
+				</div> */}
 				<div
 					className={classnames(
 						'flex flex-wrap flex-row',

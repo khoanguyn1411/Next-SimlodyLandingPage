@@ -119,7 +119,6 @@ export const WhoIsItForContainer = () => {
 
   return (
     <>
-      <div style={{ minHeight: "calc(100vh - 56px - 312px)" }}>
         <BannerSection
           nameBanner={contentBanner.nameBanner}
           titleBanner={contentBanner.titleBanner}
@@ -127,7 +126,7 @@ export const WhoIsItForContainer = () => {
           showBtnTrial
         />
 
-        <div className="flex flex-col space-y-24">
+        <div className="flex flex-col gap-y-24 pb-24">
           <ProcessSection
             title={process.title}
             description={process.description}
@@ -148,7 +147,6 @@ export const WhoIsItForContainer = () => {
 
           <SubscribeSection />
         </div>
-      </div>
     </>
   );
 };

@@ -6,55 +6,55 @@ import problem_2 from "./images/problem_2.png";
 import problem_3 from "./images/problem_3.png";
 import problem_4 from "./images/problem_4.png";
 
-import product_1 from "./images/product_1.png"
-import product_2 from "./images/product_2.png"
-import product_3 from "./images/product_3.png"
-import product_4 from "./images/product_4.png"
+import product_1 from "./images/product_1.png";
+import product_2 from "./images/product_2.png";
+import product_3 from "./images/product_3.png";
+import product_4 from "./images/product_4.png";
 
-import validate_1 from "./images/validate_1.png"
-import validate_2 from "./images/validate_2.png"
-import validate_3 from "./images/validate_3.png"
-import validate_4 from "./images/validate_4.png"
+import validate_1 from "./images/validate_1.png";
+import validate_2 from "./images/validate_2.png";
+import validate_3 from "./images/validate_3.png";
+import validate_4 from "./images/validate_4.png";
 
-import centrallize_1 from "./images/centrallize_1.png"
-import centrallize_2 from "./images/centrallize_2.png"
-import centrallize_3 from "./images/centrallize_3.png"
+import centrallize_1 from "./images/centrallize_1.png";
+import centrallize_2 from "./images/centrallize_2.png";
+import centrallize_3 from "./images/centrallize_3.png";
 
-import integrating_1 from "./images/integrate_1.png"
-import integrating_2 from "./images/integrate_2.png"
+import integrating_1 from "./images/integrate_1.png";
+import integrating_2 from "./images/integrate_2.png";
 
-import revolution_1 from "./images/revolution_1.png"
-import revolution_2 from "./images/revolution_2.png"
+import revolution_1 from "./images/revolution_1.png";
+import revolution_2 from "./images/revolution_2.png";
 
-import adapt_1 from "./images/adapt_1.png"
-import adapt_2 from "./images/adapt_2.png"
+import adapt_1 from "./images/adapt_1.png";
+import adapt_2 from "./images/adapt_2.png";
 
-import staff_1 from "./images/staff_1.png"
-import staff_2 from "./images/staff_2.png"
+import staff_1 from "./images/staff_1.png";
+import staff_2 from "./images/staff_2.png";
 
-import human_1 from "./images/human_1.png"
-import human_2 from "./images/human_2.png"
-import human_3 from "./images/human_3.png"
+import human_1 from "./images/human_1.png";
+import human_2 from "./images/human_2.png";
+import human_3 from "./images/human_3.png";
 
-import sale_1 from "./images/sale_1.png"
-import sale_2 from "./images/sale_2.png"
-import sale_3 from "./images/sale_3.png"
+import sale_1 from "./images/sale_1.png";
+import sale_2 from "./images/sale_2.png";
+import sale_3 from "./images/sale_3.png";
 
-import marketing_1 from "./images/marketing_1.png"
-import marketing_2 from "./images/marketing_2.png"
-import marketing_3 from "./images/marketing_3.png"
+import marketing_1 from "./images/marketing_1.png";
+import marketing_2 from "./images/marketing_2.png";
+import marketing_3 from "./images/marketing_3.png";
 
-import service_1 from "./images/service_1.png"
-import service_2 from "./images/service_2.png"
-import service_3 from "./images/service_3.png"
+import service_1 from "./images/service_1.png";
+import service_2 from "./images/service_2.png";
+import service_3 from "./images/service_3.png";
 
-import productivity_1 from "./images/productivity_1.png"
-import productivity_2 from "./images/productivity_2.png"
-import productivity_3 from "./images/productivity_3.png"
+import productivity_1 from "./images/productivity_1.png";
+import productivity_2 from "./images/productivity_2.png";
+import productivity_3 from "./images/productivity_3.png";
 
 import { ProcessProps } from "./sections";
 
-export const PROCESSES_PRODUCT:ProcessProps[] = [
+export const PROCESSES_PRODUCT: ProcessProps[] = [
   {
     title: "Planning",
     description:
@@ -74,16 +74,16 @@ export const PROCESSES_PRODUCT:ProcessProps[] = [
   },
 ];
 
-export const PROCESSES_SASS:ProcessProps[] = [
+export const PROCESSES_SASS: ProcessProps[] = [
   {
     title: "Accessibility",
-    description:
-      "Ability to run via an internet browser 24/7 from any device",
+    description: "Ability to run via an internet browser 24/7 from any device",
     icon: <PlanningIcon />,
   },
   {
     title: "Management",
-    description: "No installation, equipment updates or traditional licensing management",
+    description:
+      "No installation, equipment updates or traditional licensing management",
     icon: <CollaborationIcon />,
   },
   {
@@ -94,8 +94,7 @@ export const PROCESSES_SASS:ProcessProps[] = [
   },
 ];
 
-
-export const CONTENTS_PROBLEMS:ContentItemProps[] = [
+export const CONTENTS_PROBLEMS: ContentItemProps[] = [
   {
     title: "Discover problems",
     description: "",
@@ -142,7 +141,7 @@ export const CONTENTS_PROBLEMS:ContentItemProps[] = [
   },
 ];
 
-export const CONTENTS_PRODUCTS:ContentItemProps[] = [
+export const CONTENTS_PRODUCTS: ContentItemProps[] = [
   {
     title: "Design Iterations",
     description: "",
@@ -193,7 +192,7 @@ export const CONTENTS_PRODUCTS:ContentItemProps[] = [
   },
 ];
 
-export const CONTENTS_VALIDATE:ContentItemProps[] = [
+export const CONTENTS_VALIDATE: ContentItemProps[] = [
   {
     title: "Validation",
     description: "",
@@ -225,7 +224,7 @@ export const CONTENTS_VALIDATE:ContentItemProps[] = [
     subDescription: [
       "Sales Enablement, success Enablement, advocacy enablement",
       "We may be doing a slow roll-out to assess and address any compatibility and scalability issues",
-      "The product/feature is commercially available, meaning it can be purchased or is part of a purchased plan"
+      "The product/feature is commercially available, meaning it can be purchased or is part of a purchased plan",
     ],
     position: "left",
 
@@ -245,7 +244,7 @@ export const CONTENTS_VALIDATE:ContentItemProps[] = [
   },
 ];
 
-export const CONTENTS_CENTRALIZING:ContentItemProps[] = [
+export const CONTENTS_CENTRALIZING: ContentItemProps[] = [
   {
     title: "Adapt Customer Environment",
     description: "",
@@ -254,7 +253,7 @@ export const CONTENTS_CENTRALIZING:ContentItemProps[] = [
       "SaaS developers also ensure their solution easily integrates with customer environments ( Cloud, Hybrid,..)",
       "SaaS providers should build APIs that ease this process",
     ],
-    position:"left",
+    position: "left",
     srcImg: centrallize_1,
   },
   {
@@ -264,7 +263,7 @@ export const CONTENTS_CENTRALIZING:ContentItemProps[] = [
       "Data integration provides easy, fast connections between all your applications and data stores",
       "From data integrity and instant data availability, to powerful business insights and greater efficiency",
     ],
-    position:"right",
+    position: "right",
     srcImg: centrallize_2,
   },
   {
@@ -274,12 +273,12 @@ export const CONTENTS_CENTRALIZING:ContentItemProps[] = [
       "Your website AND product should have analytics built in",
       "Key information such as which parts of the SaaS product are used a lot, how to track errors in the product",
     ],
-    position:"left",
+    position: "left",
     srcImg: centrallize_3,
   },
 ];
 
-export const CONTENTS_INTEGRATING:ContentItemProps[] = [
+export const CONTENTS_INTEGRATING: ContentItemProps[] = [
   {
     title: "Everything ‘’As a service’’",
     description: "",
@@ -287,7 +286,7 @@ export const CONTENTS_INTEGRATING:ContentItemProps[] = [
       "Transitioning to SaaS providers can be a true paradigm shift impacting people, technology, and processes",
       "Save time with automated operations",
     ],
-    position:"left",
+    position: "left",
     srcImg: integrating_1,
   },
   {
@@ -297,12 +296,12 @@ export const CONTENTS_INTEGRATING:ContentItemProps[] = [
       "Stay up to date and remain competitive on a technical level every month",
       "Standardize your configurations, implement automation whenever possible and operate agilely",
     ],
-    position:"right",
+    position: "right",
     srcImg: integrating_2,
   },
 ];
 
-export const CONTENTS_REVOLUTION:ContentItemProps[] = [
+export const CONTENTS_REVOLUTION: ContentItemProps[] = [
   {
     title: "Monthly Recurring Revenue (MRR)",
     description: "",
@@ -310,7 +309,7 @@ export const CONTENTS_REVOLUTION:ContentItemProps[] = [
       "Instead of paying once for the right to download a product, users subscribe to a SaaS product or solution",
       "The entire pricing model shifts from annual large-chunk payments to much smaller monthly payments per customer",
     ],
-    position:"left",
+    position: "left",
     srcImg: revolution_1,
   },
   {
@@ -320,12 +319,12 @@ export const CONTENTS_REVOLUTION:ContentItemProps[] = [
       "Keep your product updated and highly responsive to emergent customer needs in order to stay relevant",
       "Making sure customer know where end customers are along this path to decide how and when to upsell successfully",
     ],
-    position:"right",
+    position: "right",
     srcImg: revolution_2,
   },
 ];
 
-export const CONTENTS_ADAPT:ContentItemProps[] = [
+export const CONTENTS_ADAPT: ContentItemProps[] = [
   {
     title: "Shifting a business model",
     description: "",
@@ -333,7 +332,7 @@ export const CONTENTS_ADAPT:ContentItemProps[] = [
       "Service level agreements (SLAs)  and providing more ongoing support at all levels – software, cloud",
       "Ensuring key performance indicators (KPIs) are met for business continuity or timely updates (24/7 support)",
     ],
-    position:"left",
+    position: "left",
     srcImg: adapt_1,
   },
   {
@@ -343,12 +342,12 @@ export const CONTENTS_ADAPT:ContentItemProps[] = [
       "Include processes that determine how long the data is stored and how it is removed from any databases",
       "Processes necessary to meet regulations and data security are in place before a company launches its application",
     ],
-    position:"right",
+    position: "right",
     srcImg: adapt_2,
   },
 ];
 
-export const CONTENTS_STAFFING:ContentItemProps[] = [
+export const CONTENTS_STAFFING: ContentItemProps[] = [
   {
     title: "Building Out a SaaS solution",
     description: "",
@@ -356,7 +355,7 @@ export const CONTENTS_STAFFING:ContentItemProps[] = [
       "Adopt an end-to-end, multi-disciplinary approach, including specialists in many cloud environments, CI/CD, compliance",
       "Ensuring key performance indicators (KPIs) are met for business continuity or timely updates (24/7 support)",
     ],
-    position:"left",
+    position: "left",
     srcImg: staff_1,
   },
   {
@@ -366,21 +365,21 @@ export const CONTENTS_STAFFING:ContentItemProps[] = [
       "Save money when developing and deploying a SaaS solution can utilize multi-disciplinary development services",
       "Known as flexible R&D, enables companies to tap into the world’s best talent but only pay for services",
     ],
-    position:"right",
+    position: "right",
     srcImg: staff_2,
   },
 ];
 
-export const CONTENTS_HUMAN:ContentItemProps[] = [
+export const CONTENTS_HUMAN: ContentItemProps[] = [
   {
     title: "Employees",
     description: "",
     subDescription: [
       "Centralize all your HR information",
       "Oversee all important information for each department at a glance",
-      "Receive alerts for any new leave requests, allocation requests, applications, appraisals, and more"
+      "Receive alerts for any new leave requests, allocation requests, applications, appraisals, and more",
     ],
-    position:"left",
+    position: "left",
     srcImg: human_1,
   },
   {
@@ -390,7 +389,7 @@ export const CONTENTS_HUMAN:ContentItemProps[] = [
       "Weekly or monthly timesheets with optional attendance tracking",
       "Easily access statistics to record and analyze timesheets as well as check each employee's attendance",
     ],
-    position:"right",
+    position: "right",
     srcImg: human_2,
   },
   {
@@ -401,21 +400,21 @@ export const CONTENTS_HUMAN:ContentItemProps[] = [
       "Design form-based questionnaires to collect feedback from everyone in the company",
       "Automate the entire process so that you can focus on people, not administration duties.",
     ],
-    position:"left",
+    position: "left",
     srcImg: human_3,
   },
 ];
 
-export const CONTENTS_SALE:ContentItemProps[] = [
+export const CONTENTS_SALE: ContentItemProps[] = [
   {
     title: "Get Accurate Forecasts",
     description: "",
     subDescription: [
       "Get the insights you need to make smarter decisions",
       "Design custom dashboards to get a picture of your business at a glance",
-      "Dig deeper with real-time reports and flow charts that anyone can create and share"
+      "Dig deeper with real-time reports and flow charts that anyone can create and share",
     ],
-    position:"left",
+    position: "left",
     srcImg: sale_1,
   },
   {
@@ -425,7 +424,7 @@ export const CONTENTS_SALE:ContentItemProps[] = [
       "Schedule activities based on your sales scripts: calls, meetings, mailing, and quotations",
       "Get all the information you need, directly on the opportunity: website pages viewed, mail received, etc",
     ],
-    position:"right",
+    position: "right",
     srcImg: sale_2,
   },
   {
@@ -436,21 +435,21 @@ export const CONTENTS_SALE:ContentItemProps[] = [
       "Know exactly how you perform compared to your monthly targets",
       "Organize your work based on your scheduled next actions",
     ],
-    position:"left",
+    position: "left",
     srcImg: sale_3,
   },
 ];
 
-export const CONTENTS_MARKETING:ContentItemProps[] = [
+export const CONTENTS_MARKETING: ContentItemProps[] = [
   {
     title: "Plan, Monitor, Analyze accounts",
     description: "",
     subDescription: [
       "Connects you with your customers, boosts leads, and income",
       "Provide customer support and help broadcast important company news and messages",
-      "Find new customers and keep users’ engaged"
+      "Find new customers and keep users’ engaged",
     ],
-    position:"left",
+    position: "left",
     srcImg: marketing_1,
   },
   {
@@ -460,7 +459,7 @@ export const CONTENTS_MARKETING:ContentItemProps[] = [
       "The short and straightforward messages allow users easily to read the messengers",
       "Get all the information you need, directly on the opportunity: website pages viewed, mail received, etc",
     ],
-    position:"right",
+    position: "right",
     srcImg: marketing_2,
   },
   {
@@ -471,21 +470,21 @@ export const CONTENTS_MARKETING:ContentItemProps[] = [
       "Users respond well to live chats; it gives them a chance of real-time interaction",
       "Proactively engage with visitors, which is a crucial part of a positive customer support experience",
     ],
-    position:"left",
+    position: "left",
     srcImg: marketing_3,
   },
 ];
 
-export const CONTENTS_SERVICES:ContentItemProps[] = [
+export const CONTENTS_SERVICES: ContentItemProps[] = [
   {
     title: "Forecast needs & resources",
     description: "",
     subDescription: [
       "Schedule your teams across projects taking employees' holidays into account",
       "Plan ahead for upcoming projects with forecasts based on comparable projects and estimate deadlines",
-      "Compare forecasts with real timesheets for increased profitability"
+      "Compare forecasts with real timesheets for increased profitability",
     ],
-    position:"left",
+    position: "left",
     srcImg: service_1,
   },
   {
@@ -495,7 +494,7 @@ export const CONTENTS_SERVICES:ContentItemProps[] = [
       "Provide mobile app no matter you work by your own or running a bussines, managing employees",
       "Log in and track your time through any device, anywhere",
     ],
-    position:"right",
+    position: "right",
     srcImg: service_2,
   },
   {
@@ -506,21 +505,21 @@ export const CONTENTS_SERVICES:ContentItemProps[] = [
       "Communicate through the chatter, write in a shared real-time pad, or use live chat",
       "Create graph views to analyze your data utilizing a powerful search tool, filter and grouping functions ",
     ],
-    position:"left",
+    position: "left",
     srcImg: service_3,
   },
 ];
 
-export const CONTENTS_PRODUCTIVITY:ContentItemProps[] = [
+export const CONTENTS_PRODUCTIVITY: ContentItemProps[] = [
   {
     title: "Engage In Conversation",
     description: "",
     subDescription: [
       "Drive discussions between all levels of your company ",
       "Get an overview of the topics being discussed and all the new messages in the module’s news feed",
-      "A powerful communication tool"
+      "A powerful communication tool",
     ],
-    position:"left",
+    position: "left",
     srcImg: productivity_1,
   },
   {
@@ -530,7 +529,7 @@ export const CONTENTS_PRODUCTIVITY:ContentItemProps[] = [
       "Everything in one place",
       "The management of your requests are made easy all request submissions can be created, validated, or declined in second",
     ],
-    position:"right",
+    position: "right",
     srcImg: productivity_2,
   },
   {
@@ -541,7 +540,7 @@ export const CONTENTS_PRODUCTIVITY:ContentItemProps[] = [
       "See what colleagues are up to and how quickly they can respond to messages by checking their status",
       "Choose how you want notifications to be handled, add followers to tasks, schedule activities",
     ],
-    position:"left",
+    position: "left",
     srcImg: productivity_3,
   },
 ];
@@ -607,4 +606,3 @@ export const TABS_ODOO: ITab[] = [
     name: "Productivity",
   },
 ];
-

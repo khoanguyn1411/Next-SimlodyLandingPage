@@ -30,7 +30,7 @@ export const OurTeamItem: React.FC<PersonProps> = ({
 export const OurTeam = memo(() => {
 	return (
 		<section className='bg-white'>
-			<div className='container py-16'>
+			<div className='container'>
 				<div className='flex flex-col'>
 					<div className='flex flex-col pb-14'>
 						<h4 className='text-gray-800 text-3xl font-semibold pb-6 text-center'>
