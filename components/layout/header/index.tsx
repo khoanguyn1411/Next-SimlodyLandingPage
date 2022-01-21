@@ -10,6 +10,7 @@ export const MENUS = [
 		key: 'Product',
 		name: 'Product',
 		href: '/product',
+		hasSubmenu: false,
 	},
 	{
 		key: 'WhoItFor',
@@ -63,11 +64,15 @@ export const MENUS = [
 		key: 'News',
 		name: 'News',
 		href: '/news',
+		hasSubmenu: false,
+
 	},
 	{
 		key: 'About',
 		name: 'About us',
 		href: '/about-us',
+		hasSubmenu: false,
+
 	},
 ];
 

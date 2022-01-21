@@ -29,21 +29,21 @@ const Tab: React.FC<ITabProps> = ({ tab, index, activeKey, onClick }) => {
       to={`${tab.key}`}
       smooth={true}
       spy={true}
-      activeClass="active text-primary-500 bg-primary-50"
+      activeClass="active text-primary-500"
       duration={500}
       offset={-50}
-      className="flex items-center transition "
+      className="flex items-center transition"
     >
       <div className="flex flex-col items-center space-y-4">
         <div
           className={classNames(
-            "relative",
+            "relative h-20",
             "flex items-center space-x-2 justify-center",
             "outline-none focus:outline-none",
             "transition-colors duration-300",
             "cursor-pointer whitespace-nowrap",
             {
-              "text-primary-500": isActive,
+              "text-primary-500 border-b-2 border-primary-500": isActive,
               "text-black hover:text-primary-500": !isActive,
             }
           )}
@@ -61,7 +61,7 @@ const Tab: React.FC<ITabProps> = ({ tab, index, activeKey, onClick }) => {
           </div>
         </div>
 
-        <div
+        {/* <div
           className={classNames(
             "w-full h-1 rounded-md",
             "outline-none focus:outline-none",
@@ -71,7 +71,7 @@ const Tab: React.FC<ITabProps> = ({ tab, index, activeKey, onClick }) => {
               "bg-primary-500": isActive,
             }
           )}
-        ></div>
+        ></div> */}
       </div>
     </Link>
   );
@@ -88,12 +88,15 @@ export const TabsSection: React.FC<ITabsProps> = ({
   onChange,
 }) => {
   return (
-    <section className="flex items-center justify-center">
-      <div className="container">
+    <section className="flex items-center justify-center sticky z-50 bg-white h-20 border-b"
+    style={{top:"72px"}}
+    >
+      <div className="container overflow-auto">
         <div
           className={classNames(
-            "flex items-center overflow-auto justify-center space-x-8 lg:space-x-24"
+            "flex items-center justify-center space-x-8 lg:space-x-24"
           )}
+          style={{ minWidth: "768px" }}
         >
           {tabs.map((tab, index) => {
             return (

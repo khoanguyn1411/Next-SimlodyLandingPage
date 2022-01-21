@@ -71,7 +71,7 @@ export const Drawer: React.FC<IProps> = ({
       id={id}
       level={level}
       levelMove={32}
-    //   {...props}
+      {...props}
     >
       {/* {title && (
         <Header
