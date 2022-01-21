@@ -93,18 +93,21 @@ export const FEATURE_SMALL:FeatureItemProps[] = [
       "We provide plans to tranfer your old company to become more dynamic and faster",
     icon: <SolutionIcon />,
     color: "green",
+    href:"/solution/product"
   },
   {
     title: "ERP Plan",
     description: "Sold your problems with KPI, OKRs, EOS",
     icon: <PlanIcon />,
     color: "purple",
+    href:"/solution/odoo"
   },
   {
     title: "SaaS Product",
     description: "New technology and platform to work more effeciently",
     icon: <ProductIcon />,
     color: "blue",
+    href:"/solution/saas"
   },
 ];
 

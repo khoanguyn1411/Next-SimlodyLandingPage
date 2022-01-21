@@ -1,17 +1,22 @@
 import classNames from "classnames";
+import { useRouter } from "next/router";
 
 export type FeatureItemProps = {
   title: string;
   description: string;
   icon: JSX.Element;
   color: "purple" | "blue" | "green";
+  href:string
 };
 export const FeatureItem: React.FC<FeatureItemProps> = ({
   title,
   description,
   icon,
   color,
+  href
 }) => {
+  const router=useRouter()
+
   const classes = {
     purple: {
       bg: "bg-purple-100",
@@ -29,6 +34,11 @@ export const FeatureItem: React.FC<FeatureItemProps> = ({
       hover: "hover:text-primary-600",
     },
   };
+
+const handleLinkToSection=()=>{
+  router.push(href)
+}
+
   return (
     <div className="relative px-14 py-16 rounded-md shadow-lg space-y-4 flex flex-col items-center justify-center">
       <div className="flex items-center justify-center">
@@ -39,6 +49,7 @@ export const FeatureItem: React.FC<FeatureItemProps> = ({
       <span className="text-center flex-1">{description}</span>
 
       <button
+      onClick={handleLinkToSection}
         className={classNames(
           `flex items-center  transition-all duration-300 justify-center text-base font-medium space-x-2`,
           classes[color].text,

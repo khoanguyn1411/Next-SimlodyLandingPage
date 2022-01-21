@@ -10,6 +10,7 @@ export const MENUS = [
 		key: 'Product',
 		name: 'Product',
 		href: '/product',
+		hasSubmenu: false,
 	},
 	{
 		key: 'WhoItFor',
@@ -63,11 +64,15 @@ export const MENUS = [
 		key: 'News',
 		name: 'News',
 		href: '/news',
+		hasSubmenu: false,
+
 	},
 	{
 		key: 'About',
 		name: 'About us',
 		href: '/about-us',
+		hasSubmenu: false,
+
 	},
 ];
 
@@ -101,7 +106,7 @@ export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
 
 				{/* main */}
 				<Media greaterThanOrEqual='xl'>
-					<ul className='flex items-center overflow-y-auto list-none hide-scrollbar'>
+					<ul className='flex items-center list-none hide-scrollbar'>
 						{MENUS.map((menu, index) => (
 							<ItemMenu
 								key={index}

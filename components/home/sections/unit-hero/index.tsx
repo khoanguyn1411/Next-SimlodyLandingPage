@@ -10,10 +10,10 @@ export const UnitHeroSection = memo(() => {
         <div className="flex flex-1 items-center">
           <div className="flex flex-col">
             <div className="title flex flex-col mb-8">
-              <h3 className="text-5xl font-bold text-gray-800 py-4">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 py-4">
                 Data to enrich your
               </h3>
-              <h3 className="text-5xl font-bold text-primary-500">
+              <h3 className="text-3xl md:text-4xl font-bold text-primary-500">
                 platform business
               </h3>
             </div>
@@ -23,7 +23,7 @@ export const UnitHeroSection = memo(() => {
                 solution
               </span>
             </div>
-            <div className="button flex flex-row space-x-10">
+            <div className="button flex flex-row space-x-4">
               <div className="w-40">
                 <Button text="Get Started" type="primary" block />
               </div>
@@ -32,8 +32,8 @@ export const UnitHeroSection = memo(() => {
                   text="Explore more"
                   icon={
                     <span
-                      className="ml-2 w-4 h-4 rounded-full bg-primary-500 text-white flex items-center justify-center"
-                      style={{ fontSize: "8px" }}
+                      className="ml-2 rounded-full text-primary-500  flex items-center justify-center"
+                      style={{ fontSize: "10px" }}
                     >
                       <i className="fa fa-chevron-right" />
                     </span>

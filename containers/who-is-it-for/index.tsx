@@ -95,7 +95,7 @@ export const WhoIsItForContainer = () => {
           return {
             title: "Choose the plans you need",
             description:
-              "To meet the needs of the startup business, you should do the following things:To meet the needs of the startup business, you should do the following things:",
+              "To meet the needs of the startup business, you should do the following things:",
             solutions: SOLUTION_MEDIUM,
           };
 

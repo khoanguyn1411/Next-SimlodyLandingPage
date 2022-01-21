@@ -62,17 +62,9 @@
 	body {
 		@apply text-sm;
 	}
+	
 }
 
 @tailwind components;
-
-@layer components {
-
-	/* react-collapse */
-	.ReactCollapse--collapse {
-		@apply transition-height duration-300 w-full;
-	}
-}
-
 
 @tailwind utilities;

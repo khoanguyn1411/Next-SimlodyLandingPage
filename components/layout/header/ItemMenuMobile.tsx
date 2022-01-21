@@ -1,38 +1,45 @@
 import { Collapse } from "@components/elements";
 import classNames from "classnames";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState } from "react";
 import { SubMenuProps } from "./menu-item";
 
 type IProps = {
-  name: string;
-  href: string;
+  name?: string;
+  href?: string;
 
   icon?: JSX.Element;
   isActive?: boolean;
   hasSubMenu?: boolean;
   subMenus?: SubMenuProps[];
-  isOpened: boolean;
-  onShowSubMenu: () => void;
+
 };
 export const ItemMenuMobile: React.FC<IProps> = ({
   name,
-  href,
+  href="",
   icon,
   isActive,
   hasSubMenu = false,
   subMenus = [],
-  isOpened = false,
-  onShowSubMenu,
+
 }) => {
+  const router = useRouter()
+
+  const [showSubMenu, setShowSubMenu] = useState(false)
+  const handleShowSubMenu = () => {
+    setShowSubMenu(v => !v)
+  }
   return (
     <>
       <li
-        className=" border-b-2 w-full text-left px-3 py-4"
+        className=" border-b-2 w-full text-left pl-4 px-3 py-4"
         tabIndex={0}
         role="menuitem"
-        onKeyPress={onShowSubMenu}
-        onClick={onShowSubMenu}
+        onKeyPress={handleShowSubMenu}
+        onClick={handleShowSubMenu}
       >
+        <Link href={href}>
         <a
           className={classNames(
             "flex group items-baseline transition-all duration-300 ease-in-out font-medium cursor-pointer text-base",
@@ -61,25 +68,28 @@ export const ItemMenuMobile: React.FC<IProps> = ({
             </div>
           )}
         </a>
-
-        
+        </Link>
       </li>
       {hasSubMenu && (
-          <Collapse isOpened={isOpened}>
-            <ul className=" flex flex-col">
-              {subMenus.map((subMenu, index) => (
-                <li
-                  key={index}
-                  className="border-b-2 w-full text-left px-3 py-4"
-                >
+        <Collapse isOpened={showSubMenu}>
+          <ul className="w-full  flex flex-col">
+            {subMenus.length > 0 && subMenus.map((subMenu, index) => (
+              <li
+                key={index}
+                className={classNames(" w-full focus:bg-gray-100  text-left pl-6 pr-3 py-4",
+                  { "text-primary-500": subMenu.href === router.asPath }
+                )}
+              >
+                <Link href={subMenu.href}>
                   <a className="flex group items-baseline transition-all duration-300 ease-in-out font-medium cursor-pointer text-base">
-                    {subMenu}
+                    {subMenu.name}
                   </a>
-                </li>
-              ))}
-            </ul>
-          </Collapse>
-        )}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Collapse>
+      )}
     </>
   );
 };
