@@ -28,7 +28,7 @@ export const SidebarMobile: React.FC<IProps> = ({
       shouldResponsive={false}
     >
       {/* logo */}
-      <div className="px-2 border-b-2 py-4">
+      <div className="pl-4 px-3 border-b-2 py-4">
         <Link href='/'>
           <a>
             <Logo withText />

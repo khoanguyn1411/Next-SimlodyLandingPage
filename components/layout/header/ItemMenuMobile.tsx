@@ -33,7 +33,7 @@ export const ItemMenuMobile: React.FC<IProps> = ({
   return (
     <>
       <li
-        className=" border-b-2 w-full text-left px-3 py-4"
+        className=" border-b-2 w-full text-left pl-4 px-3 py-4"
         tabIndex={0}
         role="menuitem"
         onKeyPress={handleShowSubMenu}

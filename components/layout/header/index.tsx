@@ -106,7 +106,7 @@ export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
 
 				{/* main */}
 				<Media greaterThanOrEqual='xl'>
-					<ul className='flex items-center overflow-y-auto list-none hide-scrollbar'>
+					<ul className='flex items-center list-none hide-scrollbar'>
 						{MENUS.map((menu, index) => (
 							<ItemMenu
 								key={index}

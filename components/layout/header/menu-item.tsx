@@ -69,7 +69,7 @@ export const ItemMenu: React.FC<IProps> = ({
 
       {hasSubMenu && (
         <div className="group-hover:block dropdown-menu absolute hidden h-auto">
-          <ul className="top-0 mt-2 shadow-md w-64 rounded-md bg-white">
+          <ul className="top-0 mt-4 shadow-md w-64 rounded-md bg-white">
             {subMenus.map((subMenu, index) => (
               <li
                 key={index}
