@@ -123,7 +123,6 @@ export const WhoIsItForContainer = () => {
           nameBanner={contentBanner.nameBanner}
           titleBanner={contentBanner.titleBanner}
           description={contentBanner.description}
-          showBtnTrial
         />
 
         <div className="flex flex-col gap-y-24 pb-24">

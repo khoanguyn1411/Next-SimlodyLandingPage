@@ -11,14 +11,14 @@ export const ClientSection = () => {
           description="Always listen and empathize our customers to give they the best solutions"
         />
       </div>
-      <div
-        className={classNames(
-          "flex items-center justify-center bg-primary-50 py-12",
-          "bg-[url('/solution/background-client.png')] bg-no-repeat",
-          "bg-[length:250px_auto]"
-        )}
-      >
-        <div className="container">
+      <div className="container">
+        <div
+          className={classNames(
+            " rounded-md bg-primary-50 py-12",
+            "bg-[url('/solution/background-client.png')] bg-no-repeat",
+            "bg-[length:250px_auto]"
+          )}
+        >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-center">
             <div className="col-span-1 flex items-center justify-center">
               <Image width={280} height={280} src={client} alt="" />

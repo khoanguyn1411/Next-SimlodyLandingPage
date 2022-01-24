@@ -4,6 +4,7 @@ import { ItemMenu } from './menu-item';
 import Link from 'next/link';
 import classNames from 'classnames';
 import { Media } from '@components';
+import { useRouter } from 'next/router';
 
 export const MENUS = [
 	{
@@ -81,6 +82,10 @@ type IProps = {
 	onOpen: () => void;
 };
 export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
+	const router=useRouter()
+	const handleLink=()=>{
+		router.push("/contact-us")
+	}
 	return (
 		<header className='bg-white h-header shadow sticky top-0 z-50'>
 			<div className='container flex flex-row mx-auto items-center h-full justify-between'>
@@ -123,7 +128,7 @@ export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
 
 				{/* contact */}
 				<div>
-					<Button text='Contact Us' type='primary' />
+					<Button text='Contact Us' type='primary' onClick={handleLink} />
 				</div>
 			</div>
 		</header>

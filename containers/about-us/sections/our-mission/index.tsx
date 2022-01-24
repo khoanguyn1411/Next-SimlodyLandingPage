@@ -7,7 +7,7 @@ export const OurMissionSection = memo(() => {
 			<div className='container py-24 bg-[url("/images/about-us/mission-background.png")] bg-no-repeat bg-[length:100%_auto]'>
 				<div className='flex flex-col pb-20'>
 					<div className='flex flex-col md:max-w-3xl mx-auto'>
-						<h4 className='text-gray-800 text-3xl font-semibold pb-6 text-center'>
+						<h4 className='text-gray-800 text-3xl font-semibold pb-4 text-center'>
 							Our mission
 						</h4>
 						<span className='text-xl text-gray-500 font-normal text-center'>
