@@ -18,7 +18,7 @@ export const ActionableSection = () => {
           <div className=" text-base text-white flex-1 flex items-center justify-center py-16">
             <div className="flex flex-col justify-center space-y-16">
               <div className="flex flex-col space-y-4">
-                <h2 className=" text-3xl font-semibold">{title}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold">{title}</h2>
 
                 <span>{description}</span>
               </div>

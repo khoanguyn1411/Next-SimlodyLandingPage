@@ -12,7 +12,7 @@ export const Footer = memo(() => {
 		<footer className='py-16 flex flex-1 shadow-inner'>
 			<div className='flex flex-col w-full md:w-2/5 mx-auto'>
 				<div className='flex flex-row justify-between pb-12'>
-					<Link href='/about'>
+					<Link href='/about-us'>
 						<a className='hover:text-primary-500 font-semibold text-base text-gray-400 px-4 py-2'>
 							About
 						</a>
