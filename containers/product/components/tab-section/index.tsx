@@ -31,7 +31,7 @@ const Tab: React.FC<ITabProps> = ({ tab, index, activeKey, onClick }) => {
       spy={true}
       activeClass="active text-primary-500"
       duration={500}
-      offset={-50}
+      offset={-150}
       className="flex items-center transition"
     >
       <div className="flex flex-col items-center space-y-4">
@@ -88,7 +88,7 @@ export const TabsSection: React.FC<ITabsProps> = ({
   onChange,
 }) => {
   return (
-    <section className="flex items-center justify-center sticky z-50 bg-white h-20 border-b"
+    <section className="flex items-center justify-center sticky z-20 bg-white h-20 border-b"
     style={{top:"72px"}}
     >
       <div className="container overflow-auto">

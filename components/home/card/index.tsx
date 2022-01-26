@@ -7,10 +7,11 @@ type Props = {
 	color: 'green' | 'secondary' | 'indigo';
 	icon: JSX.Element;
 	className: string;
+	delay:string
 };
 
 export const Card: React.FC<Props> = React.memo(
-	({ title, description, color, icon, className }) => {
+	({ title, description, color, icon, className,delay }) => {
 		const colors = {
 			green: {
 				bg: 'bg-green-50',
@@ -27,7 +28,7 @@ export const Card: React.FC<Props> = React.memo(
 		};
 
 		return (
-			<div className='flex flex-1 relative'>
+			<div data-aos="fade-up" data-aos-delay={delay} className='flex flex-1 relative'>
 				<div
 					className={classnames(
 						'z-10',

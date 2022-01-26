@@ -4,3 +4,4 @@ export * from "./who-is-it-for";
 export * from "./about-us";
 export * from "./news";
 export * from "./contact";
+export * from "./privacy-policy";

@@ -10,7 +10,7 @@ export const NicheSection = React.memo(() => (
 	<section className='flex bg-primary-500 pt-16 pb-32'>
 		<div className='container mx-auto my-auto flex flex-col'>
 			<div className='title flex flex-1 flex-col mb-24'>
-				<h4 className='text-3xl font-semibold text-white pb-6 text-center'>
+				<h4 className='text-3xl font-semibold text-white pb-4 text-center'>
 					Our Niche
 				</h4>
 				<span className='text-center text-xl font-normal text-white'>
@@ -25,6 +25,7 @@ export const NicheSection = React.memo(() => (
 					color='green'
 					icon={<BusinessIcon />}
 					className='bg-green'
+					delay='0'
 				/>
 				<Card
 					title='SaaS for Education'
@@ -32,6 +33,7 @@ export const NicheSection = React.memo(() => (
 					color='secondary'
 					icon={<EducationIcon />}
 					className='bg-secondary'
+					delay='200'
 				/>
 				<Card
 					title='Data PLatform'
@@ -39,6 +41,7 @@ export const NicheSection = React.memo(() => (
 					color='indigo'
 					icon={<PlatformIcon />}
 					className='bg-indigo'
+					delay='400'
 				/>
 			</div>
 		</div>

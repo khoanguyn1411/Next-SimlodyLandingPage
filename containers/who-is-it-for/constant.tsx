@@ -1,6 +1,15 @@
-
 import { ProcessProps } from "@containers/solution/sections";
-import { SolutionIcon, PlanIcon, ProductIcon, PlatformIcon, FlexibleIcon, ConnectIcon, OrganizedIcon, PeopleIcon, ManagementIcon } from "./icons";
+import {
+  SolutionIcon,
+  PlanIcon,
+  ProductIcon,
+  PlatformIcon,
+  FlexibleIcon,
+  ConnectIcon,
+  OrganizedIcon,
+  PeopleIcon,
+  ManagementIcon,
+} from "./icons";
 import {
   ClientIcon,
   DataIcon,
@@ -14,14 +23,13 @@ import {
 import problem_1 from "@containers/solution/images/problem_1.png";
 import problem_2 from "@containers/solution/images/problem_2.png";
 
-import medium_1 from "./images/medium_1.png"
-import medium_2 from "./images/medium_2.png"
+import medium_1 from "./images/medium_1.png";
+import medium_2 from "./images/medium_2.png";
 
-import large_1 from "./images/large_1.png"
-import large_2 from "./images/large_2.png"
+import large_1 from "./images/large_1.png";
+import large_2 from "./images/large_2.png";
 import { FeatureItemProps } from "./sections/feature-section/feature-item";
 import { SolutionProps } from "./sections/solution-section/solution-item";
-
 
 export const PROCESSES_SMALL: ProcessProps[] = [
   {
@@ -29,18 +37,21 @@ export const PROCESSES_SMALL: ProcessProps[] = [
     description:
       "Scalability according to market needs, enterprise needs, with good product architecture",
     icon: <ScalabilityIcon />,
+    delay: "0",
   },
   {
     title: "Client Dependence",
     description:
       "Diversifying your client base is vital to growing a business.Having a client willing to pay on time",
     icon: <ClientIcon />,
+    delay: "200",
   },
   {
     title: "Money Management",
     description:
       "Money management is important when earning money.Financial expert help is needed",
     icon: <MoneyIcon />,
+    delay: "400",
   },
 ];
 
@@ -50,18 +61,21 @@ export const PROCESSES_MEDIUM: ProcessProps[] = [
     description:
       "Greater revenue provides more protection against these shocks",
     icon: <ScalabilityIcon />,
+    delay: "0",
   },
   {
     title: "Hiring Employees",
     description:
       "Hiring employees become a primary concern. Businesses need a larger workforce growing",
     icon: <HiringIcon />,
+    delay: "200",
   },
   {
     title: "Marketing",
     description:
       "Focus on promoting marketing to get more markets and users in order to scale up",
     icon: <MarketingIcon />,
+    delay: "400",
   },
 ];
 
@@ -71,43 +85,49 @@ export const PROCESSES_LARGE: ProcessProps[] = [
     description:
       "The challenge is more to achieve  expand the customer base than to aggressively drive profits",
     icon: <IncreaseIcon />,
+    delay: "0",
   },
   {
     title: "Hiring Employees",
     description:
       "Hiring employees become a primary concern. Businesses need a larger workforce growing",
     icon: <HiringIcon />,
+    delay: "200",
   },
   {
     title: "Customers Data",
     description:
       "With thousands of users, it is necessary to protect information to avoid risks",
     icon: <DataIcon />,
+    delay: "400",
   },
 ];
 
-export const FEATURE_SMALL:FeatureItemProps[] = [
+export const FEATURE_SMALL: FeatureItemProps[] = [
   {
     title: "Concept Solution",
     description:
       "We provide plans to tranfer your old company to become more dynamic and faster",
     icon: <SolutionIcon />,
     color: "green",
-    href:"/solution/product"
+    href: "/solution/product",
+    delay: "0",
   },
   {
     title: "ERP Plan",
     description: "Sold your problems with KPI, OKRs, EOS",
     icon: <PlanIcon />,
     color: "purple",
-    href:"/solution/odoo"
+    href: "/solution/odoo",
+    delay: "200",
   },
   {
     title: "SaaS Product",
     description: "New technology and platform to work more effeciently",
     icon: <ProductIcon />,
     color: "blue",
-    href:"/solution/saas"
+    href: "/solution/saas",
+    delay: "400",
   },
 ];
 
@@ -123,6 +143,7 @@ export const PRICES = [
       "4 consultants for educate ",
     ],
     isPopular: false,
+    delay: "0",
   },
   {
     title: "Medium enterprise",
@@ -137,6 +158,7 @@ export const PRICES = [
     ],
     titleBtn: "Buy Medium Enterprise",
     isPopular: true,
+    delay: "200",
   },
   {
     title: "Large enterprise",
@@ -152,10 +174,11 @@ export const PRICES = [
       "4 consultants for educate ",
     ],
     isPopular: false,
+    delay: "400",
   },
 ];
 
-export const SOLUTION_SMALL:SolutionProps[] = [
+export const SOLUTION_SMALL: SolutionProps[] = [
   {
     icon: <PlatformIcon />,
     label: "Platform",
@@ -172,12 +195,12 @@ export const SOLUTION_SMALL:SolutionProps[] = [
     color: "green",
     position: "right",
     title: "Flexible and easy to use",
-    description:`Tungtung provide products easy to use and flexible enough to support any type of project.\nIf you have used tools like Jira, Asana, Trello. Surely this product is completely simple for you.`,
+    description: `Tungtung provide products easy to use and flexible enough to support any type of project.\nIf you have used tools like Jira, Asana, Trello. Surely this product is completely simple for you.`,
     srcImg: problem_2,
   },
 ];
 
-export const SOLUTION_MEDIUM:SolutionProps[] = [
+export const SOLUTION_MEDIUM: SolutionProps[] = [
   {
     icon: <ConnectIcon />,
     label: "Method",
@@ -194,12 +217,12 @@ export const SOLUTION_MEDIUM:SolutionProps[] = [
     color: "green",
     position: "right",
     title: "Get organized",
-    description:`Bring every one, rock and scorecard together in one space so nothing falls through the cracks`,
+    description: `Bring every one, rock and scorecard together in one space so nothing falls through the cracks`,
     srcImg: problem_2,
   },
 ];
 
-export const SOLUTION_LARGE:SolutionProps[] = [
+export const SOLUTION_LARGE: SolutionProps[] = [
   {
     icon: <PeopleIcon />,
     label: "People",
@@ -216,8 +239,7 @@ export const SOLUTION_LARGE:SolutionProps[] = [
     color: "green",
     position: "right",
     title: "Going deep into the nature of human management",
-    description:`Helping employees to own (ownership) important goals which are self-proposed and need to be done proactively`,
+    description: `Helping employees to own (ownership) important goals which are self-proposed and need to be done proactively`,
     srcImg: large_2,
   },
 ];
-

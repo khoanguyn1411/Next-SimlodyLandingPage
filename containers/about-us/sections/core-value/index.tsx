@@ -40,7 +40,7 @@ const coreValues: CoreValueProps[] = [
 
 const CoreValueItem: React.FC<CoreValueProps> = ({ title, icon, content }) => {
 	return (
-		<div className='flex flex-row flex-1 gap-x-6'>
+		<div data-aos="fade-up" className='flex flex-row flex-1 gap-x-6'>
 			<div
 				className={classnames(
 					'w-14 h-14',

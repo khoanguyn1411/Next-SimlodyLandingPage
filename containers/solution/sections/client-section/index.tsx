@@ -19,7 +19,10 @@ export const ClientSection = () => {
             "bg-[length:250px_auto]"
           )}
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-center">
+          <div
+            data-aos="fade-up"
+            className="grid grid-cols-1 md:grid-cols-3 gap-16 items-center"
+          >
             <div className="col-span-1 flex items-center justify-center">
               <Image width={280} height={280} src={client} alt="" />
             </div>

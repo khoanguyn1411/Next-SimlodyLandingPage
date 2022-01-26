@@ -22,7 +22,7 @@ export const AboutUsContainer = memo(() => {
       <div className="relative -mt-16">
         <Image src={our_team} objectFit="contain" alt="Our Team" />
 
-        <div className="absolute top-0 w-full flex items-center justify-center h-full">
+        <div data-aos="fade-in" className="absolute top-0 w-full flex items-center justify-center h-full">
           <h2 className="text-white text-xl md:text-3xl font-semibold text-center">
             Young, Dynamic and Enthusiastic Team
           </h2>

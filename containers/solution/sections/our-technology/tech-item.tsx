@@ -4,10 +4,11 @@ type IProps = {
   title: string;
   description: string;
   srcImg: any;
+  delay:string
 };
-export const TechItem: React.FC<IProps> = ({ title, description, srcImg }) => {
+export const TechItem: React.FC<IProps> = ({ title, description, srcImg,delay }) => {
   return (
-    <div className="flex flex-col items-center justify-center px-4 h-80">
+    <div data-aos="fade-up" data-aos-delay={delay} className="flex flex-col items-center justify-center px-4 h-80">
       <div className="flex items-center flex-1 "
       style={{height:"236px"}}
       >

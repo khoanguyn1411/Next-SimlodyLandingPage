@@ -21,6 +21,7 @@ export const PriceSection = () => {
                 supplies={price.supplies}
                 titleBtn={price.titleBtn}
                 isPopular={price.isPopular}
+                delay={price.delay}
               />
             ))}
           </div>

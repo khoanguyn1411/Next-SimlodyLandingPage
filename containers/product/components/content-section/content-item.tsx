@@ -18,22 +18,31 @@ export const ContentItem: React.FC<ContentItemProps> = ({
   srcImg = "",
   position,
 }) => {
-
   return (
     <Element name={id} className="element">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
         {position === "right" ? (
-          <div className="col-span-3 flex flex-1 items-center">
-            <Image
-              className="rounded-md shadow-xl"
-              src={srcImg}
-              alt="Meeting Image"
-            />
+          <div className="col-span-3 ">
+            <div
+              data-aos={position === "right" ? "fade-right" : "fade-left"}
+              data-aos-offset="200"
+              className="flex flex-1 items-center"
+            >
+              <Image
+                className="rounded-md shadow-xl"
+                src={srcImg}
+                alt="Meeting Image"
+              />
+            </div>
           </div>
         ) : null}
 
         <div className="col-span-2">
-          <div className="space-y-8 flex flex-col flex-1 justify-center h-full">
+          <div
+            data-aos={position === "right" ? "fade-left" : "fade-right"}
+            data-aos-offset="100"
+            className="space-y-8 flex flex-col flex-1 justify-center h-full"
+          >
             <h2 className="text-3xl font-semibold">{title}</h2>
 
             {description && <span className="text-base">{description}</span>}
@@ -56,7 +65,11 @@ export const ContentItem: React.FC<ContentItemProps> = ({
         </div>
 
         {position === "left" ? (
-          <div className="col-span-3 flex flex-1 items-center">
+          <div
+            data-aos={position === "left" ? "fade-left" : "fade-right"}
+            data-aos-offset="200"
+            className="col-span-3 flex flex-1 items-center"
+          >
             <Image
               className="rounded-md shadow-xl"
               src={srcImg}

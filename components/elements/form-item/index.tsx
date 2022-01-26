@@ -23,7 +23,7 @@ export const FormItem: React.FC<IFormItemProps> = ({
   return (
     <div
       className={classNames({
-        "mb-8": !isNoSpace,
+        "mb-6": !isNoSpace,
         hidden: isHidden,
       })}
     >

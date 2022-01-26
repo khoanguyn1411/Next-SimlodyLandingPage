@@ -13,7 +13,7 @@ export const SolutionSection: React.FC<IProps> = ({
 }) => {
   return (
     <section className="flex items-center justify-center">
-      <div className="container space-y-16">
+      <div className="overflow-x-hidden container space-y-16">
         <HeaderSection
           title={title}
           description={description}

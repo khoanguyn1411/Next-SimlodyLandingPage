@@ -60,17 +60,20 @@ export const PROCESSES_PRODUCT: ProcessProps[] = [
     description:
       "Quickly import your data and hit the ground running with our drag-and-drop editor",
     icon: <PlanningIcon />,
+    delay: "0",
   },
   {
     title: "Collaboration",
     description: "Share, discuss and track activity on your roadmap",
     icon: <CollaborationIcon />,
+    delay: "200",
   },
   {
     title: "Visualization",
     description:
       "Personalize your plan with custom color palettes and flexible export options",
     icon: <VisualizationIcon />,
+    delay: "400",
   },
 ];
 
@@ -79,18 +82,21 @@ export const PROCESSES_SASS: ProcessProps[] = [
     title: "Accessibility",
     description: "Ability to run via an internet browser 24/7 from any device",
     icon: <PlanningIcon />,
+    delay: "0",
   },
   {
     title: "Management",
     description:
       "No installation, equipment updates or traditional licensing management",
     icon: <CollaborationIcon />,
+    delay: "200",
   },
   {
     title: "Cost Effective",
     description:
       "No upfront hardware costs and flexible payment methods such as pay-as-you-go models",
     icon: <VisualizationIcon />,
+    delay: "400",
   },
 ];
 

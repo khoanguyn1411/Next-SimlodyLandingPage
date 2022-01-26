@@ -6,6 +6,7 @@ export type ProcessProps = {
   title: string;
   description: string;
   icon: JSX.Element;
+  delay:string
 };
 
 type IProps = {
@@ -39,6 +40,7 @@ export const ProcessSection: React.FC<IProps> = ({
                 title={process.title}
                 description={process.description}
                 icon={process.icon}
+                delay={process.delay}
               />
             ))}
           </div>

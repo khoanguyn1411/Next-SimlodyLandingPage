@@ -41,12 +41,18 @@ export const SolutionItem: React.FC<SolutionProps> = ({
     <div className="grid grid-cols-1 lg:grid-cols-5 gap-24">
       {position === "right" ? (
         <div className="col-span-3">
-          <Image src={srcImg} alt="background" />
+          <div data-aos="fade-right">
+            <Image src={srcImg} alt="background" />
+          </div>
         </div>
       ) : null}
 
       <div className="col-span-2 items-center justify-center flex">
-        <div className="flex flex-1 flex-col py-4">
+        <div
+          data-aos={position === "right" ? "fade-left" : "fade-right"}
+          data-aos-offset="0"
+          className="flex flex-1 flex-col py-4"
+        >
           <div className="flex flex-col pb-4">
             <div className="pb-4">
               <div
@@ -86,7 +92,9 @@ export const SolutionItem: React.FC<SolutionProps> = ({
 
       {position === "left" ? (
         <div className="col-span-3">
-          <Image src={srcImg} alt="background" />
+          <div data-aos="fade-left" data-aos-offset="300">
+            <Image src={srcImg} alt="background" />
+          </div>
         </div>
       ) : null}
     </div>

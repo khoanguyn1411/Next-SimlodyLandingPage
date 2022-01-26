@@ -29,12 +29,12 @@ export const LayoutBase: React.FC<IProps> = ({
 
       <Header pageKey={pageKey} onOpen={handleOpen} />
 
-      <SidebarMobile isOpen={isOpen} onClose={handleClose} />
+      <SidebarMobile isOpen={isOpen} pageKey={pageKey} onClose={handleClose} />
 
       <div>
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer pageKey={pageKey}/>
     </>
   );
 };

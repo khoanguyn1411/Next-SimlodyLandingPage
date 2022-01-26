@@ -16,6 +16,7 @@ const list = [
 		description:
 			'Make quick decisions, build data centers, metrics and reporting, information concentration',
 		color: 'orange',
+		delay:"0"
 	},
 	{
 		icon: <ScalabilityIcon />,
@@ -23,6 +24,8 @@ const list = [
 		description:
 			'Scalability according to market needs, enterprise needs, with good product architecture',
 		color: 'indigo',
+		delay:"200"
+
 	},
 	{
 		icon: <CustomerCentricIcon />,
@@ -30,6 +33,8 @@ const list = [
 		description:
 			'Solve the right problem, create customer value, fastest solutions solving contribute',
 		color: 'pink',
+		delay:"400"
+
 	},
 	{
 		icon: <FastestReleaseIcon />,
@@ -37,6 +42,8 @@ const list = [
 		description:
 			'Scalability according to market needs, enterprise needs, with good product architecture',
 		color: 'secondary',
+		delay:"600"
+
 	},
 ];
 
@@ -60,7 +67,7 @@ export const LoveInSection = memo(() => {
 		>
 			<div className='flex flex-col flex-1 container mx-auto pt-40 pb-20'>
 				<div className='flex flex-col flex-1 pb-16'>
-					<h3 className='text-3xl text-white font-semibold pb-6 text-center'>
+					<h3 className='text-3xl text-white font-semibold pb-4 text-center'>
 						We put strong love in
 					</h3>
 					<span className='text-xl font-normal text-white text-center'>
@@ -89,6 +96,8 @@ export const LoveInSection = memo(() => {
 							{list.map((item, idx) => (
 								<div
 									key={idx}
+									data-aos="fade-up"
+									data-aos-delay={item.delay}
 									className={classnames(
 										'p-4',
 										'flex flex-1',

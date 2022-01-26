@@ -13,23 +13,21 @@ type IProps = {
   isActive?: boolean;
   hasSubMenu?: boolean;
   subMenus?: SubMenuProps[];
-
 };
 export const ItemMenuMobile: React.FC<IProps> = ({
   name,
-  href="",
+  href = "",
   icon,
   isActive,
   hasSubMenu = false,
   subMenus = [],
-
 }) => {
-  const router = useRouter()
+  const router = useRouter();
 
-  const [showSubMenu, setShowSubMenu] = useState(false)
+  const [showSubMenu, setShowSubMenu] = useState(false);
   const handleShowSubMenu = () => {
-    setShowSubMenu(v => !v)
-  }
+    setShowSubMenu((v) => !v);
+  };
   return (
     <>
       <li
@@ -39,54 +37,88 @@ export const ItemMenuMobile: React.FC<IProps> = ({
         onKeyPress={handleShowSubMenu}
         onClick={handleShowSubMenu}
       >
-        <Link href={href}>
-        <a
-          className={classNames(
-            "flex group items-baseline transition-all duration-300 ease-in-out font-medium cursor-pointer text-base",
-            { "text-primary-500": isActive }
-          )}
-          id="navbarDropdown"
-          role="button"
-          data-toggle="droppdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          <div
-            className={classNames(
-              "group-hover:text-primary-500 transition-all duration-300",
-              {
-                "text-primary-500": isActive,
-              }
-            )}
-          >
-            <span className="flex-1">{name}</span>
-          </div>
+        {href ? (
+          <Link href={href}>
+            <a
+              className={classNames(
+                "flex group items-baseline transition-all duration-300 ease-in-out font-medium cursor-pointer text-base",
+                { "text-primary-500": isActive }
+              )}
+              id="navbarDropdown"
+              role="button"
+              data-toggle="droppdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div
+                className={classNames(
+                  "group-hover:text-primary-500 transition-all duration-300",
+                  {
+                    "text-primary-500": isActive,
+                  }
+                )}
+              >
+                <span className="flex-1">{name}</span>
+              </div>
 
-          {icon && (
-            <div className="ml-2 text-xs group-hover:text-primary-500 transition-all duration-300">
-              <span>{icon}</span>
+              {icon && (
+                <div className="ml-2 text-xs group-hover:text-primary-500 transition-all duration-300">
+                  <span>{icon}</span>
+                </div>
+              )}
+            </a>
+          </Link>
+        ) : (
+          <a
+            className={classNames(
+              "flex group items-baseline transition-all duration-300 ease-in-out font-medium cursor-pointer text-base",
+              { "text-primary-500": isActive }
+            )}
+            id="navbarDropdown"
+            role="button"
+            data-toggle="droppdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <div
+              className={classNames(
+                "group-hover:text-primary-500 transition-all duration-300",
+                {
+                  "text-primary-500": isActive,
+                }
+              )}
+            >
+              <span className="flex-1">{name}</span>
             </div>
-          )}
-        </a>
-        </Link>
+
+            {icon && (
+              <div className="ml-2 text-xs group-hover:text-primary-500 transition-all duration-300">
+                <span>{icon}</span>
+              </div>
+            )}
+          </a>
+        )}
       </li>
+
       {hasSubMenu && (
         <Collapse isOpened={showSubMenu}>
           <ul className="w-full  flex flex-col">
-            {subMenus.length > 0 && subMenus.map((subMenu, index) => (
-              <li
-                key={index}
-                className={classNames(" w-full focus:bg-gray-100  text-left pl-6 pr-3 py-4",
-                  { "text-primary-500": subMenu.href === router.asPath }
-                )}
-              >
-                <Link href={subMenu.href}>
-                  <a className="flex group items-baseline transition-all duration-300 ease-in-out font-medium cursor-pointer text-base">
-                    {subMenu.name}
-                  </a>
-                </Link>
-              </li>
-            ))}
+            {subMenus.length > 0 &&
+              subMenus.map((subMenu, index) => (
+                <li
+                  key={index}
+                  className={classNames(
+                    " w-full focus:bg-gray-100  text-left pl-6 pr-3 py-4",
+                    { "text-primary-500": subMenu.href === router.asPath }
+                  )}
+                >
+                  <Link href={subMenu.href}>
+                    <a className="flex group items-baseline transition-all duration-300 ease-in-out font-medium cursor-pointer text-base">
+                      {subMenu.name}
+                    </a>
+                  </Link>
+                </li>
+              ))}
           </ul>
         </Collapse>
       )}
