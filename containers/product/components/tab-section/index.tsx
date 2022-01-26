@@ -31,7 +31,7 @@ const Tab: React.FC<ITabProps> = ({ tab, index, activeKey, onClick }) => {
       spy={true}
       activeClass="active text-primary-500"
       duration={500}
-      offset={-50}
+      offset={-150}
       className="flex items-center transition"
     >
       <div className="flex flex-col items-center space-y-4">

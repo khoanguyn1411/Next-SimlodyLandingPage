@@ -8,6 +8,7 @@ type Props = {
 	content: string[];
 	color: 'primary' | 'orange' | 'purple';
 	icon: JSX.Element;
+	delay?:string
 };
 
 const list: Props[] = [
@@ -20,6 +21,7 @@ const list: Props[] = [
 			'Top 10 companies with the best UI/UX products in Vietnam',
 			'Top 10 companies with strong human resources and culture in Tech',
 		],
+		delay:"0"
 	},
 	{
 		icon: <FiveYearIcon />,
@@ -30,6 +32,7 @@ const list: Props[] = [
 			'Provide products in America, Europe,...',
 			'>60 employees, with more than 10 products',
 		],
+		delay:"200"
 	},
 	{
 		icon: <TenYearIcon />,
@@ -40,10 +43,11 @@ const list: Props[] = [
 			'Revenue 250 billion vnd/year.',
 			'>100 employees, with more than 20 products',
 		],
+		delay:"400"
 	},
 ];
 
-const Item: React.FC<Props> = ({ title, color, content, icon }) => {
+const Item: React.FC<Props> = ({ title, color, content, icon,delay }) => {
 	const classes = {
 		primary: {
 			bg: 'bg-primary-50',
@@ -59,7 +63,7 @@ const Item: React.FC<Props> = ({ title, color, content, icon }) => {
 		},
 	};
 	return (
-		<div className='relative flex flex-1'>
+		<div data-aos="fade-up" data-aos-delay={delay}  className='relative flex flex-1'>
 			<div
 				className={classnames(
 					'absolute right-3 top-3 w-full h-full',
@@ -120,17 +124,7 @@ export const ZeroToHeroSection = memo(() => {
 		<section className='bg-white'>
 			<div className='container space-y-16'>
 				<HeaderSection title="From zero to Hero" description="We aim to become a Tech Venture Builder company with a SaaS business model in: SaaS For Business, Education, Data Platform"/>
-				{/* <div className='flex flex-col flex-1 pb-14'>
-					<div className='flex flex-col md:max-w-3xl mx-auto'>
-						<h4 className='text-center pb-6 text-3xl font-semibold text-gray-800'>
-							From zero to Hero
-						</h4>
-						<span className='text-center text-gray-500 text-xl font-normal'>
-							We aim to become a Tech Venture Builder company with a SaaS
-							business model in: SaaS For Business, Education, Data Platform
-						</span>
-					</div>
-				</div> */}
+			
 				<div
 					className={classnames(
 						'flex flex-wrap flex-row',

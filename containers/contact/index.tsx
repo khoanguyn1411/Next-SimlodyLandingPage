@@ -1,6 +1,26 @@
-import { Button, FormItem, Input } from "@components/elements";
+import { Button, Checkbox, FormItem, Input } from "@components/elements";
 
 import { InformationContact } from "./sections";
+import { SelectControl } from "./select-control";
+
+const NATURE_OPTIONS=[
+  {
+    name:"Service Business",
+    value:"Service Business",
+  },
+  {
+    name:"Merchandising Business",
+    value:"Merchandising Business",
+  },
+  {
+    name:"Manufacturing Business",
+    value:"Manufacturing Business",
+  },
+  {
+    name:"Hybrid Business",
+    value:"Hybrid Business",
+  }
+]
 
 export const ContactContainer = () => {
   return (
@@ -24,10 +44,7 @@ export const ContactContainer = () => {
                 </FormItem>
 
                 <FormItem label="Nature of bussines">
-                  <Input
-                    placeholder="ex: TungTung venture company"
-                    type="primary"
-                  />
+                  <SelectControl placeholder="Your title" options={NATURE_OPTIONS} onChange={null}/>
                 </FormItem>
 
                 <FormItem label="Your email address" isRequired>
@@ -46,13 +63,20 @@ export const ContactContainer = () => {
                   />
                 </FormItem>
 
+                <FormItem>
+                  <Checkbox
+                    label="I want to protect my data by signing an NDA"
+                    value={null}
+                    onChange={null}
+                  />
+                </FormItem>
                 <Button text="Submit Aplication" type="primary" block />
               </form>
             </div>
           </div>
 
           <div className="col-span-1">
-           <InformationContact/>
+            <InformationContact />
           </div>
         </div>
       </div>

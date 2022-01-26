@@ -6,16 +6,18 @@ export type FeatureItemProps = {
   description: string;
   icon: JSX.Element;
   color: "purple" | "blue" | "green";
-  href:string
+  href: string;
+  delay: string;
 };
 export const FeatureItem: React.FC<FeatureItemProps> = ({
   title,
   description,
   icon,
   color,
-  href
+  href,
+  delay,
 }) => {
-  const router=useRouter()
+  const router = useRouter();
 
   const classes = {
     purple: {
@@ -35,12 +37,16 @@ export const FeatureItem: React.FC<FeatureItemProps> = ({
     },
   };
 
-const handleLinkToSection=()=>{
-  router.push(href)
-}
+  const handleLinkToSection = () => {
+    router.push(href);
+  };
 
   return (
-    <div className="relative px-14 py-16 rounded-md shadow-lg space-y-4 flex flex-col items-center justify-center">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={delay}
+      className="relative px-14 py-16 rounded-md shadow-lg space-y-4 flex flex-col items-center justify-center"
+    >
       <div className="flex items-center justify-center">
         <span>{icon}</span>
       </div>
@@ -49,7 +55,7 @@ const handleLinkToSection=()=>{
       <span className="text-center flex-1">{description}</span>
 
       <button
-      onClick={handleLinkToSection}
+        onClick={handleLinkToSection}
         className={classNames(
           `flex items-center  transition-all duration-300 justify-center text-base font-medium space-x-2`,
           classes[color].text,

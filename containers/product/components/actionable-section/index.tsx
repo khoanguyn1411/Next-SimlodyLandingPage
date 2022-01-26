@@ -3,8 +3,9 @@ import { ColItem } from "./col-item";
 import { description, title } from "./constant";
 import Image from "next/image";
 import background from "../images/test.jpg";
+import { memo } from "react";
 
-export const ActionableSection = () => {
+ const _ActionableSection = () => {
   return (
     <section
       className="flex items-center justify-center w-full"
@@ -13,7 +14,7 @@ export const ActionableSection = () => {
           "linear-gradient(96.03deg, #1096F0 1.05%, rgba(29, 65, 123, 0) 180.46%, #466986 180.46%)",
       }}
     >
-      <div className="container">
+      <div data-aos="fade-up" className="container">
         <div className="flex flex-col lg:flex-row flex-1 gap-0 lg:gap-32">
           <div className=" text-base text-white flex-1 flex items-center justify-center py-16">
             <div className="flex flex-col justify-center space-y-16">
@@ -52,3 +53,5 @@ export const ActionableSection = () => {
     </section>
   );
 };
+
+export const ActionableSection=memo(_ActionableSection)

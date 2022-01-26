@@ -22,7 +22,7 @@ export const InterestedSection = () => {
                     </div>
 
                     <div className="container">
-                        <div className="relative md:absolute top-0 flex items-center justify-center h-full">
+                        <div data-aos="fade-up" className="relative md:absolute top-0 flex items-center justify-center h-full">
                             <div className="p-4 flex flex-col max-w-md md:max-w-xl space-y-4 rounded-md bg-primary-700 opacity-90 text-white">
                                 <div className="w-14 h-14 md:w-32 md:h-32">
                                     <Image

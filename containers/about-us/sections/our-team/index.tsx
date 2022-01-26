@@ -7,8 +7,9 @@ export const OurTeamItem: React.FC<PersonProps> = ({
 	fullName,
 	position,
 	description,
+	delay
 }) => (
-	<div className='flex flex-1 flex-col py-4 px-6 rounded-lg bg-white hover:bg-gray-100'>
+	<div data-aos="fade-up" data-aos-offset="200" data-aos-delay={delay} className='flex flex-1 flex-col py-4 px-6 rounded-lg bg-white hover:bg-gray-100'>
 		<div className='pb-4 self-center'>
 			<Image src={avatar} alt={fullName} width={200} height={200} />
 		</div>

@@ -6,3 +6,4 @@ export * from "./collapse";
 export * from "./tabs";
 export * from "./form-item";
 export * from "./input";
+export * from "./checkbox";

@@ -21,6 +21,7 @@ export const FeatureSection = () => {
                 icon={feature.icon}
                 color={feature.color}
                 href={feature.href}
+                delay={feature.delay}
               />
             ))}
           </div>

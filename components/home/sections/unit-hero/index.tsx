@@ -6,14 +6,14 @@ import background from "./background.png";
 export const UnitHeroSection = memo(() => {
   return (
     <section className="bg-primary-50 flex py-32">
-      <div className="container mx-auto my-auto flex flex-col md:flex-row gap-24">
+      <div className="overflow-x-hidden container mx-auto my-auto flex flex-col md:flex-row gap-24">
         <div className="flex flex-1 items-center">
           <div className="flex flex-col">
             <div className="title flex flex-col mb-8">
               <h3 className="text-3xl md:text-4xl font-bold text-gray-800 py-4">
                 Data to enrich your
               </h3>
-              <h3 className="text-3xl md:text-4xl font-bold text-primary-500">
+              <h3 data-aos="fade-down" className="text-3xl md:text-4xl font-bold text-primary-500">
                 platform business
               </h3>
             </div>
@@ -24,10 +24,10 @@ export const UnitHeroSection = memo(() => {
               </span>
             </div>
             <div className="button flex flex-row space-x-4">
-              <div className="w-40">
+              <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="500" className="w-40">
                 <Button text="Get Started" type="primary" block />
               </div>
-              <div className="w-40">
+              <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="500" className="w-40">
                 <Button
                   text="Explore more"
                   icon={
@@ -53,7 +53,7 @@ export const UnitHeroSection = memo(() => {
             backgroundPosition: "right",
           }}
         >
-          <div className="p-12">
+          <div  data-aos="fade-left" data-aos-delay="200" data-aos-duration="500" className="p-12">
             <Image src={background} alt="Background" />
           </div>
         </div>

@@ -25,6 +25,7 @@ export const NicheSection = React.memo(() => (
 					color='green'
 					icon={<BusinessIcon />}
 					className='bg-green'
+					delay='0'
 				/>
 				<Card
 					title='SaaS for Education'
@@ -32,6 +33,7 @@ export const NicheSection = React.memo(() => (
 					color='secondary'
 					icon={<EducationIcon />}
 					className='bg-secondary'
+					delay='200'
 				/>
 				<Card
 					title='Data PLatform'
@@ -39,6 +41,7 @@ export const NicheSection = React.memo(() => (
 					color='indigo'
 					icon={<PlatformIcon />}
 					className='bg-indigo'
+					delay='400'
 				/>
 			</div>
 		</div>

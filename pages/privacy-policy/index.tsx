@@ -3,7 +3,7 @@ import { PolicyContainer } from "@containers"
 
 const PrivacyPolicy = ()=>{
     return(
-        <LayoutBase pageKey="" pageTitle="Privacy Policy">
+        <LayoutBase pageKey="Policy" pageTitle="Privacy Policy">
             <PolicyContainer/>
         </LayoutBase>
     )

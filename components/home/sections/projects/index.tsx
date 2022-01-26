@@ -8,7 +8,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 	image,
 	subTitle,
 }) => (
-	<div className='flex flex-col'>
+	<div data-aos="fade-up" className='flex flex-col'>
 		<div className='pb-4'>
 			<img
 				className='w-full h-96 hover:scale-105 transition ease-in-out hover:cursor-pointer object-contain rounded-lg'

@@ -15,6 +15,8 @@ export const JoinTeamSection = () => {
             {JOBS.map((job, index) => (
               <div
                 key={index}
+                data-aos="fade-up"
+                data-aos-delay={job.delay}
                 className="flex flex-col rounded-md border py-6 px-6 space-y-6 items-center justify-center hover:shadow-md hover:shadow-primary-400 transition-all duration-300 cursor-pointer"
               >
                 <span>{job.icon}</span>

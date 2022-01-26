@@ -34,14 +34,15 @@ const list = [
 export const BringSection = React.memo(() => {
 	return (
 		<section className='bg-white flex py-28'>
-			<div className='container mx-auto flex flex-1 flex-col space-y-16'>
+			<div className='overflow-x-hidden container mx-auto flex flex-1 flex-col space-y-16'>
 				<HeaderSection title='What we can bring?' description="By understanding our customers's paint, we would love to help yousold the problems you are facing"/>
 
 				<div className='flex flex-col md:flex-row gap-12 md:gap-72'>
-					<div className='flex flex-1'>
+					<div data-aos="fade-right" data-aos-offset="300" className='flex flex-1'>
 						<Image src={background} alt='background' unoptimized />
 					</div>
-					<div className='flex flex-1 items-center'>
+
+					<div data-aos="fade-left" data-aos-offset="300" className='flex flex-1 items-center'>
 						<div className='flex flex-1 flex-col'>
 							<div className='flex flex-col pb-4'>
 								<h4 className='text-gray-800 text-3xl font-semibold pb-4'>

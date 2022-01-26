@@ -7,6 +7,7 @@ type IProps = {
   supplies: string[];
   titleBtn: string;
   isPopular: boolean;
+  delay: string;
 };
 export const PriceItem: React.FC<IProps> = ({
   title,
@@ -14,9 +15,12 @@ export const PriceItem: React.FC<IProps> = ({
   supplies = [],
   titleBtn,
   isPopular = false,
+  delay,
 }) => {
   return (
     <div
+      data-aos="fade-up"
+      data-aos-delay={delay}
       className={classNames(
         "relative border rounded-xl flex flex-col justify-between items-center px-6 py-6",
         {

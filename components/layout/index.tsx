@@ -34,7 +34,7 @@ export const LayoutBase: React.FC<IProps> = ({
       <div>
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer pageKey={pageKey}/>
     </>
   );
 };
