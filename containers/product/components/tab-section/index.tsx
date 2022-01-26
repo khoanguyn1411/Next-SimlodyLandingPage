@@ -88,7 +88,7 @@ export const TabsSection: React.FC<ITabsProps> = ({
   onChange,
 }) => {
   return (
-    <section className="flex items-center justify-center sticky z-50 bg-white h-20 border-b"
+    <section className="flex items-center justify-center sticky z-20 bg-white h-20 border-b"
     style={{top:"72px"}}
     >
       <div className="container overflow-auto">

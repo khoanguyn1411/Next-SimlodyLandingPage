@@ -60,7 +60,7 @@ export const LoveInSection = memo(() => {
 		>
 			<div className='flex flex-col flex-1 container mx-auto pt-40 pb-20'>
 				<div className='flex flex-col flex-1 pb-16'>
-					<h3 className='text-3xl text-white font-semibold pb-6 text-center'>
+					<h3 className='text-3xl text-white font-semibold pb-4 text-center'>
 						We put strong love in
 					</h3>
 					<span className='text-xl font-normal text-white text-center'>

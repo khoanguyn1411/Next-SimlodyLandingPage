@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import { Media } from '@components';
 import { useRouter } from 'next/router';
 
-export const MENUS = [
+ const MENUS = [
 	{
 		key: 'Product',
 		name: 'Product',

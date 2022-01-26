@@ -19,12 +19,14 @@ const _BannerSection: React.FC<IProps> = ({
       <div className="container mx-auto my-auto md:py-24 py-8">
         <div className=" flex flex-col md:flex-row justify-center">
           <div
-            className="w-full xl:w-2/3"
+            className={classNames("w-full xl:w-2/3",
+            "bg-[url('/product/backgroundProduct.png')] bg-no-repeat bg-[left_0_top_0] bg-[length:200px_auto] md:bg-contain"
+            )}
             style={{
-              backgroundImage: "url('/product/backgroundProduct.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "contain",
-              backgroundPosition: "left",
+              // backgroundImage: "url('/product/backgroundProduct.png')",
+              // backgroundRepeat: "no-repeat",
+              // backgroundSize: "contain",
+              // backgroundPosition: "left",
               height: "384px",
             }}
           >
