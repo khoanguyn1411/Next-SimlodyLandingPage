@@ -65,9 +65,9 @@ const MENUS_MOBILE = [
     ],
   },
   {
-    key: 'News',
+    key: 'Blog',
     name: 'News',
-    href: '/news',
+    href: '/blogs',
     hasSubmenu: false,
 
   },

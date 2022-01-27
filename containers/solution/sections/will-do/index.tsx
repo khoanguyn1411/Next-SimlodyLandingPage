@@ -39,6 +39,7 @@ export const WillDoSection: React.FC<IProps> = ({
   const handleChangeTab = (key: string) => {
     setActiveKey(key);
   };
+
   const renderContents = () => {
     switch (activeKey) {
       // content page product concept
@@ -102,10 +103,17 @@ export const WillDoSection: React.FC<IProps> = ({
       <div className=" container space-y-16">
         <HeaderSection title={title} description={description} />
 
-        <div
-          className="flex items-center top-[72px] sticky bg-white  h-20 z-20 justify-center px-0 lg:px-16 overflow-auto"
-        >
-          <Tabs tabs={tabs} activeKey={activeKey} onChange={handleChangeTab} />
+        <div className="overflow-auto">
+          <div
+            className="flex items-center top-[72px] sticky bg-white  h-20 z-20 justify-center px-0 lg:px-16"
+            style={{ minWidth: "768px" }}
+          >
+            <Tabs
+              tabs={tabs}
+              activeKey={activeKey}
+              onChange={handleChangeTab}
+            />
+          </div>
         </div>
 
         <div className="space-y-16 overflow-x-hidden">
