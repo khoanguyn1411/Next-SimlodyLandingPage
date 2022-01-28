@@ -43,6 +43,6 @@ export const JOBS = [
   {
     title: "Mobile Developer",
     icon: <MobileIcon />,
-    delay: "3000",
+    delay: "300",
   },
 ];

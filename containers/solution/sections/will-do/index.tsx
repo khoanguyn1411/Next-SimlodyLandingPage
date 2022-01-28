@@ -1,4 +1,4 @@
-import { HeaderSection } from "@components";
+import { HeaderSection, Media } from "@components";
 import { ITab, Tabs } from "@components/elements";
 import { ContentItem } from "@containers/product/components/content-section/content-item";
 import {
@@ -103,9 +103,9 @@ export const WillDoSection: React.FC<IProps> = ({
       <div className=" container space-y-16">
         <HeaderSection title={title} description={description} />
 
-        <div className="overflow-auto">
+        <div className="overflow-x-auto sticky top-[72px] z-20 bg-white">
           <div
-            className="flex items-center top-[72px] sticky bg-white  h-20 z-20 justify-center px-0 lg:px-16"
+            className="flex items-center justify-center h-20 px-0 lg:px-16"
             style={{ minWidth: "768px" }}
           >
             <Tabs

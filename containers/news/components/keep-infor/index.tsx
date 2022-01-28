@@ -26,7 +26,7 @@ export const KeepInformationSection = () => {
           </div>
 
           <div className="flex flex-col justify-center basis-1/2 flex-1 space-y-4">
-            <h2 className="text-center font-medium text-base lg:text-2xl">
+            <h2 className="text-center font-medium text-lg lg:text-3xl">
               Keep updated TungTung News
             </h2>
             <div className="flex flex-col md:flex-row gap-4">

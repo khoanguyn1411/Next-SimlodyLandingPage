@@ -1,12 +1,12 @@
 import { InformationContact } from "@containers/contact/sections";
 import { CheckboxItem } from "./checkbox-item";
-import { DEFINiTIONS, PERSONAL_DATA } from "./constant";
+import { DEFINiTIONS, PERSONAL_DATA, TRACKING_TECHNOLOGY } from "./constant";
 
 export const PolicyContainer = () => {
   return (
     <div className="flex items-center justify-center py-8">
       <div className="container">
-        <div className="grid grid-cols-2 gap-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
           <div className="flex flex-col space-y-8">
             <div className="flex flex-col space-y-4">
               <h2 className="text-3xl font-semibold">Privacy Policy</h2>
@@ -80,6 +80,23 @@ export const PolicyContainer = () => {
                   by or through a mobile device.
                 </span>
               </div>
+            </div>
+
+            <div className="flex flex-col space-y-4">
+              <h2 className="text-base font-semibold">
+                Tracking Technologies and Cookies
+              </h2>
+              <span>
+                We use Cookies and similar tracking technologies to track the
+                activity on Our Service and store certain information. Tracking
+                technologies used are beacons, tags, and scripts to collect and
+                track information and to improve and analyze Our Service. The
+                technologies We use may include:
+              </span>
+
+              {TRACKING_TECHNOLOGY.map((data, index) => (
+                <CheckboxItem key={index} label={data} />
+              ))}
             </div>
           </div>
 
