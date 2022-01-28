@@ -11,8 +11,9 @@ type Props = {
       description: string;
       thumbnailUrl: string;
       date: string;
-      avatar?: string;
-      fullName?: string;
+      resource?:string
+      tag:string
+      link:string
     };
   }[];
 };
@@ -45,7 +46,7 @@ export const NewsContainer: React.FC<Props> = ({ posts = [] }) => {
 
   const renderBlogs = useMemo(() => {
     return (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+      <div data-aos="fade-in" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
         {posts.length > 0 &&
           posts.map((post, index) => <BlogItem key={index} post={post} />)}
       </div>
