@@ -16,7 +16,7 @@ const _BannerSection: React.FC<IProps> = ({
 }) => {
   return (
     <section className="flex items-center justify-center">
-      <div className="container mx-auto my-auto md:py-24 py-8">
+      <div className="container mx-auto my-auto md:py-16 py-8">
         <div className=" flex flex-col md:flex-row justify-center">
           <div
             className={classNames("w-full xl:w-2/3",
@@ -35,15 +35,15 @@ const _BannerSection: React.FC<IProps> = ({
                 "flex flex-col items-center justify-center space-y-8 py-24"
               )}
             >
-              <div className="text-primary-500 text-base font-semibold">
+              <div className="text-primary-500 text-lg font-semibold">
                 <span>{nameBanner}</span>
               </div>
 
-              <div className="font-semibold text-2xl lg:text-3xl">
+              <div className="font-semibold text-3xl">
                 <h2>{titleBanner}</h2>
               </div>
 
-              <div className="text-gray-400 text-xl">
+              <div className="text-gray-400 text-lg">
                 <span>{description}</span>
               </div>
 

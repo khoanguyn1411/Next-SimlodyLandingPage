@@ -62,9 +62,9 @@ import { useRouter } from 'next/router';
 		],
 	},
 	{
-		key: 'News',
+		key: 'Blog',
 		name: 'News',
-		href: '/news',
+		href: '/blogs',
 		hasSubmenu: false,
 
 	},

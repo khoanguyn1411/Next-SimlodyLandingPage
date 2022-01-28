@@ -140,7 +140,6 @@ export const PRICES = [
       "5 products",
       "Basic analytics",
       "4 consultants for educate ",
-      "4 consultants for educate ",
     ],
     isPopular: false,
     delay: "0",

@@ -20,9 +20,9 @@ const MENUS_FOOTER = [
     href: "/job",
   },
   {
-    key: "News",
+    key: "Blog",
     name: "Blog",
-    href: "/news",
+    href: "/blogs",
   },
   {
     key: "Policy",

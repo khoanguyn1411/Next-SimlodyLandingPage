@@ -43,7 +43,6 @@ const Tab: React.FC<ITabProps> = ({ tab, index, activeKey, onClick }) => {
     >
       {tab.name}
     </div>
-
   );
 };
 
@@ -52,28 +51,24 @@ type ITabsProps = {
   activeKey: string;
   onChange: (key: string) => void;
 };
-export const Tabs: React.FC<ITabsProps> = ({
-  tabs,
-  activeKey,
-  onChange,
-}) => {
+export const Tabs: React.FC<ITabsProps> = ({ tabs, activeKey, onChange }) => {
   return (
-    <div
-      className={classNames(
-        "inline-flex items-center h-12 bg-gray-100 shadow-inner divide-x px-2 divide-gray-200 rounded-md"
-      )}
-    >
-      {tabs.map((tab, index) => {
-        return (
-          <Tab
-            key={tab.key}
-            tab={tab}
-            activeKey={activeKey}
-            index={index + 1}
-            onClick={onChange}
-          />
-        );
-      })}
-    </div>
+      <div
+        className={classNames(
+          "inline-flex items-center w-full h-12 bg-gray-100 shadow-inner divide-x px-2 divide-gray-200 rounded-md"
+        )}
+      >
+        {tabs.map((tab, index) => {
+          return (
+            <Tab
+              key={tab.key}
+              tab={tab}
+              activeKey={activeKey}
+              index={index + 1}
+              onClick={onChange}
+            />
+          );
+        })}
+      </div>
   );
 };

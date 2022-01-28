@@ -70,7 +70,7 @@ export const LoveInSection = memo(() => {
 					<h3 className='text-3xl text-white font-semibold pb-4 text-center'>
 						We put strong love in
 					</h3>
-					<span className='text-xl font-normal text-white text-center'>
+					<span className='text-lg font-normal text-white text-center'>
 						We invest in both product and customer satisfaction in the fastest
 						time
 					</span>

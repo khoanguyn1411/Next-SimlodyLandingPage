@@ -10,15 +10,15 @@ export const UnitHeroSection = memo(() => {
         <div className="flex flex-1 items-center">
           <div className="flex flex-col">
             <div className="title flex flex-col mb-8">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-800 py-4">
+              <h3 className="text-3xl font-bold text-gray-800 py-4">
                 Data to enrich your
               </h3>
-              <h3 data-aos="fade-down" className="text-3xl md:text-4xl font-bold text-primary-500">
+              <h3 data-aos="fade-down" className="text-3xl font-bold text-primary-500">
                 platform business
               </h3>
             </div>
             <div className="description flex flex-col mb-8">
-              <span className="text-gray-700 font-normal text-xl">
+              <span className="text-gray-700 font-normal text-lg">
                 Help your business grow revenue by building product concept and
                 solution
               </span>

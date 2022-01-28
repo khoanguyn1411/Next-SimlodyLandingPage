@@ -1,3 +1,4 @@
+import { HeaderSection } from '@components';
 import Image from 'next/image';
 import React, { memo } from 'react';
 import { PersonProps, teams } from './constant';
@@ -33,14 +34,8 @@ export const OurTeam = memo(() => {
 		<section className='bg-white'>
 			<div className='container'>
 				<div className='flex flex-col'>
-					<div className='flex flex-col pb-14'>
-						<h4 className='text-gray-800 text-3xl font-semibold pb-6 text-center'>
-							Meet our team
-						</h4>
-						<span className='text-gray-500 text-xl font-normal text-center'>
-							We build Tech culture from individuals
-						</span>
-					</div>
+					<HeaderSection title='Meet our team' description='We build Tech culture from individuals'/>
+					
 					<div className='flex flex-row flex-wrap -m-4'>
 						{teams.map((team, idx) => (
 							<div key={idx} className='p-4 basis-full md:basis-1/3'>

@@ -158,10 +158,10 @@ export const OurJourneySection = memo(() => {
           />
           <div className="flex flex-col relative z-10">
             <div className="flex flex-col pb-20">
-              <h4 className="text-center text-gray-800 text-3xl font-semibold pb-6">
+              <h4 className="text-center text-gray-800 text-3xl font-semibold pb-4">
                 Our journey
               </h4>
-              <span className="text-center text-gray-500 text-xl font-normal">
+              <span className="text-center text-gray-500 text-lg font-normal">
                 We grow over time and have more experience in each project
               </span>
             </div>

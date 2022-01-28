@@ -11,7 +11,7 @@ export const OurMissionSection = memo(() => {
               <h4 className="text-gray-800 text-3xl font-semibold pb-4 text-center">
                 Our mission
               </h4>
-              <span className="text-xl text-gray-500 font-normal text-center">
+              <span className="text-lg text-gray-500 font-normal text-center">
                 Our motivation is to build technology solutions with the best
                 user experience, optimized for operation, for businesses,
                 startups to develop business models.

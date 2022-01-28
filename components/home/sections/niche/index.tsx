@@ -13,7 +13,7 @@ export const NicheSection = React.memo(() => (
 				<h4 className='text-3xl font-semibold text-white pb-4 text-center'>
 					Our Niche
 				</h4>
-				<span className='text-center text-xl font-normal text-white'>
+				<span className='text-center text-lg font-normal text-white'>
 					We build product and platform for business to scale-up their ability,
 					position
 				</span>
