@@ -12,15 +12,18 @@ import NextNProgress from "nextjs-progressbar";
 import { MediaContextProvider } from "@components";
 import { useEffect } from "react";
 import AOS from "aos";
-
+import MessengerCustomerChat from "react-messenger-customer-chat";
+import envGlobal from "../env";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { PAGE_ID, APP_ID } = envGlobal();
+
   useEffect(() => {
     AOS.init({
-      duration : 500
+      duration: 500,
     });
   }, []);
-  
+
   return (
     <>
       <NextNProgress
@@ -30,6 +33,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
       <MediaContextProvider>
         <Component {...pageProps} />
+        <MessengerCustomerChat pageId={PAGE_ID} appId={APP_ID} />
       </MediaContextProvider>
     </>
   );
