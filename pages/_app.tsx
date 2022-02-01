@@ -17,7 +17,7 @@ import envGlobal from "../env";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { PAGE_ID, APP_ID } = envGlobal();
-
+  console.log(PAGE_ID,"envGlobal")
   useEffect(() => {
     AOS.init({
       duration: 500,
