@@ -13,7 +13,7 @@ export const CONTENTS: ContentItemProps[] = [
       "Let the automation of our Level 10 Meeting™ system work for you. Keep scrolling to check out this enhanced meeting management.",
     subDescription: [
       "Findings about the users’ context, common scenarios, goals",
-      "various forms: clickable Invision prototype, low fidelity wireframe, storyboards, lightweight coded prototype",
+      "Various forms: clickable Invision prototype, low fidelity wireframe, storyboards, lightweight coded prototype",
       "Optimize Average and Totals Colums",
     ],
     position: "left",
