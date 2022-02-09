@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { useMemo } from "react";
 import { Link } from "react-scroll";
 
 export type ITab = {
@@ -13,26 +12,21 @@ type ITabProps = {
   onClick: (value: string) => void;
 };
 
-const Tab: React.FC<ITabProps> = ({ tab, index, activeKey, onClick }) => {
+const Tab: React.FC<ITabProps> = ({ tab, index, onClick }) => {
   const handleClick = () => {
     if (onClick) {
       onClick(tab.key);
     }
   };
 
-  const isActive = useMemo(() => {
-    return tab.key === activeKey;
-  }, [activeKey, tab.key]);
-
   return (
     <Link
       to={`${tab.key}`}
       smooth={true}
       spy={true}
-      activeClass="active text-primary-500"
-      duration={500}
+      activeClass="active text-primary-500 expand-border-active"
       offset={-150}
-      className="flex items-center transition"
+      className={classNames("flex items-center transition ease-in-out px-4 xl:px-12 expand-border")}
     >
       <div className="flex flex-col items-center space-y-4">
         <div
@@ -42,10 +36,7 @@ const Tab: React.FC<ITabProps> = ({ tab, index, activeKey, onClick }) => {
             "outline-none focus:outline-none",
             "transition-colors duration-300",
             "cursor-pointer whitespace-nowrap",
-            {
-              "text-primary-500 border-b-2 border-primary-500": isActive,
-              "text-black hover:text-primary-500": !isActive,
-            }
+
           )}
           onClick={handleClick}
           role="menuitem"
@@ -61,17 +52,7 @@ const Tab: React.FC<ITabProps> = ({ tab, index, activeKey, onClick }) => {
           </div>
         </div>
 
-        {/* <div
-          className={classNames(
-            "w-full h-1 rounded-md",
-            "outline-none focus:outline-none",
-            "transition-colors duration-300",
-            "cursor-pointer whitespace-nowrap",
-            {
-              "bg-primary-500": isActive,
-            }
-          )}
-        ></div> */}
+
       </div>
     </Link>
   );
@@ -91,24 +72,26 @@ export const TabsSection: React.FC<ITabsProps> = ({
     <section className="flex items-center justify-center sticky top-[72px] z-20 bg-white h-20 border-b"
     >
       <div className="container overflow-auto">
-        <div
+        <ul
           className={classNames(
-            "flex items-center justify-center space-x-8 lg:space-x-24"
+            "flex items-center justify-center"
           )}
           style={{ minWidth: "768px" }}
         >
           {tabs.map((tab, index) => {
             return (
-              <Tab
-                key={tab.key}
-                tab={tab}
-                activeKey={activeKey}
-                index={index + 1}
-                onClick={onChange}
-              />
+              <li key={index} className="list-none relative overflow-hidden">
+                <Tab
+                  key={tab.key}
+                  tab={tab}
+                  activeKey={activeKey}
+                  index={index + 1}
+                  onClick={onChange}
+                />
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );

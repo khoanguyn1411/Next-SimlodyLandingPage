@@ -20,7 +20,7 @@ export const ContentItem: React.FC<ContentItemProps> = ({
 }) => {
   return (
     <Element name={id} className="element">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-24">
         {position === "right" ? (
           <div className="col-span-3 ">
             <div
@@ -66,15 +66,19 @@ export const ContentItem: React.FC<ContentItemProps> = ({
 
         {position === "left" ? (
           <div
-            data-aos={position === "left" ? "fade-left" : "fade-right"}
-            data-aos-offset="200"
-            className="col-span-3 flex flex-1 items-center"
+            className="col-span-3 "
           >
-            <Image
-              className="rounded-md shadow-xl"
-              src={srcImg}
-              alt="Meeting Image"
-            />
+            <div
+              data-aos={position === "left" ? "fade-left" : "fade-right"}
+              data-aos-offset="200"
+              className="flex flex-1 items-center"
+            >
+              <Image
+                className="rounded-md shadow-xl"
+                src={srcImg}
+                alt="Meeting Image"
+              />
+            </div>
           </div>
         ) : null}
       </div>
