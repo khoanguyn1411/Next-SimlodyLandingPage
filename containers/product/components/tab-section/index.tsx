@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { useMemo } from "react";
 import { Link } from "react-scroll";
 
 export type ITab = {
@@ -27,7 +26,7 @@ const Tab: React.FC<ITabProps> = ({ tab, index, onClick }) => {
       spy={true}
       activeClass="active text-primary-500 expand-border-active"
       offset={-150}
-      className={classNames("flex items-center transition ease-in-out px-12 expand-border")}
+      className={classNames("flex items-center transition ease-in-out px-4 xl:px-12 expand-border")}
     >
       <div className="flex flex-col items-center space-y-4">
         <div
