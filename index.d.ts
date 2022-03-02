@@ -1,4 +1,5 @@
 declare interface ENVIRONMENT {
+  SITE_URL: string;
   PAGE_ID: string;
   APP_ID: string;
 }

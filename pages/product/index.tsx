@@ -3,7 +3,13 @@ import { ProductContainer } from "@containers"
 
 const ProductPage=()=>{
     return(
-        <LayoutBase pageKey="Product" pageTitle="Product">
+        <LayoutBase
+            pageKey="Product"
+            head={{
+                pageTitle: 'Product',
+                pageCoverImageRectangle: '/images/site-covers/product.jpg'
+            }}
+        >
             <ProductContainer/>
         </LayoutBase>
     )

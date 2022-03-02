@@ -3,7 +3,14 @@ import { AboutUsContainer } from '@containers';
 
 const AboutUsPage = () => {
 	return (
-		<LayoutBase key='About' pageKey='About' pageTitle='About us'>
+		<LayoutBase
+			key='About'
+			pageKey='About'
+			head={{
+				pageTitle: 'About Us',
+				pageCoverImageRectangle: '/images/site-covers/about-us.jpg'
+			}}
+		>
 			<AboutUsContainer />
 		</LayoutBase>
 	);

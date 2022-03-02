@@ -21,7 +21,13 @@ type Props = {
 
 const BlogPage: React.FC<Props> = ({ posts }) => {
   return (
-    <LayoutBase pageKey="Blog" pageTitle="Blogs">
+    <LayoutBase
+      pageKey="Blog"
+      head={{
+        pageTitle: "News",
+        pageCoverImageRectangle: "/images/site-covers/news.jpg"
+      }}
+    >
       <NewsContainer posts={posts} />
     </LayoutBase>
   );

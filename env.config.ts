@@ -1,1 +1,1 @@
-export const envs = ["PAGE_ID", "APP_ID"];
+export const envs = ["SITE_URL", "PAGE_ID", "APP_ID"];
