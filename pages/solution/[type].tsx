@@ -41,20 +41,17 @@ type IProps = {
 }
 
 const SolutionPage: NextPage<IProps> = ({ pageTitle, pageCoverImageRectangle }) => {
-    const router = useRouter();
-    const type = router.query?.type as string;
-
-    return(
-        <LayoutBase
-            pageKey="Solution"
-            head={{
-                pageTitle,
-                pageCoverImageRectangle
-            }}
-        >
-            <SolutionContainer/>
-        </LayoutBase>
-    )
+  return(
+    <LayoutBase
+      pageKey="Solution"
+      head={{
+          pageTitle,
+          pageCoverImageRectangle
+      }}
+    >
+      <SolutionContainer/>
+    </LayoutBase>
+  )
 }
 
 SolutionPage.getInitialProps = async (
