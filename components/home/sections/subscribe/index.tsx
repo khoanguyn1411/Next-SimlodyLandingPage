@@ -17,7 +17,10 @@ export const SubscribeSection = memo(() => {
 			}}
 		>
 			<div className='container mx-auto flex flex-1'>
-				<div data-aos="fade-up" className='flex flex-col md:flex-row flex-1 gap-10'>
+				<div
+					data-aos='fade-up'
+					className='flex flex-col md:flex-row flex-1 gap-10'
+				>
 					<div className='flex flex-1 justify-center flex-col py-6'>
 						<div className='flex flex-col pb-8'>
 							<h4 className='text-3xl font-semibold text-gray-50 pb-4'>
@@ -38,13 +41,17 @@ export const SubscribeSection = memo(() => {
 									)}
 								/>
 							</div>
-							<Button text='Subscribe now' type='primary' />
+							<Button text='Subscribe now' type='primary' size='large' />
 						</div>
 					</div>
 
 					<div className='flex flex-col flex-1'>
 						<div className='md:-mt-14 mb-4'>
-							<Image className="shadow-md" src={backgroundImage} alt='Background' />
+							<Image
+								className='shadow-md'
+								src={backgroundImage}
+								alt='Background'
+							/>
 						</div>
 						<div className='flex flex-row gap-4'>
 							<Image src={background2Image} alt='Background 2' />

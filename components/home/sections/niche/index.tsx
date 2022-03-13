@@ -7,7 +7,7 @@ import {
 } from '@components/home/icons';
 
 export const NicheSection = React.memo(() => (
-	<section className='flex bg-primary-500 pt-16 pb-32'>
+	<section className='flex bg-gradient-to-r from-blue-600 to-blue-300 pt-16 pb-32'>
 		<div className='container mx-auto my-auto flex flex-col'>
 			<div className='title flex flex-1 flex-col mb-24'>
 				<h4 className='text-3xl font-semibold text-white pb-4 text-center'>

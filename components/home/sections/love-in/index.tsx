@@ -16,7 +16,7 @@ const list = [
 		description:
 			'Make quick decisions, build data centers, metrics and reporting, information concentration',
 		color: 'orange',
-		delay:"0"
+		delay: '0',
 	},
 	{
 		icon: <ScalabilityIcon />,
@@ -24,8 +24,7 @@ const list = [
 		description:
 			'Scalability according to market needs, enterprise needs, with good product architecture',
 		color: 'indigo',
-		delay:"200"
-
+		delay: '200',
 	},
 	{
 		icon: <CustomerCentricIcon />,
@@ -33,8 +32,7 @@ const list = [
 		description:
 			'Solve the right problem, create customer value, fastest solutions solving contribute',
 		color: 'pink',
-		delay:"400"
-
+		delay: '400',
 	},
 	{
 		icon: <FastestReleaseIcon />,
@@ -42,8 +40,7 @@ const list = [
 		description:
 			'Scalability according to market needs, enterprise needs, with good product architecture',
 		color: 'secondary',
-		delay:"600"
-
+		delay: '600',
 	},
 ];
 
@@ -62,7 +59,7 @@ export const LoveInSection = memo(() => {
 					"data:image/svg+xml,%3Csvg width='1438' height='760' viewBox='0 0 1438 760' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-2.05225 0L1437.95 113V760H-2.05225V0Z' fill='%2370C9F4'/%3E%3C/svg%3E%0A"
 				)`,
 				backgroundRepeat: 'no-repeat',
-				backgroundSize: '100%',
+				backgroundSize: 'cover',
 			}}
 		>
 			<div className='flex flex-col flex-1 container mx-auto pt-40 pb-20'>
@@ -96,7 +93,7 @@ export const LoveInSection = memo(() => {
 							{list.map((item, idx) => (
 								<div
 									key={idx}
-									data-aos="fade-up"
+									data-aos='fade-up'
 									data-aos-delay={item.delay}
 									className={classnames(
 										'p-4',

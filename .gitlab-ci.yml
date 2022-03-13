@@ -7,7 +7,6 @@ before_script:
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
 deploy_staging:
-  type: deploy
   script:
     - ssh $SSH_SERVER "export PATH=/home/ubuntu/.nvm/versions/node/v14.17.3/bin:/usr/bin:/bin ; cd $PROJECT_DIR ; git pull origin $CI_COMMIT_REF_NAME ; sh build.sh"
   only:

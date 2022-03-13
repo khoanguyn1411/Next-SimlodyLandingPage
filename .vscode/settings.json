@@ -1,11 +1,14 @@
 {
-  "editor.formatOnSave": true,
-  "tailwindCSS.experimental.classRegex": [
-    "tw.*`([^`]*)",
-    "tw`([^`]*)",
-    ["classnames\\(([^)]*)\\)", "'([^']*)'"]
-  ],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+	"editor.formatOnSave": true,
+	"tailwindCSS.experimental.classRegex": [
+		"tw.*`([^`]*)",
+		"tw`([^`]*)",
+		["classnames\\(([^)]*)\\)", "'([^']*)'"]
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"yaml.schemas": {
+		"https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json": "file:///Users/trongtran/Documents/Project/product/tungtung-website/.gitlab-ci.yml"
+	}
 }
