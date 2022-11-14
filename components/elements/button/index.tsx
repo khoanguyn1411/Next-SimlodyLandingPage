@@ -9,11 +9,11 @@ const SIZE_MAPS = {
 };
 
 const TYPE_MAPS = {
-	primary: 'bg-primary-500 hover:bg-primary-600 text-white',
+	primary: 'bg-primary-800 hover:bg-primary-900 text-white',
 	default: classnames(
 		'bg-transparent hover:bg-primary-100',
-		'border border-primary-500',
-		'text-primary-500'
+		'border border-primary-800',
+		'text-primary-800'
 	),
 	text: '',
 };

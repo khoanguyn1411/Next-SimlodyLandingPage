@@ -16,10 +16,10 @@ export type IHeadProps = {
 export const Head: React.FC<IHeadProps> = ({
   pageType = "website",
   pageTitle,
-  pageDescription = "Help your business grow revenue by building product concept and solution.",
-  pageKeywords = ["tungtung jsc", "tungtung", "tung tung"],
-  pageAuthor = 'tungtungjsc',
-  pageCoverImageRectangle = '/images/site-covers/main.jpg',
+  pageDescription = "Giúp gia tăng giá trị của đội nhóm bằng cách nâng cao nguồn nhân lực",
+  pageKeywords = ["Symlody", "symlody", "simlody"],
+  pageAuthor = 'symlody',
+  pageCoverImageRectangle = 'https://simplamo.s3.ap-southeast-1.amazonaws.com/dev/9d3081ad-d859-4544-8eb4-d81e615ad48b.webp',
   pageCoverImageSquare
 }) => {
   const router = useRouter();

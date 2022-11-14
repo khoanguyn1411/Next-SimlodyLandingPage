@@ -10,25 +10,21 @@ import React, { memo } from "react";
 
 const MENUS_FOOTER = [
   {
+    key: "Home",
+    name: "Trang chủ",
+    href: "/",
+  },
+  {
+    key: "Product",
+    name: "Sản phẩm",
+    href: "/product",
+  },
+  {
     key: "About",
-    name: "About",
-    href: "/about-us",
+    name: "Giới thiệu",
+    href: "/about",
   },
-  {
-    key: "Job",
-    name: "Job",
-    href: "/job",
-  },
-  {
-    key: "Blog",
-    name: "Blog",
-    href: "/blogs",
-  },
-  {
-    key: "Policy",
-    name: "Privacy Policy",
-    href: "/privacy-policy",
-  },
+ 
 ];
 
 type IProps = {
@@ -53,22 +49,20 @@ export const Footer: React.FC<IProps> = memo(({ pageKey }) => {
           ))}
         </div>
         <div className="flex flex-row w-64 mx-auto justify-between pb-12">
-          <a href="" className="hover:text-primary-500 text-gray-400">
+          <a href="" className="text-blue-500 ">
             <FacebookIcon />
           </a>
-          <a href="" className="hover:text-primary-500 text-gray-400">
-            <GoogleIcon />
-          </a>
-          <a href="" className="hover:text-primary-500 text-gray-400">
+         
+          <a href="" className="text-blue-700 ">
             <LinkedInIcon />
           </a>
-          <a href="" className="hover:text-primary-500 text-gray-400">
+          <a href="" className="text-red-500 ">
             <YoutubeIcon />
           </a>
         </div>
         <div className="flex flex-1 justify-center">
           <span className="text-center text-gray-400 text-base font-normal">
-            © 2019 - Copyright Tungtung JSC - Tungtung.vn. All rights reserved
+            © 2022 - Copyright Symlody - symlody.com, All rights reserved
           </span>
         </div>
       </div>

@@ -1,4 +1,4 @@
-export const APP_NAME = "TungTung JSC";
+export const APP_NAME = "Symlody";
 
 // Ref : https://tailwindcss.com/docs/responsive-design#overview
 export const BREAKPOINTS = {
