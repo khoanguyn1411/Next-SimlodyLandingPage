@@ -1,7 +1,7 @@
 module.exports = {
 	apps: [
 		{
-			name: 'tungtung-website',
+			name: 'symlody-website',
 			script: 'yarn start',
 			env: {
 				NODE_ENV: 'development',

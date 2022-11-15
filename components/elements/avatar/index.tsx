@@ -17,7 +17,7 @@ type IProps = {
 };
 
 export const Avatar: React.FC<IProps> = ({
-  fullName = "TungTung",
+  fullName = "Symlody",
   src,
   size = "default",
   className,
