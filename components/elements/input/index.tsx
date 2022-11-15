@@ -21,7 +21,7 @@ const TYPE_MAPS = {
     input: "bg-gray-100",
   },
   default: {
-    wrapper: "bg-white border border-transparent",
+    wrapper: "bg-white border",
     input: "bg-white",
   },
 };
@@ -32,7 +32,7 @@ const key = {
 };
 
 const BORDERED_MAPS = {
-  true: "border-2",
+  true: "border-1",
 };
 
 export type IProps = {
@@ -72,6 +72,7 @@ export const Input: React.FC<IProps> = ({
   value,
   
   suffix,
+  prefix,
   bordered = false,
 
   onChange,
@@ -163,6 +164,15 @@ export const Input: React.FC<IProps> = ({
           }
         )}
       >
+         {prefix && (
+          <div
+            className="flex items-center justify-center mr-2"
+            onClick={null}
+            aria-hidden="true"
+          >
+            {prefix}
+          </div>
+        )}
 
         <input
           id={uuid.current}

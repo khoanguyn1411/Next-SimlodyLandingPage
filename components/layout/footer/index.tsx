@@ -1,9 +1,5 @@
-import {
-  FacebookIcon,
-  GoogleIcon,
-  LinkedInIcon,
-  YoutubeIcon,
-} from "@components/home/icons";
+
+import { FacebookIcon } from "@components/icons";
 import classNames from "classnames";
 import Link from "next/link";
 import React, { memo } from "react";
@@ -24,7 +20,7 @@ const MENUS_FOOTER = [
     name: "Giới thiệu",
     href: "/about",
   },
- 
+
 ];
 
 type IProps = {
@@ -49,16 +45,19 @@ export const Footer: React.FC<IProps> = memo(({ pageKey }) => {
           ))}
         </div>
         <div className="flex flex-row w-64 mx-auto justify-between pb-12">
-          <a href="" className="text-blue-500 ">
+          <a href="" className=" ">
             <FacebookIcon />
           </a>
-         
-          <a href="" className="text-blue-700 ">
-            <LinkedInIcon />
+          <a href="" className="">
+            <FacebookIcon />
+
           </a>
-          <a href="" className="text-red-500 ">
-            <YoutubeIcon />
+          <a href="" className=" ">
+            <FacebookIcon />
+
           </a>
+
+
         </div>
         <div className="flex flex-1 justify-center">
           <span className="text-center text-gray-400 text-base font-normal">

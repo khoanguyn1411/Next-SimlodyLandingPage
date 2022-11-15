@@ -1,3 +1,5 @@
+import { SectionContainer } from "@components"
+
 /* eslint-disable @next/next/no-img-element */
 export const PartnerSection: React.FC = () => {
   const PARTNERS = [
@@ -17,19 +19,23 @@ export const PartnerSection: React.FC = () => {
       id: "4",
       src: "/images/home/partner_4.png"
     },
+    {
+      id: "5",
+      src: "/images/home/partner_5.png"
+    },
   ]
 
   return (
-    <section className="container py-12">
-      <h2 className="text-2xl text-gray-800 text-center font-medium">Đối tác của chúng tôi</h2>
+    <SectionContainer title="Đối tác của chúng tôi">
       <h3 className="mt-4 text-base text-gray-400 text-center">Cảm thấy hài lòng chỉ sau 8 tuần sử dụng</h3>
-      <div className="flex items-center justify-between mt-8">
+      <div className="flex md:flex-row flex-col space-y-8 md:space-x-4 items-center justify-between mt-8">
         {PARTNERS.map((p, idx) => (
           <div key={idx}>
             <img className="w-40 h-40" src={p.src} alt={p.id} />
           </div>
         ))}
       </div>
-    </section>
+    </SectionContainer>
+
   )
 }
