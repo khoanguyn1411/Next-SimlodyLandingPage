@@ -10,74 +10,22 @@ type IProps = {
 };
 
 const MENUS_MOBILE = [
-  {
-    key: 'Product',
-    name: 'Product',
-    href: '/product',
-    hasSubmenu: false,
-  },
-  {
-    key: 'WhoItFor',
-    name: "Who's It For",
-    href: '',
-    icon: <i className='fa fa-chevron-down' />,
-    hasSubmenu: true,
-    submenus: [
-      {
-        key: 'Small',
-        name: 'Small enterprises',
-        href: '/who-is-it-for/small',
-      },
-      {
-        key: 'Medium',
-        name: 'Medium-sized enterprises',
-        href: '/who-is-it-for/medium',
-      },
-      {
-        key: 'Large',
-        name: 'Large enterprises',
-        href: '/who-is-it-for/large',
-      },
-    ],
-  },
-  {
-    key: 'Solution',
-    name: 'Solution',
-    href: '',
-    icon: <i className='fa fa-chevron-down' />,
-    hasSubmenu: true,
-    submenus: [
-      {
-        key: 'Product',
-        name: 'Product concept',
-        href: '/solution/product',
-      },
-      {
-        key: 'Saas',
-        name: 'Saas',
-        href: '/solution/saas',
-      },
-      {
-        key: 'Odoo',
-        name: 'Odoo',
-        href: '/solution/odoo',
-      },
-    ],
-  },
-  {
-    key: 'Blog',
-    name: 'News',
-    href: '/blogs',
-    hasSubmenu: false,
-
-  },
-  {
-    key: 'About',
-    name: 'About us',
-    href: '/about-us',
-    hasSubmenu: false,
-
-  },
+	{
+		key: 'Home',
+		name: 'Trang chủ',
+		href: '/',
+	},
+	{
+		key: 'Product',
+		name: 'Sản phẩm',
+		href: '/product',
+	},
+	{
+		key: 'About',
+		name: 'Giới thiệu',
+		href: '/about',
+	},
+	
 ];
 
 export const SidebarMobile: React.FC<IProps> = ({
@@ -108,11 +56,8 @@ export const SidebarMobile: React.FC<IProps> = ({
           <ItemMenuMobile
             key={index}
             name={menu.name}
-            icon={menu.icon}
             href={menu.href}
             isActive={menu.key===pageKey}
-            hasSubMenu={menu.hasSubmenu}
-            subMenus={menu.submenus}
           />
         ))}
       </ul>

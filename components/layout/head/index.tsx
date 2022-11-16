@@ -19,7 +19,7 @@ export const Head: React.FC<IHeadProps> = ({
   pageDescription = "Giúp gia tăng giá trị của đội nhóm bằng cách nâng cao nguồn nhân lực",
   pageKeywords = ["Symlody", "symlody", "simlody"],
   pageAuthor = 'symlody',
-  pageCoverImageRectangle = 'https://simplamo.s3.ap-southeast-1.amazonaws.com/dev/9d3081ad-d859-4544-8eb4-d81e615ad48b.webp',
+  pageCoverImageRectangle = '/images/cover-bg/cover_bg.png',
   pageCoverImageSquare
 }) => {
   const router = useRouter();

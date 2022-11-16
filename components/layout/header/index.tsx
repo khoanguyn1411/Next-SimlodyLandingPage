@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import { Media } from '@components';
 import { useRouter } from 'next/router';
 
- const MENUS = [
+const MENUS = [
 	{
 		key: 'Home',
 		name: 'Trang chủ',
@@ -22,7 +22,7 @@ import { useRouter } from 'next/router';
 		name: 'Giới thiệu',
 		href: '/about',
 	},
-	
+
 ];
 
 type IProps = {
@@ -30,8 +30,8 @@ type IProps = {
 	onOpen: () => void;
 };
 export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
-	const router=useRouter()
-	const handleLink=()=>{
+	const router = useRouter()
+	const handleLink = () => {
 		router.push("/contact-us")
 	}
 	return (
