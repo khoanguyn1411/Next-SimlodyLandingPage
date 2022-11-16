@@ -1,12 +1,18 @@
+import classNames from "classnames"
 type Props = {
   title?: string
+  className?: string
 }
-export const SectionContainer: React.FC<Props> = ({ title, children }) => {
+export const SectionContainer: React.FC<Props> = ({ title, className, children }) => {
   return (
-    <section className="py-12">
-      <div className="container">
+    <section className={classNames("py-12", className)}
+
+    >
+      <div className="container"
+
+      >
         {title &&
-          <h2 className="text-2xl text-gray-800 text-center font-medium">Đối tác của chúng tôi</h2>
+          <h2 className="text-2xl text-gray-800 text-center font-medium">{title}</h2>
         }
         {children}
       </div>
