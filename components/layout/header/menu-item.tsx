@@ -35,7 +35,7 @@ export const ItemMenu: React.FC<IProps> = ({
         <a
           className={classNames(
             "flex group items-baseline text-gray-600 justify-center transition-all duration-300 ease-in-out font-medium cursor-pointer text-base",
-            { "text-primary-500": isActive }
+            { "text-primary-800": isActive }
           )}
           id="navbarDropdown"
           role="button"
@@ -45,9 +45,9 @@ export const ItemMenu: React.FC<IProps> = ({
         >
           <div
             className={classNames(
-              "group-hover:text-primary-500 transition-all duration-300",
+              "group-hover:text-primary-800 transition-all duration-300",
               {
-                "text-primary-500": isActive,
+                "text-primary-800": isActive,
               }
             )}
           >
@@ -57,8 +57,8 @@ export const ItemMenu: React.FC<IProps> = ({
           {icon && (
             <div
               className={classNames(
-                "ml-2 text-xs group-hover:text-primary-500 transition-all duration-300",
-                { "text-primary-500": isActive }
+                "ml-2 text-xs group-hover:text-primary-800 transition-all duration-300",
+                { "text-primary-800": isActive }
               )}
             >
               <span>{icon}</span>

@@ -1,4 +1,4 @@
-import { FacebookIcon, LinkedinIcon, YoutubeIcon } from "@components/icons";
+import { FacebookIcon, LinkedinIcon, TwitterIcon, YoutubeIcon } from "@components/icons";
 import classNames from "classnames";
 import Link from "next/link";
 import React, { memo } from "react";
@@ -51,6 +51,9 @@ export const Footer: React.FC<IProps> = memo(({ pageKey }) => {
           </a>
           <a href="" className=" text-blue-700">
             <LinkedinIcon />
+          </a>
+          <a href="" className="">
+            <TwitterIcon />
           </a>
         </div>
         <div className="flex flex-1 justify-center">

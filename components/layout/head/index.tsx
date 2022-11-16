@@ -19,8 +19,8 @@ export const Head: React.FC<IHeadProps> = ({
   pageDescription = "Giúp gia tăng giá trị của đội nhóm bằng cách nâng cao nguồn nhân lực",
   pageKeywords = ["Symlody", "symlody", "simlody"],
   pageAuthor = 'symlody',
-  pageCoverImageRectangle = '/images/cover-bg/cover_bg.png',
-  pageCoverImageSquare
+  // pageCoverImageRectangle = '/images/cover-bg/cover_bg.png',
+  // pageCoverImageSquare
 }) => {
   const router = useRouter();
 
@@ -30,8 +30,8 @@ export const Head: React.FC<IHeadProps> = ({
   const url = SITE_URL + router.asPath;
   const keywords = pageKeywords.join(', ');
 
-  const coverImageRectangle = SITE_URL + pageCoverImageRectangle;
-  const coverImageSquare = SITE_URL + (pageCoverImageSquare || pageCoverImageRectangle);
+  const coverImageRectangle = "https://simplamo.s3.ap-southeast-1.amazonaws.com/dev/9d3081ad-d859-4544-8eb4-d81e615ad48b.webp"
+  const coverImageSquare = "https://simplamo.s3.ap-southeast-1.amazonaws.com/dev/9d3081ad-d859-4544-8eb4-d81e615ad48b.webp"
 
   return (
     <NextHead>
