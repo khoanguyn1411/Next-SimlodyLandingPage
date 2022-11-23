@@ -1,4 +1,9 @@
-import { FacebookIcon, LinkedinIcon, TwitterIcon, YoutubeIcon } from "@components/icons";
+import {
+  FacebookIcon,
+  LinkedinIcon,
+  TwitterIcon,
+  YoutubeIcon,
+} from "@components/icons";
 import classNames from "classnames";
 import Link from "next/link";
 import React, { memo } from "react";
