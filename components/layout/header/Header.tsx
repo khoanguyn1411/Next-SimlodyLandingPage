@@ -1,6 +1,6 @@
 import React from "react";
 import { Logo, Button } from "@components/elements";
-import { ItemMenu } from "./menu-item";
+import { ItemMenu } from "./MenuItem";
 import Link from "next/link";
 import classNames from "classnames";
 import { Media } from "@components";

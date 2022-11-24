@@ -1,24 +1,24 @@
-import { Item } from "./Item"
+import { Item } from "./Item";
 
 export const WhyNeedSymlody: React.FC = () => {
   const ITEMS = [
     {
       src: "/images/home/need_symlody_1.png",
-      content: "Tập trung vào hiệu suất công việc"
+      content: "Tập trung vào hiệu suất công việc",
     },
     {
       src: "/images/home/need_symlody_2.png",
-      content: "Liên kết giữa thành viên và tổ chức"
+      content: "Liên kết giữa thành viên và tổ chức",
     },
     {
       src: "/images/home/need_symlody_3.png",
-      content: "Xác định mục tiêu cho đội nhóm"
+      content: "Xác định mục tiêu cho đội nhóm",
     },
     {
       src: "/images/home/need_symlody_4.png",
-      content: "Dữ liệu tập trung tại 1 nơi"
+      content: "Dữ liệu tập trung tại 1 nơi",
     },
-  ]
+  ];
 
   return (
     <section className="container py-12">
@@ -32,11 +32,11 @@ export const WhyNeedSymlody: React.FC = () => {
         </h3>
 
         <div className="grid grid-cols-2 gap-8 mt-8 justify-between items-center">
-          {ITEMS.map((item,idx)=>(
-            <Item key={idx} src={item.src} content={item.content}/>
+          {ITEMS.map((item, idx) => (
+            <Item key={idx} src={item.src} content={item.content} />
           ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

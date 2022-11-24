@@ -1,7 +1,7 @@
 import { Footer } from "./footer";
 import { Header } from "./header";
 import { Head, IHeadProps } from "./head";
-import { SidebarMobile } from "./header/sidebar-mobile";
+import { SidebarMobile } from "./header/SidebarMobile";
 import { useState } from "react";
 
 type IProps = {
@@ -37,7 +37,7 @@ export const LayoutBase: React.FC<IProps> = ({
       <div>
         <main>{children}</main>
       </div>
-      <Footer pageKey={pageKey}/>
+      <Footer pageKey={pageKey} />
     </>
   );
 };
