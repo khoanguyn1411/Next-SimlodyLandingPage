@@ -4,7 +4,7 @@ import NextHead from "next/head";
 import { useRouter } from "next/router";
 
 export type IHeadProps = {
-  pageType?: "website",
+  pageType?: "website";
   pageTitle?: string;
   pageDescription?: string;
   pageKeywords?: string[];
@@ -18,7 +18,7 @@ export const Head: React.FC<IHeadProps> = ({
   pageTitle,
   pageDescription = "Giúp gia tăng giá trị của đội nhóm bằng cách nâng cao nguồn nhân lực",
   pageKeywords = ["Symlody", "symlody", "simlody"],
-  pageAuthor = 'symlody',
+  pageAuthor = "symlody",
   // pageCoverImageRectangle = '/images/cover-bg/cover_bg.png',
   // pageCoverImageSquare
 }) => {
@@ -28,10 +28,12 @@ export const Head: React.FC<IHeadProps> = ({
 
   const title = pageTitle ? `${pageTitle} | ${APP_NAME}` : APP_NAME;
   const url = SITE_URL + router.asPath;
-  const keywords = pageKeywords.join(', ');
+  const keywords = pageKeywords.join(", ");
 
-  const coverImageRectangle = "https://simplamo.s3.ap-southeast-1.amazonaws.com/dev/9d3081ad-d859-4544-8eb4-d81e615ad48b.webp"
-  const coverImageSquare = "https://simplamo.s3.ap-southeast-1.amazonaws.com/dev/9d3081ad-d859-4544-8eb4-d81e615ad48b.webp"
+  const coverImageRectangle =
+    "https://simplamo.s3.ap-southeast-1.amazonaws.com/dev/9d3081ad-d859-4544-8eb4-d81e615ad48b.webp";
+  const coverImageSquare =
+    "https://simplamo.s3.ap-southeast-1.amazonaws.com/dev/9d3081ad-d859-4544-8eb4-d81e615ad48b.webp";
 
   return (
     <NextHead>
@@ -57,7 +59,10 @@ export const Head: React.FC<IHeadProps> = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={pageDescription} />
       <meta name="twitter:creator" content={pageAuthor} />
-      <meta name="twitter:image" content={coverImageSquare || coverImageRectangle} />
+      <meta
+        name="twitter:image"
+        content={coverImageSquare || coverImageRectangle}
+      />
     </NextHead>
   );
 };

@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { SubMenuProps } from "./menu-item";
+import { SubMenuProps } from "./MenuItem";
 
 type IProps = {
   name?: string;

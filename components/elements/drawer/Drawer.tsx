@@ -3,10 +3,9 @@ import useWindowSize from "hooks/useWindowSize";
 import ReactDrawer from "rc-drawer";
 import { useMemo } from "react";
 
-
 interface IProps {
   title?: string;
-  
+
   visible: boolean;
   placement?: "left" | "right";
   level?: string;
@@ -17,11 +16,9 @@ interface IProps {
   shouldResponsive?: boolean;
 }
 
-
-
 export const Drawer: React.FC<IProps> = ({
   title,
-  
+
   visible,
   children,
   footer,
