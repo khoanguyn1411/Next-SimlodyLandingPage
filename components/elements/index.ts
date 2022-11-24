@@ -7,3 +7,4 @@ export * from "./form-item";
 export * from "./input";
 export * from "./checkbox";
 export * from "./avatar";
+export * from "./section";
