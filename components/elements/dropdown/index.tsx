@@ -3,8 +3,6 @@ import classNames from "classnames";
 import React from "react";
 import { Fragment } from "react";
 
-
-
 export type MenuItem = {
   value: string;
   name: string;
@@ -16,11 +14,9 @@ type Props = {
   menus?: MenuItem[];
   overlay?: JSX.Element;
 
-
   placement?: "left" | "right";
   widthContainer?: string;
   maxHeight?: number | string;
-
 
   animation?: boolean;
   disabled?: boolean;
@@ -34,20 +30,15 @@ export const Dropdown: React.FC<Props> = ({
   menus = [],
   overlay,
 
-
   placement = "right",
   widthContainer,
   maxHeight,
-
 
   animation = true,
   disabled,
 
   onClick,
 }) => {
-
-  
-
   const transition = animation
     ? {
         enter: "transition ease-out duration-100",
@@ -58,12 +49,6 @@ export const Dropdown: React.FC<Props> = ({
         leaveTo: "transform opacity-0 scale-95",
       }
     : {};
-
-
-
-
-
-
 
   return (
     <Menu as="div" className="relative inline-block text-left">
@@ -92,10 +77,6 @@ export const Dropdown: React.FC<Props> = ({
                 <Menu.Item>{overlay}</Menu.Item>
               ) : (
                 <div>
-                 
-
-                
-
                   <div className="py-2">
                     {menus.map((m) => {
                       return (
@@ -104,8 +85,7 @@ export const Dropdown: React.FC<Props> = ({
                           onClick={() => onClick && onClick(m.value)}
                         >
                           {({ active }) => {
-                            const isActive =
-                              active 
+                            const isActive = active;
                             return (
                               <div
                                 className={classNames(
@@ -125,8 +105,6 @@ export const Dropdown: React.FC<Props> = ({
                         </Menu.Item>
                       );
                     })}
-
-                  
                   </div>
                 </div>
               )}
