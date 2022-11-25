@@ -6,13 +6,6 @@ export interface Feedback {
   readonly role: string;
 }
 
-export interface SlideList {
-  readonly id: string;
-  readonly cardList: readonly Feedback[];
-}
-
-const CARD_PER_SLIDE = 2;
-
 export const FEEDBACKS: readonly Feedback[] = [
   {
     id: "1",
