@@ -3,10 +3,10 @@ import { Button } from "@components/elements";
 import Image from "next/image";
 export const IntroduceSection: React.FC = () => {
   return (
-    <SectionContainer className="opacity-90 py-28 flex items-center">
+    <SectionContainer className="opacity-90 py-24 flex items-center">
       <div className="grid grid-cols-2">
         <div className="flex flex-col gap-9 h-full justify-center">
-          <h2 className="text-5xl leading-tight font-medium text-gray-800 relative">
+          <h2 className="text-4xl leading-tight font-medium text-gray-800 relative">
             Công cụ <span className="text-primary-800">quản trị tổ chức</span>{" "}
             hiện đại và hiệu quả
             <span

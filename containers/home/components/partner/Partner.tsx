@@ -28,6 +28,7 @@ export const PartnerSection: React.FC = () => {
   return (
     <SectionContainer
       title="Đối tác của chúng tôi"
+      isDashedSeparate
       subtitle="Cảm thấy hài lòng chỉ sau 8 tuần sử dụng"
     >
       <div className="flex md:flex-row flex-col flex-wrap space-y-8 md:space-x-4 items-center justify-between">

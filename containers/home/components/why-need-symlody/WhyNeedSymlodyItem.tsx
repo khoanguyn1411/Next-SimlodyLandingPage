@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 type Props = {
   src: string;
   content: string;
@@ -6,11 +6,10 @@ type Props = {
 export const WhyNeedSymlodyItem: React.FC<Props> = ({ src, content }) => {
   return (
     <div className="flex items-center justify-center space-x-8">
-      <span className="flex items-center">
-        <img className="w-32 h-32 object-cover" src={src} alt="need symlody" />
-      </span>
-
-      <span className="text-lg">{content}</span>
+      <div className="relative w-1/4 h-28">
+        <Image src={src} layout="fill" objectFit="contain" alt={content} />
+      </div>
+      <span className="leading-relaxed w-3/4 text-2xl">{content}</span>
     </div>
   );
 };

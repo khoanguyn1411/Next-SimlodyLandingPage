@@ -23,11 +23,12 @@ export const WhyNeedSymlody: React.FC = () => {
 
   return (
     <SectionContainer
+      isDashedSeparate
       title="Tại sao Leader cần Symlody?"
       subtitle="Công cụ để xây dựng tổ chức năng suất và hiệu quả"
     >
       <div className="flex flex-col">
-        <div className="grid grid-cols-2 gap-8 mt-8 justify-between items-center">
+        <div className="grid grid-cols-2 gap-14">
           {ITEMS.map((item, idx) => (
             <WhyNeedSymlodyItem
               key={idx}
