@@ -40,12 +40,10 @@ export const FeedbackSection: React.FC = () => {
 
   return (
     <SectionContainer
-      title="Khách hàng nói gì về Symlody?"
+      title="Khách hàng nói gì về  Symlody?"
+      subtitle="Giải quyết nỗi đau mà người lãnh đạo đang gặp"
       className="flex flex-1 bg-[url('/images/home/bg_feedback.png')] bg-no-repeat bg-[length:100%_100%]"
     >
-      <h3 className="mt-4 text-base text-gray-400 text-center">
-        Giải quyết nỗi đau mà người lãnh đạo đang gặp
-      </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-24 justify-center">
         {FEEDBACKS.map((feedback, idx) => (
           <FeedbackItem key={idx} {...feedback} />

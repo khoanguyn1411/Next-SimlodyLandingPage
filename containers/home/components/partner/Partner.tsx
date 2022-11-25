@@ -26,11 +26,11 @@ export const PartnerSection: React.FC = () => {
   ];
 
   return (
-    <SectionContainer title="Đối tác của chúng tôi">
-      <h3 className="mt-4 text-base text-gray-400 text-center">
-        Cảm thấy hài lòng chỉ sau 8 tuần sử dụng
-      </h3>
-      <div className="flex md:flex-row flex-col space-y-8 md:space-x-4 items-center justify-between mt-8">
+    <SectionContainer
+      title="Đối tác của chúng tôi"
+      subtitle="Cảm thấy hài lòng chỉ sau 8 tuần sử dụng"
+    >
+      <div className="flex md:flex-row flex-col flex-wrap space-y-8 md:space-x-4 items-center justify-between">
         {PARTNERS.map((p, idx) => (
           <div key={idx}>
             <img className="w-40 h-40" src={p.src} alt={p.id} />

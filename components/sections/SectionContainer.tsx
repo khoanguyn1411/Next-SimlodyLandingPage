@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 type Props = {
   title?: string;
   subtitle?: string;
-  className: string;
+  className?: string;
   children: ReactNode;
 };
 export const SectionContainer: React.FC<Props> = ({
@@ -14,12 +14,12 @@ export const SectionContainer: React.FC<Props> = ({
 }) => {
   return (
     <section className={classNames("py-12", className)}>
-      <div className="container flex flex-col gap-6">
-        <div className="gap-3">
-          <h1 className="text-2xl text-gray-800 text-center font-medium">
+      <div className="container flex flex-col gap-16">
+        <div className="flex flex-col gap-7">
+          <h1 className="text-4xl text-gray-800 text-center font-medium">
             {title}
           </h1>
-          <h2 className="text-lg text-gray-800 text-center font-medium">
+          <h2 className="text-3xl text-gray-400 text-center font-medium">
             {subtitle}
           </h2>
         </div>

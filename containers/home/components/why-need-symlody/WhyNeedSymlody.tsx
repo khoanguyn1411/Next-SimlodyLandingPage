@@ -1,4 +1,5 @@
-import { Item } from "./Item";
+import { SectionContainer } from "@components";
+import { WhyNeedSymlodyItem } from "./WhyNeedSymlodyItem";
 
 export const WhyNeedSymlody: React.FC = () => {
   const ITEMS = [
@@ -21,22 +22,21 @@ export const WhyNeedSymlody: React.FC = () => {
   ];
 
   return (
-    <section className="container py-12">
+    <SectionContainer
+      title="Tại sao Leader cần Symlody?"
+      subtitle="Công cụ để xây dựng tổ chức năng suất và hiệu quả"
+    >
       <div className="flex flex-col">
-        <h2 className="text-2xl text-gray-800 font-medium text-center">
-          Tại sao Leader cần Symlody?
-        </h2>
-
-        <h3 className="mt-4 text-gray-400 text-base text-center">
-          Công cụ để xây dựng tổ chức năng suất và hiệu quả
-        </h3>
-
         <div className="grid grid-cols-2 gap-8 mt-8 justify-between items-center">
           {ITEMS.map((item, idx) => (
-            <Item key={idx} src={item.src} content={item.content} />
+            <WhyNeedSymlodyItem
+              key={idx}
+              src={item.src}
+              content={item.content}
+            />
           ))}
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 };

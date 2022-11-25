@@ -1,9 +1,9 @@
-import { CurvesArrowIcon } from "@components";
+import { CurvesArrowIcon, SectionContainer } from "@components";
 import { Button } from "@components/elements";
 import Image from "next/image";
 export const IntroduceSection: React.FC = () => {
   return (
-    <section className="container opacity-90 py-28 flex items-center">
+    <SectionContainer className="opacity-90 py-28 flex items-center">
       <div className="grid grid-cols-2">
         <div className="flex flex-col gap-9 h-full justify-center">
           <h2 className="text-5xl leading-tight font-medium text-gray-800 relative">
@@ -45,6 +45,6 @@ export const IntroduceSection: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 };
