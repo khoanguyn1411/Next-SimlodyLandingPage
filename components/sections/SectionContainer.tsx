@@ -21,11 +21,16 @@ export const SectionContainer: React.FC<Props> = ({
   return (
     <section className={classNames("py-12", className)}>
       {background && (
-        <span className="absolute -z-10 top-10 bottom-10 left-0 right-0">
+        <div className="absolute m-auto max-w-7xl -z-10 top-10 bottom-10 left-0 right-0">
           {background}
-        </span>
+        </div>
       )}
-      <div className="container flex flex-col gap-16">
+      <div
+        className="container flex flex-col gap-16"
+        data-aos="fade-left"
+        data-aos-delay="200"
+        data-aos-duration="500"
+      >
         {hasTitleOrSubtitle && (
           <div className="flex flex-col gap-5">
             {title && (
@@ -43,7 +48,7 @@ export const SectionContainer: React.FC<Props> = ({
         <div>{children}</div>
         {isDashedSeparate && (
           <span className="w-full text-primary-800 mt-8">
-            <DashedLine></DashedLine>
+            <DashedLine />
           </span>
         )}
       </div>
