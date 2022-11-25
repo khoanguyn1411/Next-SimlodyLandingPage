@@ -11,6 +11,8 @@
 	},
 	"dependencies": {
 		"@artsy/fresnel": "^3.2.1",
+		"@emotion/react": "^11.10.5",
+		"@emotion/styled": "^11.10.5",
 		"@headlessui/react": "^1.4.2",
 		"@hookform/resolvers": "^2.8.8",
 		"@splidejs/react-splide": "^0.7.12",

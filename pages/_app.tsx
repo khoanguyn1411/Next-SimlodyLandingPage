@@ -15,6 +15,7 @@ import NextNProgress from "nextjs-progressbar";
 import { MediaContextProvider } from "@components";
 import { useEffect } from "react";
 import AOS from "aos";
+import "@splidejs/react-splide/css";
 import envGlobal from "../env";
 
 function MyApp({ Component, pageProps }: AppProps) {
