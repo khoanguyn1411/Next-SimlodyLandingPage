@@ -24,3 +24,5 @@ export const FEEDBACKS: readonly Feedback[] = [
     role: "Chủ nhiệm CLB IBT nhiệm kì 2020-2021",
   },
 ];
+
+export const DEFAULT_PER_PAGE = 2;
