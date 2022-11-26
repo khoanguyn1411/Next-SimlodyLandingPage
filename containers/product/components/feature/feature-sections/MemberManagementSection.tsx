@@ -1,4 +1,3 @@
-import { BackgroundFlower } from "@components";
 import { CircleDashed } from "@components/icons/CircleDashed";
 import React from "react";
 import { Feature } from "../constant";
