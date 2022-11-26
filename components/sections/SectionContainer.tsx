@@ -28,6 +28,7 @@ export const SectionContainer: React.FC<Props> = ({
       <div
         className="container flex flex-col gap-16"
         data-aos="fade-left"
+        data-aos-once
         data-aos-delay="200"
         data-aos-duration="500"
       >
