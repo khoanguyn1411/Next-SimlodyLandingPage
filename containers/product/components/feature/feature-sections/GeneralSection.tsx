@@ -8,14 +8,6 @@ const ImageComponent: React.FC<Props> = (props) => {
   return (
     <div className="col-span-2">
       <div className="w-full relative">
-        {/* <Image
-          width={0}
-          height={0}
-          src={props.image}
-          alt={props.title}
-          objectFit="contain"
-          layout="responsive"
-        /> */}
         <img className="w-full" src={props.image} alt={props.title} />
         {props.children}
       </div>
