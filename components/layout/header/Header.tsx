@@ -35,8 +35,8 @@ export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
   };
   return (
     <header className="bg-white h-header shadow sticky top-0 z-50">
-      <div className="container flex flex-row mx-auto items-center h-full">
-        <div className="flex items-center flex-1">
+      <div className="container flex justify-between flex-row mx-auto items-center h-full">
+        <div className="flex items-center">
           <Media lessThan="xl">
             <button
               className={classNames(
@@ -70,8 +70,8 @@ export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
               ))}
             </ul>
           </Media>
-          <Button text="Trải nghiệm ngay" type="primary" onClick={handleLink} />
         </div>
+        <Button text="Trải nghiệm ngay" type="primary" onClick={handleLink} />
       </div>
     </header>
   );
