@@ -36,6 +36,7 @@ const BORDERED_MAPS = {
 };
 
 export type IProps = {
+  className?: string;
   placeholder?: string;
   label?: string;
   prefix?: React.ReactNode;
@@ -65,12 +66,13 @@ export type IProps = {
 export const Input: React.FC<IProps> = ({
   placeholder,
   htmlType = "text",
-  
+  className,
+
   size = "middle",
   type = "default",
   name,
   value,
-  
+
   suffix,
   prefix,
   bordered = false,
@@ -154,7 +156,7 @@ export const Input: React.FC<IProps> = ({
         tabIndex={-1}
         onKeyPress={null}
         className={classnames(
-          "relative w-full min-w-0 h-10 px-4 flex items-center outline-none text-gray-500 rounded-md",
+          "relative w-full min-w-0 shadow-sm h-10 px-4 flex items-center outline-none text-gray-500 rounded-md",
           SIZE_MAPS[size][key.wrapper],
           TYPE_MAPS[type][key.wrapper],
           BORDERED_MAPS[bordered.toString()],
@@ -164,7 +166,7 @@ export const Input: React.FC<IProps> = ({
           }
         )}
       >
-         {prefix && (
+        {prefix && (
           <div
             className="flex items-center justify-center mr-2"
             onClick={null}
@@ -185,7 +187,8 @@ export const Input: React.FC<IProps> = ({
           className={classnames(
             "relative w-full min-w-0 outline-none text-black inline-block",
             SIZE_MAPS[size][key.input],
-            TYPE_MAPS[type][key.input]
+            TYPE_MAPS[type][key.input],
+            className
           )}
           disabled={disabled}
           onKeyPress={handleKeyPress}
@@ -205,7 +208,6 @@ export const Input: React.FC<IProps> = ({
             {suffix}
           </div>
         )}
-
       </div>
     </>
   );

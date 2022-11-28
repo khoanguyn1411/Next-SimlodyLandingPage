@@ -57,21 +57,19 @@ export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
         </div>
 
         {/* main */}
-        <Media greaterThanOrEqual="xl">
-          <ul className="flex items-center list-none hide-scrollbar">
-            {MENUS.map((menu, index) => (
-              <ItemMenu
-                key={index}
-                name={menu.name}
-                href={menu.href}
-                isActive={pageKey === menu.key}
-              />
-            ))}
-          </ul>
-        </Media>
-
-        {/* contact */}
-        <div>
+        <div className="flex gap-7 items-center">
+          <Media greaterThanOrEqual="xl">
+            <ul className="flex items-center list-none hide-scrollbar gap-5">
+              {MENUS.map((menu, index) => (
+                <ItemMenu
+                  key={index}
+                  name={menu.name}
+                  href={menu.href}
+                  isActive={pageKey === menu.key}
+                />
+              ))}
+            </ul>
+          </Media>
           <Button text="Trải nghiệm ngay" type="primary" onClick={handleLink} />
         </div>
       </div>

@@ -28,9 +28,9 @@ export const ItemMenu: React.FC<IProps> = ({
 }) => {
   const router = useRouter();
   const path = router.asPath;
-  
+
   return (
-    <li className="group dropdown mx-8">
+    <li className="group dropdown">
       <Link href={href}>
         <a
           className={classNames(

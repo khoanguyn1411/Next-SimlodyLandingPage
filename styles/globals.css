@@ -79,16 +79,16 @@
   width: 0;
   height: 2px;
   position: absolute;
-  left:0;
-  right:0;
-  margin:0 auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   top: inherit;
   bottom: -1px;
   transform: scaleX(0);
-  background: #3B82F6;
+  background: #3b82f6;
   transition: transform 200ms ease-in-out;
 }
- .expand-border-active:before {
+.expand-border-active:before {
   width: 100px;
   transform: scaleX(1);
 }
