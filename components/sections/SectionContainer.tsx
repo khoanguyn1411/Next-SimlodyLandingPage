@@ -7,7 +7,9 @@ type Props = {
   className?: string;
   children: ReactNode;
   background?: ReactNode;
+  additionalComponent?: ReactNode;
   isDashedSeparate?: boolean;
+  animation?: "fade-left" | "fade-right" | "fade-up";
 };
 export const SectionContainer: React.FC<Props> = ({
   title,
@@ -16,6 +18,8 @@ export const SectionContainer: React.FC<Props> = ({
   className,
   children,
   background,
+  animation,
+  additionalComponent,
 }) => {
   const hasTitleOrSubtitle = title || subtitle;
   return (
@@ -26,12 +30,13 @@ export const SectionContainer: React.FC<Props> = ({
         </div>
       )}
       <div
-        className="container flex flex-col gap-16"
-        data-aos="fade-left"
+        className="container relative flex flex-col gap-16"
+        data-aos={animation}
         data-aos-once
         data-aos-delay="200"
         data-aos-duration="500"
       >
+        {additionalComponent}
         {hasTitleOrSubtitle && (
           <div className="flex flex-col gap-5">
             {title && (

@@ -35,7 +35,7 @@ export const ItemMenu: React.FC<IProps> = ({
         <a
           className={classNames(
             "flex group items-baseline text-gray-600 justify-center transition-all duration-300 ease-in-out font-medium cursor-pointer text-base",
-            { "text-primary-800": isActive }
+            { "text-primary-800 font-semibold": isActive }
           )}
           id="navbarDropdown"
           role="button"

@@ -1,11 +1,5 @@
 export const BackgroundHeart: React.FC = () => (
-  <svg
-    width="auto"
-    height="auto"
-    viewBox="0 0 1396 436"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg viewBox="0 0 1396 436" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M30 204.774C28.9626 192.505 20.0584 199.662 15.736 204.774C1.21271 196.595 -0.689156 205.626 0.175327 211.165C3.28747 216.277 15.3038 220.963 20.9229 222.667C28.1846 217.555 30 208.608 30 204.774Z"
       fill="#F6B4C6"

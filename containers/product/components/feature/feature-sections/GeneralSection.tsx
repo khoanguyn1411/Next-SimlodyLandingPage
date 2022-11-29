@@ -8,14 +8,6 @@ const ImageComponent: React.FC<Props> = (props) => {
   return (
     <div className="col-span-2">
       <div className="w-full relative">
-        {/* <Image
-          width={0}
-          height={0}
-          src={props.image}
-          alt={props.title}
-          objectFit="contain"
-          layout="responsive"
-        /> */}
         <img className="w-full" src={props.image} alt={props.title} />
         {props.children}
       </div>
@@ -25,7 +17,13 @@ const ImageComponent: React.FC<Props> = (props) => {
 
 export const GeneralSection: React.FC<Props> = (props) => {
   return (
-    <div className="grid grid-cols-3 gap-4 justify-between items-center">
+    <div
+      className="grid grid-cols-3 gap-4 justify-between items-center"
+      data-aos={props.isRight ? "fade-right" : "fade-left"}
+      data-aos-once
+      data-aos-delay="200"
+      data-aos-duration="500"
+    >
       {!props.isRight && <ImageComponent {...props} />}
 
       <div className="flex flex-col col-span-1">
