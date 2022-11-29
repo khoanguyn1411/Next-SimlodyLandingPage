@@ -1,5 +1,6 @@
 import { SectionContainer } from "@components";
 import React from "react";
+import { CoreValueItems } from "./CoreValueItems";
 export interface CoreValue {
   readonly title: string;
   readonly content: string;
@@ -29,10 +30,10 @@ const CORE_VALUES: readonly CoreValue[] = [
 
 export const CoreValue: React.FC = () => {
   return (
-    <SectionContainer>
-      <div className="grid grid-cols-2 gap-24 items-center">
+    <SectionContainer className="py-28 bg-primary-10" title="Giá trị cốt lõi">
+      <div className="grid grid-cols-2 gap-y-14 gap-x-40 items-center">
         {CORE_VALUES.map((item) => (
-          <CoreValue key={item.title} {...item} />
+          <CoreValueItems key={item.title} {...item} />
         ))}
       </div>
     </SectionContainer>

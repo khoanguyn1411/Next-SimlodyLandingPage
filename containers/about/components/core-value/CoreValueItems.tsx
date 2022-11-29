@@ -5,9 +5,9 @@ type Props = CoreValue;
 
 export const CoreValueItems: React.FC<Props> = ({ title, content }) => {
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{content}</p>
+    <div className="flex flex-col gap-3">
+      <h1 className="font-semibold text-2xl">{title}</h1>
+      <p className="text-xl">{content}</p>
     </div>
   );
 };

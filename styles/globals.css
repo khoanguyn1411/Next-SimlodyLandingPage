@@ -85,7 +85,6 @@
   top: inherit;
   bottom: -1px;
   transform: scaleX(0);
-  background: #3b82f6;
   transition: transform 200ms ease-in-out;
 }
 .expand-border-active:before {
