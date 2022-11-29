@@ -36,7 +36,7 @@ export const FeedbackSection: React.FC = () => {
           }}
         >
           {FEEDBACKS.map((card) => (
-            <SplideSlide key={card.id}>
+            <SplideSlide className="items-stretch" key={card.id}>
               <FeedbackItem key={card.id} {...card} />
             </SplideSlide>
           ))}

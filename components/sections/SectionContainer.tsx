@@ -7,6 +7,7 @@ type Props = {
   className?: string;
   children: ReactNode;
   background?: ReactNode;
+  additionalComponent?: ReactNode;
   isDashedSeparate?: boolean;
 };
 export const SectionContainer: React.FC<Props> = ({
@@ -16,6 +17,7 @@ export const SectionContainer: React.FC<Props> = ({
   className,
   children,
   background,
+  additionalComponent,
 }) => {
   const hasTitleOrSubtitle = title || subtitle;
   return (
@@ -32,6 +34,7 @@ export const SectionContainer: React.FC<Props> = ({
         data-aos-delay="200"
         data-aos-duration="500"
       >
+        {additionalComponent}
         {hasTitleOrSubtitle && (
           <div className="flex flex-col gap-5">
             {title && (

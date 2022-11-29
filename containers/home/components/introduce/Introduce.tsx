@@ -3,7 +3,7 @@ import { CurvesArrowIcon, SectionContainer } from "@components";
 import { Button } from "@components/elements";
 export const IntroduceSection: React.FC = () => {
   return (
-    <SectionContainer className="opacity-90 py-24 flex items-center">
+    <SectionContainer className="py-24 flex items-center">
       <div className="grid grid-cols-2 gap-12">
         <div className="flex flex-col gap-9 h-full justify-center">
           <h2 className="text-4xl leading-tight font-medium text-gray-800 relative">
