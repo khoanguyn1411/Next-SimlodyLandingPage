@@ -20,7 +20,7 @@ const MEMBERS: readonly Member[] = [
     role: "Front-end developer",
   },
   {
-    image: "/images/about-us/mission-mountain.png",
+    image: "/images/about-us/members/linh-khanh.jpg",
     name: "Đặng Khánh Linh",
     role: "UI/UX designer",
   },
