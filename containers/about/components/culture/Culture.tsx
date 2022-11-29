@@ -6,6 +6,7 @@ import React from "react";
 export const Culture: React.FC = () => {
   return (
     <SectionContainer
+      animation="fade-up"
       additionalComponent={
         <span className="-right-20 -top-5 text-primary-800 absolute">
           <CircleDashed size={480} />

@@ -1,3 +1,4 @@
+import { WrapperContainer } from "@components";
 import {
   BoxEmail,
   FeedbackSection,
@@ -8,12 +9,12 @@ import {
 
 export const HomeContainer: React.FC = () => {
   return (
-    <div className="flex flex-col overflow-x-hidden">
+    <WrapperContainer>
       <IntroduceSection />
       <WhyNeedSymlody />
       <PartnerSection />
       <FeedbackSection />
       <BoxEmail />
-    </div>
+    </WrapperContainer>
   );
 };

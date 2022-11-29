@@ -23,6 +23,7 @@ export const WhyNeedSymlody: React.FC = () => {
 
   return (
     <SectionContainer
+      animation="fade-up"
       isDashedSeparate
       title="Tại sao Leader cần Symlody?"
       subtitle="Công cụ để xây dựng tổ chức năng suất và hiệu quả"

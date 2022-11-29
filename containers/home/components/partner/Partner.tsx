@@ -28,6 +28,7 @@ export const PartnerSection: React.FC = () => {
   return (
     <SectionContainer
       title="Đối tác của chúng tôi"
+      animation="fade-up"
       isDashedSeparate
       subtitle="Cảm thấy hài lòng chỉ sau 8 tuần sử dụng"
     >

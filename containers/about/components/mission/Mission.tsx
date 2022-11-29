@@ -24,7 +24,7 @@ const MISSIONS: readonly Mission[] = [
 ];
 export const Mission: React.FC = () => {
   return (
-    <SectionContainer>
+    <SectionContainer animation="fade-up">
       <div className="grid grid-cols-2 gap-24 items-center">
         {MISSIONS.map((item) => (
           <MissionItem key={item.title} {...item} />

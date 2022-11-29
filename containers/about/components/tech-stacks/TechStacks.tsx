@@ -45,7 +45,11 @@ const TECH_STACK: readonly TechStack[] = [
 
 export const TechStacks: React.FC = () => {
   return (
-    <SectionContainer className="bg-primary-10" title="Công nghệ sử dụng">
+    <SectionContainer
+      animation="fade-up"
+      className="bg-primary-10"
+      title="Công nghệ sử dụng"
+    >
       <div className="grid grid-cols-3 gap-24 items-stretch">
         {TECH_STACK.map((item) => (
           <TechStackItem key={item.title} {...item} />

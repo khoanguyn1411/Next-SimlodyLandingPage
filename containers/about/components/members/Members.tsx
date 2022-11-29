@@ -33,7 +33,11 @@ const MEMBERS: readonly Member[] = [
 
 export const Members: React.FC = () => {
   return (
-    <SectionContainer className="py-28" title="Đội ngũ chúng tôi">
+    <SectionContainer
+      animation="fade-right"
+      className="py-28"
+      title="Đội ngũ chúng tôi"
+    >
       <div className="grid grid-cols-4 gap-11">
         {MEMBERS.map((item) => (
           <MemberItem key={item.name} {...item} />
