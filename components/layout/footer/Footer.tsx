@@ -31,15 +31,18 @@ type IProps = {
 };
 export const Footer: React.FC<IProps> = memo(({ pageKey }) => {
   return (
-    <footer className="py-16 flex flex-1 shadow-inner">
-      <div className="flex flex-col w-full md:w-2/5 mx-auto">
-        <div className="flex flex-row justify-between pb-12">
+    <footer className="py-16 flex bg-primary-10 flex-1 shadow-inner">
+      <div className="flex flex-col w-full md:w-2/5 mx-auto gap-8 items-center">
+        <div className="flex flex-row justify-between">
           {MENUS_FOOTER.map((menu, index) => (
             <Link key={index} href={menu.href}>
               <a
                 className={classNames(
-                  "hover:text-primary-500 font-semibold text-base text-gray-400 px-4 py-2",
-                  { "text-primary-500": pageKey === menu.key }
+                  "hover:text-primary-500 transition-colors font-semibold text-base px-4 py-2",
+                  {
+                    "text-primary-800": pageKey === menu.key,
+                    "text-gray-600": pageKey !== menu.key,
+                  }
                 )}
               >
                 {menu.name}
@@ -47,18 +50,13 @@ export const Footer: React.FC<IProps> = memo(({ pageKey }) => {
             </Link>
           ))}
         </div>
-        <div className="flex flex-row w-64 mx-auto justify-between pb-12">
-          <a href="" className="text-blue-400 ">
-            <FacebookIcon />
-          </a>
-          <a href="" className="text-red-500">
-            <YoutubeIcon />
-          </a>
-          <a href="" className=" text-blue-700">
-            <LinkedinIcon />
-          </a>
-          <a href="" className="">
-            <TwitterIcon />
+        <div className="flex gap-5">
+          <a
+            href="https://www.facebook.com/symlodyproduction"
+            className="text-primary-800 hover:underline font-medium text-lg flex items-center gap-4"
+          >
+            <FacebookIcon size={23} />
+            Fanpage của chúng tôi
           </a>
         </div>
         <div className="flex flex-1 justify-center">
