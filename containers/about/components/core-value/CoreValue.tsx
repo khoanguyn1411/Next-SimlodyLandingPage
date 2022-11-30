@@ -37,7 +37,7 @@ export const CoreValue: React.FC = () => {
     >
       <div className="grid grid-cols-2 gap-y-14 gap-x-40 items-center">
         {CORE_VALUES.map((item, index) => (
-          <CoreValueItems key={item.title} index={index} {...item} />
+          <CoreValueItems key={item.title} {...item} />
         ))}
       </div>
     </SectionContainer>
