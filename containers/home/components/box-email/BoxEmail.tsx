@@ -2,9 +2,29 @@ import { MailIcon, SectionContainer } from "@components";
 import { Button, Input } from "@components/elements";
 import { BackgroundHeart } from "@components/icons/BackgroundHeart";
 import { useState } from "react";
+import { toast } from "react-toastify";
+
+const GOOGLE_API_URL =
+  "https://script.google.com/macros/s/AKfycbyccwaPOlK3RGn-Y6x15EJvLT-euGc138rybxqqIaAu68Yx46AUkSsFtaalTWaeW7Ah/exec";
 
 export const BoxEmail: React.FC = () => {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const handleSubmitEmail = async () => {
+    const formData = new FormData();
+    formData.append("email", email);
+    setIsLoading(true);
+    try {
+      await fetch(GOOGLE_API_URL, {
+        method: "POST",
+        body: formData,
+      });
+      toast.success("Gửi email thành công");
+    } catch (e) {
+      toast.error("Gửi email thất bại");
+    }
+    setIsLoading(false);
+  };
   return (
     <SectionContainer
       className="py-40 relative"
@@ -28,9 +48,10 @@ export const BoxEmail: React.FC = () => {
           />
           <div className="min-w-max absolute right-0">
             <Button
+              loading={isLoading}
               text="Trải nghiệm ngay"
               type="primary"
-              onClick={null}
+              onClick={handleSubmitEmail}
               block
             />
           </div>
