@@ -1,5 +1,6 @@
 import { Media } from "@components";
 import { Button, Logo } from "@components/elements";
+import { APP_EXPERIENCE_NOW_LINK } from "@constants";
 import classNames from "classnames";
 import Link from "next/link";
 import React from "react";
@@ -29,7 +30,7 @@ type IProps = {
 };
 export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
   const handleLink = () => {
-    window.open("http://app.simlody.com/", "_blank");
+    window.open(APP_EXPERIENCE_NOW_LINK, "_blank");
   };
   return (
     <header className="bg-white h-header shadow sticky top-0 z-50">

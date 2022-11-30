@@ -1,7 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import { CurvesArrowIcon, SectionContainer } from "@components";
 import { Button } from "@components/elements";
-export const IntroduceSection: React.FC = () => {
+import { APP_EXPERIENCE_NOW_LINK } from "@constants";
+
+interface Props {
+  readonly onClickContact: () => void;
+}
+
+export const IntroduceSection: React.FC<Props> = ({ onClickContact }) => {
+  const handleOpenLink = () => {
+    window.open(APP_EXPERIENCE_NOW_LINK, "_blank");
+  };
   return (
     <SectionContainer className="py-16 bg-primary-10 flex items-center">
       <div className="grid grid-cols-2 gap-12">
@@ -24,8 +33,13 @@ export const IntroduceSection: React.FC = () => {
           </h3>
 
           <div className="flex gap-7">
-            <Button text="Trải nghiệm ngay" className="w-44" type="primary" />
-            <Button text="Liên hệ" className="w-44" />
+            <Button
+              text="Trải nghiệm ngay"
+              className="w-44"
+              type="primary"
+              onClick={handleOpenLink}
+            />
+            <Button text="Liên hệ" className="w-44" onClick={onClickContact} />
           </div>
         </div>
         <div className="flex justify-start">
