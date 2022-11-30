@@ -15,3 +15,5 @@ export const BREAKPOINTS = {
   // 	@media (min-width: 1536px) { ... }
   "2xl": 1536,
 };
+
+export const APP_EXPERIENCE_NOW_LINK = "http://app.simlody.com/";
