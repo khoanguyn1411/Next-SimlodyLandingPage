@@ -12,7 +12,7 @@ const MEMBERS: readonly Member[] = [
   {
     image: "/images/about-us/members/huy-vu.jpg",
     name: "Vũ Quang Huy",
-    role: "Founder, Back-end developer",
+    role: "Founder",
   },
   {
     image: "/images/about-us/members/nhat-hao.jpeg",

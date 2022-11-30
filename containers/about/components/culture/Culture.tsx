@@ -12,7 +12,7 @@ export const Culture: React.FC = () => {
           <CircleDashed size={480} />
         </span>
       }
-      className="opacity-90 py-16 flex items-center bg-primary-10"
+      className="opacity-90 py-16 flex items-center"
     >
       <div className="grid grid-cols-2 gap-12 items-center">
         <div className="col-span-1 flex gap-4 flex-col">

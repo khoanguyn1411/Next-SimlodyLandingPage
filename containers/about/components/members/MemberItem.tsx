@@ -14,7 +14,7 @@ export const MemberItem: React.FC<Props> = ({ name, role, image }) => {
       />
       <div className="gap-2 flex flex-col">
         <h1 className="font-semibold text-xl text-center">{name}</h1>
-        <span className="text-center text-lg">{role}</span>
+        <span className="text-center text-gray-600 text-lg">{role}</span>
       </div>
     </div>
   );

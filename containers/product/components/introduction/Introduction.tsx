@@ -4,8 +4,8 @@ import React from "react";
 
 export const Introduction: React.FC = () => {
   return (
-    <SectionContainer className="bg-primary-10" animation="fade-up">
-      <div className="flex flex-col gap-10">
+    <SectionContainer animation="fade-up">
+      <div className="flex flex-col gap-8">
         <h1 className="text-center font-semibold text-4xl">
           <span className="text-primary-800">Symlody</span> là gì?
         </h1>
