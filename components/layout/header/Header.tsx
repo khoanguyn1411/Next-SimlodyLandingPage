@@ -1,10 +1,9 @@
-import React from "react";
-import { Logo, Button } from "@components/elements";
-import { ItemMenu } from "./MenuItem";
-import Link from "next/link";
-import classNames from "classnames";
 import { Media } from "@components";
-import { useRouter } from "next/router";
+import { Button, Logo } from "@components/elements";
+import classNames from "classnames";
+import Link from "next/link";
+import React from "react";
+import { ItemMenu } from "./MenuItem";
 
 const MENUS = [
   {
@@ -29,9 +28,8 @@ type IProps = {
   onOpen: () => void;
 };
 export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
-  const router = useRouter();
   const handleLink = () => {
-    router.push("/contact-us");
+    window.open("http://app.simlody.com/", "_blank");
   };
   return (
     <header className="bg-white h-header shadow sticky top-0 z-50">
