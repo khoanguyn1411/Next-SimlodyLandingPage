@@ -14,7 +14,7 @@ export const HomeContainer: React.FC = () => {
     if (boxEmailRef?.current) {
       boxEmailRef.current.scrollIntoView({
         behavior: "smooth",
-        block: "start",
+        block: "center",
       });
     }
   };
