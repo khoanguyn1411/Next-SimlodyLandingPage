@@ -4,31 +4,33 @@ import { APP_EXPERIENCE_NOW_LINK } from "@constants";
 import classNames from "classnames";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { ItemMenu } from "./MenuItem";
-
-const MENUS = [
-  {
-    key: "Home",
-    name: "Trang chủ",
-    href: "/",
-  },
-  {
-    key: "Product",
-    name: "Sản phẩm",
-    href: "/product",
-  },
-  {
-    key: "About",
-    name: "Giới thiệu",
-    href: "/about",
-  },
-];
 
 type IProps = {
   pageKey?: string;
   onOpen: () => void;
 };
 export const Header: React.FC<IProps> = React.memo(({ pageKey, onOpen }) => {
+  const { t } = useTranslation(["layout"])
+  const MENUS = [
+    {
+      key: "Home",
+      name: t("layout:menu.home"),
+      href: "/",
+    },
+    {
+      key: "Product",
+      name: t("layout:menu.product"),
+      href: "/product",
+    },
+    {
+      key: "About",
+      name: t("layout:menu.about"),
+      href: "/about",
+    },
+  ];
+
   const handleLink = () => {
     window.open(APP_EXPERIENCE_NOW_LINK, "_blank");
   };

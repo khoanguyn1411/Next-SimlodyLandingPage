@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import "../public/fonts/FontAwesomePro/css/fontawesome.min.css";
 import "../public/fonts/FontAwesomePro/css/solid.min.css";
 import "../public/fonts/FontAwesomePro/css/regular.min.css";
+import "../i18n";
 import "rc-drawer/assets/index.css";
 
 import { ToastContainer } from "react-toastify";
@@ -16,7 +17,6 @@ import { MediaContextProvider } from "@components";
 import { useEffect } from "react";
 import AOS from "aos";
 import "@splidejs/react-splide/css";
-import envGlobal from "../env";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
