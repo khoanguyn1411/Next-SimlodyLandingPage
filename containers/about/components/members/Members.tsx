@@ -12,7 +12,7 @@ const MEMBERS: readonly Member[] = [
   {
     image: "/images/about-us/members/huy-vu.jpg",
     name: "Vũ Quang Huy",
-    role: "Founder",
+    role: "Founder, Back-end developer",
   },
   {
     image: "/images/about-us/members/nhat-hao.jpeg",
@@ -29,6 +29,11 @@ const MEMBERS: readonly Member[] = [
     name: "Nguyễn Hoàng Anh Khoa",
     role: "Front-end developer",
   },
+  {
+    image: "/images/about-us/members/bich-tram.jpg",
+    name: "Võ Thị Bích Trâm",
+    role: "Marketer",
+  },
 ];
 
 export const Members: React.FC = () => {
@@ -38,10 +43,17 @@ export const Members: React.FC = () => {
       className="py-28"
       title="Đội ngũ chúng tôi"
     >
-      <div className="grid grid-cols-4 gap-11">
-        {MEMBERS.map((item) => (
-          <MemberItem key={item.name} {...item} />
-        ))}
+      <div className="flex-col gap-11 flex">
+        <div className="grid grid-cols-4 gap-11">
+          {MEMBERS.slice(0, 4).map((item) => (
+            <MemberItem key={item.name} {...item} />
+          ))}
+        </div>
+        <div className="grid grid-cols-3 gap-11 self-center">
+          {MEMBERS.slice(4, MEMBERS.length).map((item) => (
+            <MemberItem key={item.name} {...item} />
+          ))}
+        </div>
       </div>
     </SectionContainer>
   );
