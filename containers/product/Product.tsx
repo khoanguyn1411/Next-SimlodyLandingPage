@@ -5,7 +5,7 @@ import { Introduction } from "./components/introduction";
 
 export const ProductContainer: React.FC = () => {
   return (
-    <WrapperContainer>
+    <WrapperContainer className="gap-5">
       <Introduction />
       <FeatureSection />
       <BoxEmail />

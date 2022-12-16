@@ -13,7 +13,7 @@ export const IntroduceSection: React.FC<Props> = ({ onClickContact }) => {
   };
   return (
     <SectionContainer className="py-16 bg-primary-10 flex items-center">
-      <div className="grid grid-cols-2 gap-12">
+      <div className="grid xl:grid-cols-2 gap-12 grid-cols-1">
         <div className="flex flex-col gap-9 h-full justify-center">
           <h2 className="text-4xl leading-tight font-medium text-gray-800 relative">
             Công cụ <span className="text-primary-800">quản trị tổ chức</span>{" "}
@@ -22,7 +22,7 @@ export const IntroduceSection: React.FC<Props> = ({ onClickContact }) => {
               data-aos="fade-left"
               data-aos-delay="200"
               data-aos-duration="500"
-              className="text-primary-800 absolute -right-16 top-14"
+              className="text-primary-800 absolute xl:block hidden -right-16 top-14"
             >
               <CurvesArrowIcon size={80} />
             </span>
@@ -42,7 +42,7 @@ export const IntroduceSection: React.FC<Props> = ({ onClickContact }) => {
             <Button text="Liên hệ" className="w-44" onClick={onClickContact} />
           </div>
         </div>
-        <div className="flex justify-start">
+        <div className="xl:flex justify-start hidden">
           <div
             data-aos="fade-left"
             data-aos-delay="200"

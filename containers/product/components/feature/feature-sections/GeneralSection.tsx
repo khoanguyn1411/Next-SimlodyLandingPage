@@ -1,15 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
+import classNames from "classnames";
 import React, { ReactNode } from "react";
 import { Feature } from "../constant";
 
-type Props = Feature & { children?: ReactNode };
+type Props = Feature & { children?: ReactNode; className?: string };
 
 const ImageComponent: React.FC<Props> = (props) => {
   return (
-    <div className="col-span-2">
+    <div
+      className={classNames(
+        { "col-span-2 hidden md:block": !props.className },
+        props.className
+      )}
+    >
       <div className="w-full relative">
-        <img className="w-full" src={props.image} alt={props.title} />
-        {props.children}
+        <img src={props.image} alt={props.title} />
+        <div className="hidden md:block">{props.children}</div>
       </div>
     </div>
   );
@@ -18,8 +24,10 @@ const ImageComponent: React.FC<Props> = (props) => {
 export const GeneralSection: React.FC<Props> = (props) => {
   return (
     <div
-      className="grid grid-cols-3 gap-4 justify-between items-center"
-      data-aos={props.isRight ? "fade-right" : "fade-left"}
+      className={classNames(
+        "grid md:grid-cols-3 grid-cols-1 md:gap-4 gap-10 justify-between items-center"
+      )}
+      data-aos={!props.isRight ? "fade-right" : "fade-left"}
       data-aos-once
       data-aos-delay="200"
       data-aos-duration="500"
@@ -42,6 +50,12 @@ export const GeneralSection: React.FC<Props> = (props) => {
       </div>
 
       {props.isRight && <ImageComponent {...props} />}
+      {
+        <ImageComponent
+          {...props}
+          className={"block col-span-1 bg-primary-50 rounded-lg md:hidden"}
+        />
+      }
     </div>
   );
 };

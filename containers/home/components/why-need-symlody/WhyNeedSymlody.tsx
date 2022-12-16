@@ -29,7 +29,7 @@ export const WhyNeedSymlody: React.FC = () => {
       subtitle="Công cụ để xây dựng tổ chức năng suất và hiệu quả"
     >
       <div className="flex flex-col">
-        <div className="grid grid-cols-2 gap-14">
+        <div className="grid md:grid-cols-2 gap-14 grid-cols-1">
           {ITEMS.map((item, idx) => (
             <WhyNeedSymlodyItem
               key={idx}

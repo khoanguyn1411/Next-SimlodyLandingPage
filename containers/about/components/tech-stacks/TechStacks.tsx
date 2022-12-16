@@ -50,7 +50,7 @@ export const TechStacks: React.FC = () => {
       className="bg-primary-10"
       title="Công nghệ sử dụng"
     >
-      <div className="grid grid-cols-3 gap-24 items-stretch">
+      <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-24 items-stretch">
         {TECH_STACK.map((item) => (
           <TechStackItem key={item.title} {...item} />
         ))}

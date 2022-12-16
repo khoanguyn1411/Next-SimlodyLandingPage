@@ -32,7 +32,7 @@ export const PartnerSection: React.FC = () => {
       isDashedSeparate
       subtitle="Cảm thấy hài lòng chỉ sau 8 tuần sử dụng"
     >
-      <div className="flex md:flex-row flex-col flex-wrap space-y-8 md:space-x-4 items-center justify-between">
+      <div className="flex md:flex-row flex-wrap gap-6 items-center justify-around">
         {PARTNERS.map((p, idx) => (
           <div key={idx}>
             <img className="w-40 h-40" src={p.src} alt={p.id} />

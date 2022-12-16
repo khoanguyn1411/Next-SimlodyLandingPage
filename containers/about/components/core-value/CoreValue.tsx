@@ -35,8 +35,8 @@ export const CoreValue: React.FC = () => {
       className="py-28 bg-primary-10"
       title="Giá trị cốt lõi"
     >
-      <div className="grid grid-cols-2 gap-y-14 gap-x-40 items-center">
-        {CORE_VALUES.map((item, index) => (
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-y-14 gap-x-40 items-center">
+        {CORE_VALUES.map((item) => (
           <CoreValueItems key={item.title} {...item} />
         ))}
       </div>

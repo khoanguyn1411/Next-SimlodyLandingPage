@@ -14,8 +14,8 @@ export const Culture: React.FC = () => {
       }
       className="opacity-90 py-16 flex items-center"
     >
-      <div className="grid grid-cols-2 gap-12 items-center">
-        <div className="col-span-1 flex gap-4 flex-col">
+      <div className="grid xl:grid-cols-2 grid-cols-1 gap-12 items-center">
+        <div className="col-span-1 flex gap-4 flex-col items-center xl:items-start">
           <h1 className="font-semibold text-4xl">Văn hoá hiện đại</h1>
           <p className="text-lg">
             Với đội ngũ trẻ tuổi, vui nhộn và tinh thần trách nhiệm cao, chúng
