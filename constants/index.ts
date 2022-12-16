@@ -16,4 +16,4 @@ export const BREAKPOINTS = {
   "2xl": 1536,
 };
 
-export const APP_EXPERIENCE_NOW_LINK = "http://app.simlody.com/";
+export const APP_EXPERIENCE_NOW_LINK = "http://dev.simlody.com/";
