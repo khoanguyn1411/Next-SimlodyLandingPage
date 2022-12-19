@@ -28,8 +28,13 @@ export const FeedbackSection: React.FC = () => {
       <CustomSplide>
         <Splide
           options={{
-            perPage: DEFAULT_PER_PAGE,
             gap: 30,
+            perPage: DEFAULT_PER_PAGE,
+            breakpoints: {
+              800: {
+                perPage: 1,
+              },
+            },
             type: FEEDBACKS.length > DEFAULT_PER_PAGE ? "loop" : "slide",
             interval: 1000,
             autoplay: true,

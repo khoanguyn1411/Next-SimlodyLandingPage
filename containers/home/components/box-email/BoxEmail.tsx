@@ -66,17 +66,17 @@ export const BoxEmail: React.FC = () => {
       background={<BackgroundHeart />}
     >
       <div className="border text-gray-400 bg-white rounded-md shadow-xl items-center grid grid-cols-1 lg:grid-cols-2 gap-4 px-12 py-8">
-        <div className="flex justify-center w-96 items-center">
+        <div className="flex justify-center items-center">
           <h2 className="text-2xl font-semibold text-primary-800">
             Quản lý tổ chức đơn giản và dễ dàng hơn.
           </h2>
         </div>
 
-        <div className="flex relative">
+        <div className="flex relative flex-col xl:flex-row gap-4">
           <div className="w-full flex flex-col gap-2">
             <Input
               bordered
-              className="pr-[155px]"
+              className="xl:pr-[155px] pr-0"
               placeholder="Vui lòng điền Email của bạn tại đây"
               prefix={<MailIcon />}
               value={email}
@@ -86,7 +86,7 @@ export const BoxEmail: React.FC = () => {
               <span className="text-red-400">{errorMessage}</span>
             )}
           </div>
-          <div className="min-w-max absolute right-0">
+          <div className="min-w-max xl:absolute right-0">
             <Button
               loading={isLoading}
               text="Trải nghiệm ngay"
