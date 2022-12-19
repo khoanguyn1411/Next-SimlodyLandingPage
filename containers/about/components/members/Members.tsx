@@ -37,13 +37,13 @@ const MEMBERS: readonly Member[] = [
   {
     image: "/images/about-us/members/thuy-quynh.jpeg",
     name: "Nguyễn Trần Thúy Quỳnh",
-    role: "Business Analysis",
+    role: "Business Analyst",
   },
 
   {
     image: "/images/about-us/members/huyen-thuong.jpg",
     name: "Nguyễn Huyền Thương",
-    role: "Business Analysis",
+    role: "Business Analyst",
   },
 ];
 
